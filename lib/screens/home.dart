@@ -13,7 +13,8 @@ class _MyHomePageState extends State<MyHomePage> {
     return MaterialApp(
       home: Scaffold(
         body: Container(
-          child: Column(children: <Widget>[
+          child: Row(children: <Widget>[
+            SizedBox(height: 150),
             //ROW 1 ///////////////////////////////////////////////////////////
             Expanded(
               child: Stack(

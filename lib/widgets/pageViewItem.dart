@@ -6,40 +6,76 @@ import '../utils/mixins/CountryModelClass.dart';
 import '../utils/mixins/CountryDataList.dart';
 
 class PageViewItem extends StatelessWidget {
-
-  Widget build(BuildContext context) {
-
-    print("Name : ${countrydata[2].imageAsset}");
+  Container country_PageView() {
+    //print("Name : ${countrydata[2].imageAsset}");
 
     final PageController controller =
         PageController(initialPage: 1, keepPage: true, viewportFraction: 0.35);
 
-    return PageView.builder(
-      /// [PageView.scrollDirection] defaults to [Axis.horizontal].
-      /// Use [Axis.vertical] to scroll vertically.
-      scrollDirection: Axis.horizontal,
-      controller: controller,
-      itemCount: 5 /*interests.length*/,
-      physics: BouncingScrollPhysics(),
-      itemBuilder: (BuildContext context, int index) {
-        return Text(
-          '${'country.countrydata[1]'[index]}',
-        );
-      },
-      /*
-                const <Widget>[
-        Center(
-          child: Text('First Page'),
-        ),
-        Center(
-          child: Text('Second Page'),
-        ),
-        Center(
-          child: Text('Third Page'),
-        )
-      ],
-           */
+    return Container(
+      color: Colors.red,
+      height: 90,
+      child: PageView.builder(
+        /// [PageView.scrollDirection] defaults to [Axis.horizontal].
+        /// Use [Axis.vertical] to scroll vertically.
+        scrollDirection: Axis.horizontal,
+        controller: controller,
+        itemCount: countrydata.length,
+        physics: BouncingScrollPhysics(),
+        itemBuilder: (BuildContext context, int index) {
+          return Container(
+            child: gestureDetector_Ontap(index),
+          );
+        },
+      ),
     );
-    //itembuilder()
+  }
+
+  GestureDetector gestureDetector_Ontap(int index) {
+    return GestureDetector(
+      onTap: () {
+        print('${countrydata[index].title}');
+      },
+      child: Container(
+        child: Text(
+          '${countrydata[index].title}',
+        ),
+      ),
+    );
+  }
+
+  /* //OK
+        final PageController controller =
+        PageController(initialPage: 1, keepPage: true, viewportFraction: 0.35);
+
+    return Container(
+      color: Colors.red,
+      height: 90,
+      child: PageView.builder(
+        /// [PageView.scrollDirection] defaults to [Axis.horizontal].
+        /// Use [Axis.vertical] to scroll vertically.
+        scrollDirection: Axis.horizontal,
+        controller: controller,
+        itemCount: countrydata.length,
+        physics: BouncingScrollPhysics(),
+        itemBuilder: (BuildContext context, int index) {
+          return GestureDetector(
+            onTap: () {
+              print('${countrydata[index].title}');
+            },
+            child: Container(
+              child: Text(
+                '${countrydata[index].title}',
+              ),
+            ),
+          );
+        },
+      ),
+    );
+     */
+  Widget build(BuildContext context) {
+    return Container(
+      child: country_PageView(),
+    );
   }
 }
