@@ -8,7 +8,6 @@ import '../utils/mixins/CountryDataList.dart';
 class PageViewItem extends StatelessWidget {
   Container country_PageView() {
     //print("Name : ${countrydata[2].imageAsset}");
-
     final PageController controller =
         PageController(initialPage: 1, keepPage: true, viewportFraction: 0.35);
 
@@ -37,6 +36,7 @@ class PageViewItem extends StatelessWidget {
         print('${countrydata[index].title}');
       },
       child: Container(
+        alignment: AlignmentDirectional.center,
         child: Text(
           '${countrydata[index].title}',
         ),
