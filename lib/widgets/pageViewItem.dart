@@ -4,10 +4,16 @@
 import 'package:flutter/material.dart';
 import '../utils/mixins/CountryModelClass.dart';
 import '../utils/mixins/CountryDataList.dart';
+import '../utils/mixins/CountryDataList.dart' as globals;
+
+
 
 class PageViewItem extends StatelessWidget {
-  Container country_PageView() {
+
+  //var detail ;
+  Container CountryPageView() {
     //print("Name : ${countrydata[2].imageAsset}");
+
     final PageController controller =
         PageController(initialPage: 1, keepPage: true, viewportFraction: 0.35);
 
@@ -33,6 +39,7 @@ class PageViewItem extends StatelessWidget {
   GestureDetector gestureDetector_Ontap(int index) {
     return GestureDetector(
       onTap: () {
+        globals.detail = countrydata[index].title ;
         print('${countrydata[index].title}');
       },
       child: Container(
@@ -75,7 +82,7 @@ class PageViewItem extends StatelessWidget {
      */
   Widget build(BuildContext context) {
     return Container(
-      child: country_PageView(),
+      child: CountryPageView(),
     );
   }
 }

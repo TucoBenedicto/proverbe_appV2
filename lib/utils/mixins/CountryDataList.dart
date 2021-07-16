@@ -7,3 +7,8 @@ import 'CountryModelClass.dart';
     InterestsModel(3, 'American', 'assets/logo/bonsai4.jpg'),
     InterestsModel(4, 'Marocan', 'assets/logo/bonsai5.jpg')
   ];
+
+
+//bool isLoggedIn = false;
+
+var detail ;

@@ -39,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
               // permet a son contenu de prendre toute la place horyzontal disponible , puisque on a autiliser un " width: double.infinity, "
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                proverbDisplay(),
+                ProverbDisplay(),
                 //DisplayProverb(_myService),
                 // _showProverbeOnTap(),
                 // _buildCheckIcon(),
