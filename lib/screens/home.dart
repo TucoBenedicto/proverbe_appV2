@@ -35,11 +35,10 @@ class _MyHomePageState extends State<MyHomePage> {
             SizedBox(height: 100),
             Row(
               //AFFICHAGE des proverbes
-              // Expanded(
-              // permet a son contenu de prendre toute la place horyzontal disponible , puisque on a autiliser un " width: double.infinity, "
-              mainAxisAlignment: MainAxisAlignment.center,
+              // Expanded(// permet a son contenu de prendre toute la place horyzontal disponible , puisque on a autiliser un " width: double.infinity, "
+              mainAxisAlignment: MainAxisAlignment.center, //permet de centrer le Row
               children: <Widget>[
-                ProverbDisplay(),
+                proverbDisplay(),
                 //DisplayProverb(_myService),
                 // _showProverbeOnTap(),
                 // _buildCheckIcon(),

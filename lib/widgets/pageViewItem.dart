@@ -1,14 +1,12 @@
 // https://www.woolha.com/tutorials/flutter-creating-pageview-with-pagecontroller-examples
 // adb connect localhost:5555
-
+//SON
 import 'package:flutter/material.dart';
 import '../utils/mixins/CountryModelClass.dart';
 import '../utils/mixins/CountryDataList.dart';
-import '../utils/mixins/CountryDataList.dart' as globals;
-
-
 
 class PageViewItem extends StatelessWidget {
+  var MyVariableParametre = 3;
 
   //var detail ;
   Container CountryPageView() {
@@ -39,8 +37,10 @@ class PageViewItem extends StatelessWidget {
   GestureDetector gestureDetector_Ontap(int index) {
     return GestureDetector(
       onTap: () {
-        globals.detail = countrydata[index].title ;
-        print('${countrydata[index].title}');
+        print('TiTle : ${countrydata[index].title}');
+        print('Id : ${countrydata[index].id}');
+
+        print('TiTle : ${countrydata[index].title}');
       },
       child: Container(
         alignment: AlignmentDirectional.center,

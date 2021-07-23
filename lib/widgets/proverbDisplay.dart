@@ -8,57 +8,91 @@ import 'dart:convert'; //(jsonDecode)
 import 'package:flutter/services.dart'; // (loadJson)
 import 'dart:math'; //Random
 import 'package:flutter/foundation.dart'; //debugPrint()
+//PARENT
+// https://medium.com/flutter-community/data-binding-in-flutter-or-passing-data-from-a-child-widget-to-a-parent-widget-4b1c5ffe2114
 
-class ProverbDisplay extends StatefulWidget {
-
+class proverbDisplay extends StatefulWidget {
   @override
-  _ProverbDisplayState createState() => _ProverbDisplayState();
+  _proverbDisplayState createState() => _proverbDisplayState();
 }
 
-class _ProverbDisplayState extends State<ProverbDisplay> {
-
+class _proverbDisplayState extends State<proverbDisplay> {
+  //OLD
   /*
-    void flex(){
-    print(globals.detail);
+    String data;
+  Future<void> getJsonProverb() async {
+    final String rawJson =
+        await rootBundle.loadString('assets/json/proverb.json');
+    var datasObject = await jsonDecode(rawJson);
+    setState(() {
+      data = jsonEncode(datasObject["Japonais"]["0"])
+          .replaceAll('"', ''); //replaceAll remove quotation marks
+    });
+    print('object : $datasObject');
+    print('String : $data');
+  }
+  @override
+  void initState() {
+    super.initState();
+    getJsonProverb();
   }
    */
 
-  //fetch data from the json file
-  String data;
-  Future<void> readJson() async {
-
+  //NEW ok mais tous s'affiche
+  /*
+    Map<String, dynamic> proverbeCountrySelected = {};
+  //String proverbeCountrySelected ;
+  Future getJsonProverb() async {
     final String rawJson = await rootBundle.loadString('assets/json/proverb.json');
-    var dataObject = await jsonDecode(rawJson); //Parsing
+    var datasJsonObject = await jsonDecode(rawJson);
+    //proverbeCountrySelected = datasJsonObject[data.title];
     setState(() {
-      data = jsonEncode(dataObject["Japonais"]["0"])
-          .replaceAll('"', ''); //replaceAll remove quotation marks
+      proverbeCountrySelected = datasJsonObject["Japonais"]; //OK
     });
-    print(dataObject);
-    print(data);
-    print(detail);
-    debugPrint('movieTitle: $detail');
+    //debugPrint('DATA proverbeSelect: $proverbeCountrySelected');
+    print('DATA proverbeSelect inside: $proverbeCountrySelected');
+    //return proverbeCountrySelected; //Renvoi le proverbe
   }
-  /////////////////////////////////////////////////////
-
-/*
   @override
-  void initState() { // Called when object "ReadJson" is inserted in the tree (arborescence)
+  void initState() {
     super.initState();
-    readJson();
+    getJsonProverb();
   }
- */
+
+   */
+
+  //NEW 2
+  Map<String, dynamic> proverbeCountrySelected = {};
+  Future getJsonProverb() async {
+    final String rawJson = await rootBundle.loadString('assets/json/proverb.json');
+    var datasJsonObject = await jsonDecode(rawJson);
+    //proverbeCountrySelected = datasJsonObject[data.title];
+    setState(() {
+      //proverbeCountrySelected = datasJsonObject["Japonais"]; //OK
+      proverbeCountrySelected = datasJsonObject["Japonais"]{"1"}; //OK
+    });
+    //debugPrint('DATA proverbeSelect: $proverbeCountrySelected');
+    print('DATA proverbeSelect inside: $proverbeCountrySelected');
+    //return proverbeCountrySelected; //Renvoi le proverbe
+  }
+  @override
+  void initState() {
+    super.initState();
+    getJsonProverb();
+  }
+
 
   @override
   Widget build(BuildContext context) {
+    print('DATA proverbeSelect outside: ${proverbeCountrySelected["1"]}');
     return Container(
       color: Colors.blue,
       height: 250,
-      width: 350,
-      child: Text('${data}'),
+      width: 250,
+      child: Text('${proverbeCountrySelected}'),
     );
   }
 }
-
 
 //Save 2 corrige pour cette exemple .
 /*
