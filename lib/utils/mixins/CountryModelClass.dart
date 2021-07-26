@@ -2,11 +2,10 @@
 class InterestsModel {
   //Field
   int id;
+  String country;
   String imageAsset;
-  String title;
   //Constructor
-  InterestsModel(this.id, this.title, this.imageAsset);
-
+  InterestsModel(this.id, this.country, this.imageAsset);
 }
 
 

@@ -37,15 +37,15 @@ class PageViewItem extends StatelessWidget {
   GestureDetector gestureDetector_Ontap(int index) {
     return GestureDetector(
       onTap: () {
-        print('TiTle : ${countrydata[index].title}');
+        print('TiTle : ${countrydata[index].country}');
         print('Id : ${countrydata[index].id}');
 
-        print('TiTle : ${countrydata[index].title}');
+        print('TiTle : ${countrydata[index].country}');
       },
       child: Container(
         alignment: AlignmentDirectional.center,
         child: Text(
-          '${countrydata[index].title}',
+          '${countrydata[index].country}',
         ),
       ),
     );
