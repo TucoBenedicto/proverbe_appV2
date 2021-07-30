@@ -20,19 +20,27 @@ class proverbDisplay extends StatefulWidget {
 
 class _proverbDisplayState extends State<proverbDisplay> {
 
-  int selectedCountry = 2;
+  int selectedCountry = 1 ; //Attention c'est ici que se fait le choix du pays , binding a faire ici
+
   Map<String, dynamic> proverbeCountrySelected = {};
+
   Future getJsonProverb(InterestsModel data) async {
-    //Ici en parametre on "instencie" (creation objet) la variable "data"  avec la class "InterestsModel"
-    final String rawJson =
-        await rootBundle.loadString('assets/json/proverb.json');
+    //Recuperation JSON
+    final String rawJson = await rootBundle.loadString('assets/json/proverb.json');
     var datasJsonObject = await jsonDecode(rawJson);
+
     //data = jsonEncode(datasJsonObject["japonais"]["$page"]).replaceAll('"', '');
     //data = datasJsonObject["Japonais"];
+
+    //POO recuperer le pays
     proverbeCountrySelected = datasJsonObject[data.country];
     //Text('${itemData[index].Counter}'
+
+
+    //DEBugage
     debugPrint('DATA proverbeSelect: $proverbeCountrySelected');
     debugPrint('DATA:::::::::::::::: $data');
+    print('DATA proverbeSelect outside: ${proverbeCountrySelected['1']}');
     return proverbeCountrySelected; //Renvoi le proverbe
   }
 
@@ -44,7 +52,6 @@ class _proverbDisplayState extends State<proverbDisplay> {
 
   @override
   Widget build(BuildContext context) {
-    print('DATA proverbeSelect outside: ${proverbeCountrySelected['1']}');
     return Container(
       color: Colors.blue,
       height: 250,
