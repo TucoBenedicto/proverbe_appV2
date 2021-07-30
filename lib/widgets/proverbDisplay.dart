@@ -8,8 +8,10 @@ import 'dart:convert'; //(jsonDecode)
 import 'package:flutter/services.dart'; // (loadJson)
 import 'dart:math'; //Random
 import 'package:flutter/foundation.dart'; //debugPrint()
+
 //PARENT
 // https://medium.com/flutter-community/data-binding-in-flutter-or-passing-data-from-a-child-widget-to-a-parent-widget-4b1c5ffe2114
+
 
 class proverbDisplay extends StatefulWidget {
   @override
@@ -17,93 +19,11 @@ class proverbDisplay extends StatefulWidget {
 }
 
 class _proverbDisplayState extends State<proverbDisplay> {
-  //OLD
-  /*
-    String data;
-  Future<void> getJsonProverb() async {
-    final String rawJson =
-        await rootBundle.loadString('assets/json/proverb.json');
-    var datasObject = await jsonDecode(rawJson);
-    setState(() {
-      data = jsonEncode(datasObject["Japonais"]["0"])
-          .replaceAll('"', ''); //replaceAll remove quotation marks
-    });
-    print('object : $datasObject');
-    print('String : $data');
-  }
-  @override
-  void initState() {
-    super.initState();
-    getJsonProverb();
-  }
-   */
 
-  //NEW charger tous le fichier json
-  /*
-    Map<String, dynamic> proverbeCountrySelected = {};
-  //String proverbeCountrySelected ;
-  Future getJsonProverb() async {
-    final String rawJson = await rootBundle.loadString('assets/json/proverb.json');
-    var datasJsonObject = await jsonDecode(rawJson);
-    //proverbeCountrySelected = datasJsonObject[data.title];
-    setState(() {
-      proverbeCountrySelected = datasJsonObject["Japonais"]; //OK
-    });
-    //debugPrint('DATA proverbeSelect: $proverbeCountrySelected');
-    print('DATA proverbeSelect inside: $proverbeCountrySelected');
-    //return proverbeCountrySelected; //Renvoi le proverbe
-  }
-  @override
-  void initState() {
-    super.initState();
-    getJsonProverb();
-  }
-
-   */
-
-  //NEW 2 charger une partie à l'aide de "keys" "entries" "values"
-/*
-  Map<String, dynamic> proverbeCountrySelected = {};
-  Future getJsonProverb() async {
-    final String rawJson = await rootBundle.loadString('assets/json/proverb.json');
-    var datasJsonObject = await jsonDecode(rawJson);
-    //proverbeCountrySelected = datasJsonObject[data.title];
-    setState(() {
-      //proverbeCountrySelected = datasJsonObject["Japonais"]; //OK
-      proverbeCountrySelected = (datasJsonObject["Japonais"]); //OK
-    });
-    //debugPrint('DATA proverbeSelect: $proverbeCountrySelected');
-    print('DATA proverbeSelect inside: $proverbeCountrySelected');
-    print('DATA proverbeSelect keys: ${proverbeCountrySelected.keys}');
-    print('DATA proverbeSelect values: ${proverbeCountrySelected.values}');
-    print('DATA proverbeSelect entries: ${proverbeCountrySelected.entries}');
-    //return proverbeCountrySelected; //Renvoi le proverbe
-  }
- */
-
-  //NEW 3  charger une partie precise en ajoutant "toList()[1]" qui va convertir le contenu en liste
-  /*
-    Map<String, dynamic> proverbeCountrySelected = {};
-  Future getJsonProverb() async {
-    final String rawJson = await rootBundle.loadString('assets/json/proverb.json');
-    var datasJsonObject = await jsonDecode(rawJson);
-    //proverbeCountrySelected = datasJsonObject[data.title];
-    setState(() {
-      //proverbeCountrySelected = datasJsonObject["Japonais"]; //OK
-      proverbeCountrySelected = (datasJsonObject["Japonais"]); //OK
-    });
-    //debugPrint('DATA proverbeSelect: $proverbeCountrySelected');
-    print('DATA proverbeSelect inside: $proverbeCountrySelected');
-    print('DATA proverbeSelect keys: ${proverbeCountrySelected.keys.toList()[3]}');
-    print('DATA proverbeSelect values: ${proverbeCountrySelected.values.toList()[3]}');
-    print('DATA proverbeSelect entries: ${proverbeCountrySelected.entries.toList()[3]}');
-    //return proverbeCountrySelected; //Renvoi le proverbe
-  }
-   */
-
-  int selectedCountry = 0;
+  int selectedCountry = 2;
   Map<String, dynamic> proverbeCountrySelected = {};
   Future getJsonProverb(InterestsModel data) async {
+    //Ici en parametre on "instencie" (creation objet) la variable "data"  avec la class "InterestsModel"
     final String rawJson =
         await rootBundle.loadString('assets/json/proverb.json');
     var datasJsonObject = await jsonDecode(rawJson);
@@ -112,6 +32,7 @@ class _proverbDisplayState extends State<proverbDisplay> {
     proverbeCountrySelected = datasJsonObject[data.country];
     //Text('${itemData[index].Counter}'
     debugPrint('DATA proverbeSelect: $proverbeCountrySelected');
+    debugPrint('DATA:::::::::::::::: $data');
     return proverbeCountrySelected; //Renvoi le proverbe
   }
 
@@ -119,18 +40,15 @@ class _proverbDisplayState extends State<proverbDisplay> {
   void initState() {
     super.initState();
     getJsonProverb(countrydata[selectedCountry]);
-    // getJsonProverb(countrydata[selectedCountry]);
   }
 
   @override
   Widget build(BuildContext context) {
     print('DATA proverbeSelect outside: ${proverbeCountrySelected['1']}');
-    //print('DATA proverbeSelect inside: ${countrydata.id}');
     return Container(
       color: Colors.blue,
       height: 250,
       width: 250,
-      // child: Text('${getJsonProverb(countrydata[selectedCountry])}'),
       child: Text('${proverbeCountrySelected['1']}'),
     );
   }
