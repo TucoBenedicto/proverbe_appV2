@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../utils/mixins/CountryDataList.dart';
 import '../utils/mixins/CountryModelClass.dart';
 import '../widgets/pageViewItem.dart'; // <---
+import './pageViewItem.dart'; // <---
 
 import 'dart:convert'; //(jsonDecode)
 import 'package:flutter/services.dart'; // (loadJson)
@@ -12,15 +13,67 @@ import 'package:flutter/foundation.dart'; //debugPrint()
 //PARENT
 // https://medium.com/flutter-community/data-binding-in-flutter-or-passing-data-from-a-child-widget-to-a-parent-widget-4b1c5ffe2114
 
-
 class proverbDisplay extends StatefulWidget {
+  int dumbi = 0;
+
   @override
   _proverbDisplayState createState() => _proverbDisplayState();
 }
 
 class _proverbDisplayState extends State<proverbDisplay> {
+  PageViewItem flexi = PageViewItem();
+  MyService _myService = MyService();
+  int selectedCountry = 1; //Attention c'est ici que se fait le choix du pays , binding a faire ici
 
-  int selectedCountry = 1 ; //Attention c'est ici que se fait le choix du pays , binding a faire ici
+  Map<String, dynamic> proverbeCountrySelected = {};
+
+  Future getJsonProverb() async {
+    //Recuperation JSON
+    final String rawJson =
+        await rootBundle.loadString('assets/json/proverb.json');
+    var datasJsonObject = await jsonDecode(rawJson);
+
+    //data = jsonEncode(datasJsonObject["japonais"]["$page"]).replaceAll('"', '');
+    //data = datasJsonObject["Japonais"];
+
+    //POO recuperer le pays
+    proverbeCountrySelected = datasJsonObject["Japonais"];
+    //proverbeCountrySelected = datasJsonObject;
+    //Text('${itemData[index].Counter}'
+
+    //DEBugage
+    debugPrint('DATA proverbeSelect: $proverbeCountrySelected');
+    //debugPrint('DATA:::::::::::::::: $flex');
+    //debugPrint('DATA proverbeSelect outside: ${proverbeCountrySelected['1']}');
+
+    setState(() {
+      //print('$_myService');
+      //print('DATA PageViewItem: ${ flexi._myService }');
+      //print('${_myService.}');
+      //print('DATA PageViewItem: ${ flexi.gestureDetector_Ontap(1)}');
+      print('DATA PageViewItem: ${widget.dumbi}');
+    });
+
+    return proverbeCountrySelected; //Renvoi le proverbe
+  }
+
+  updateId() {
+    setState(() {
+      print('DATA PageViewItem: ${widget.dumbi}');
+      return widget.dumbi;
+    });
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    getJsonProverb();
+    // getJsonProverb(countrydata[selectedCountry]);
+  }
+
+  //Save POO
+/*
+    int selectedCountry = 1 ; //Attention c'est ici que se fait le choix du pays , binding a faire ici
 
   Map<String, dynamic> proverbeCountrySelected = {};
 
@@ -34,8 +87,8 @@ class _proverbDisplayState extends State<proverbDisplay> {
 
     //POO recuperer le pays
     proverbeCountrySelected = datasJsonObject[data.country];
-    //Text('${itemData[index].Counter}'
 
+    //Text('${itemData[index].Counter}'
 
     //DEBugage
     debugPrint('DATA proverbeSelect: $proverbeCountrySelected');
@@ -50,16 +103,136 @@ class _proverbDisplayState extends State<proverbDisplay> {
     getJsonProverb(countrydata[selectedCountry]);
   }
 
+ */
+
   @override
   Widget build(BuildContext context) {
     return Container(
       color: Colors.blue,
       height: 250,
       width: 250,
-      child: Text('${proverbeCountrySelected['1']}'),
+      //child: Text('${proverbeCountrySelected}'),
+      child: Text('${widget.dumbi}'),
+
+      //child: updateId(),
     );
   }
 }
+
+//Last Save
+/*
+import 'package:flutter/material.dart';
+
+import '../utils/mixins/CountryDataList.dart';
+import '../utils/mixins/CountryModelClass.dart';
+import '../widgets/pageViewItem.dart'; // <---
+import './pageViewItem.dart'; // <---
+
+import 'dart:convert'; //(jsonDecode)
+import 'package:flutter/services.dart'; // (loadJson)
+import 'dart:math'; //Random
+import 'package:flutter/foundation.dart'; //debugPrint()
+
+//PARENT
+// https://medium.com/flutter-community/data-binding-in-flutter-or-passing-data-from-a-child-widget-to-a-parent-widget-4b1c5ffe2114
+
+class proverbDisplay extends StatefulWidget {
+  @override
+  _proverbDisplayState createState() => _proverbDisplayState();
+}
+
+class _proverbDisplayState extends State<proverbDisplay> {
+  PageViewItem flexi = PageViewItem();
+  MyService _myService = MyService();
+  int selectedCountry = 1 ; //Attention c'est ici que se fait le choix du pays , binding a faire ici
+
+  Map<String, dynamic> proverbeCountrySelected = {};
+
+  Future getJsonProverb() async {
+    //Recuperation JSON
+    final String rawJson =
+        await rootBundle.loadString('assets/json/proverb.json');
+    var datasJsonObject = await jsonDecode(rawJson);
+
+    //data = jsonEncode(datasJsonObject["japonais"]["$page"]).replaceAll('"', '');
+    //data = datasJsonObject["Japonais"];
+
+    //POO recuperer le pays
+    proverbeCountrySelected = datasJsonObject["Japonais"];
+    //proverbeCountrySelected = datasJsonObject;
+    //Text('${itemData[index].Counter}'
+
+    //DEBugage
+    debugPrint('DATA proverbeSelect: $proverbeCountrySelected');
+    //debugPrint('DATA:::::::::::::::: $flex');
+    //debugPrint('DATA proverbeSelect outside: ${proverbeCountrySelected['1']}');
+
+    setState(() {
+       flexi.flex;
+      //print('$_myService');
+      //print('DATA PageViewItem: ${ flexi._myService }');
+      //print('${_myService.}');
+      //print('DATA PageViewItem: ${ flexi.gestureDetector_Ontap(1)}');
+      print('DATA PageViewItem: ${flexi.flex}');
+    });
+
+    return proverbeCountrySelected; //Renvoi le proverbe
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    getJsonProverb();
+    // getJsonProverb(countrydata[selectedCountry]);
+  }
+
+  //Save POO
+/*
+    int selectedCountry = 1 ; //Attention c'est ici que se fait le choix du pays , binding a faire ici
+
+  Map<String, dynamic> proverbeCountrySelected = {};
+
+  Future getJsonProverb(InterestsModel data) async {
+    //Recuperation JSON
+    final String rawJson = await rootBundle.loadString('assets/json/proverb.json');
+    var datasJsonObject = await jsonDecode(rawJson);
+
+    //data = jsonEncode(datasJsonObject["japonais"]["$page"]).replaceAll('"', '');
+    //data = datasJsonObject["Japonais"];
+
+    //POO recuperer le pays
+    proverbeCountrySelected = datasJsonObject[data.country];
+
+    //Text('${itemData[index].Counter}'
+
+    //DEBugage
+    debugPrint('DATA proverbeSelect: $proverbeCountrySelected');
+    debugPrint('DATA:::::::::::::::: $data');
+    print('DATA proverbeSelect outside: ${proverbeCountrySelected['1']}');
+    return proverbeCountrySelected; //Renvoi le proverbe
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    getJsonProverb(countrydata[selectedCountry]);
+  }
+
+ */
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: Colors.blue,
+      height: 250,
+      width: 250,
+      //child: Text('${proverbeCountrySelected}'),
+      child: Text('${flexi.flex}'),
+
+    );
+  }
+}
+ */
 
 //Save 2 corrige pour cette exemple .
 /*

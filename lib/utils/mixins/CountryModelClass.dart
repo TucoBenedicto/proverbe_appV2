@@ -9,11 +9,6 @@ class InterestsModel {
 }
 
 
-
-
-
-
-
 /*
 List<Widget> pages = [
 Container(
