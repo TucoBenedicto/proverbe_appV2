@@ -10,22 +10,19 @@ import './proverbDisplay.dart';
 
 class PageViewItem extends StatelessWidget {
 
-  //var MyVariableParametre = 3;
-  MyService _myService = MyService();
-  static int flex ;
-  //var flexu = 55; //OK binded
-  //var  flexu;
-  //var detail ;
-  //PageViewItem({this.flex});
 
-  proverbDisplay dumb = proverbDisplay();
+
+  final void Function(int myId, String myMenu) onChanged;
+  const PageViewItem({this.onChanged});
+
+
 
   Container CountryPageView() {
 
+
     //print("Name : ${countrydata[2].imageAsset}");
 
-    final PageController controller =
-        PageController(initialPage: 1, keepPage: true, viewportFraction: 0.35);
+    final PageController controller = PageController(initialPage: 1, keepPage: true, viewportFraction: 0.35);
 
     return Container(
       color: Colors.red,
@@ -47,20 +44,29 @@ class PageViewItem extends StatelessWidget {
     );
   }
 
+
+
   GestureDetector gestureDetector_Ontap(int index) {
+
 
     return GestureDetector(
       onTap: () {
         //flex = _myService.myVariable[index].id;
         //print('TiTle : ${countrydata[index].country}');
-        print('TiTle: _myService.myVariable : ${_myService.myVariable[1]}');
-        print('TiTle: _myService.myVariable ID : ${_myService.myVariable[index].id}');
-        print('TiTle: _myService.myVariable country: ${_myService.myVariable[index].country}');
-        flex = countrydata[index].id;
-        print('Id : ${countrydata[index].id}');
-        //Appeler proverbe display
+        /*
+                print('TiTle: _myService.myVariable : ${myVariable[1]}');
+        print('TiTle: _myService.myVariable ID : ${myVariable[index].id}');
+        print('TiTle: _myService.myVariable country: ${myVariable[index].country}');
+         */
 
-       dumb.dumbi = _myService.myVariable[index].id;
+        int myId = countrydata[index].id;
+        String myMenu = countrydata[index].country;
+
+        onChanged(myId, myMenu);
+
+        print('myIDpageViewItem ${myId}');
+        print('myMenupageViewItem  ${myMenu}');
+
       },
       child: Container(
         alignment: AlignmentDirectional.center,

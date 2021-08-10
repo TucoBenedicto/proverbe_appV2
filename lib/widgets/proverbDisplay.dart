@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../utils/mixins/CountryDataList.dart';
 import '../utils/mixins/CountryModelClass.dart';
 import '../widgets/pageViewItem.dart'; // <---
@@ -14,61 +13,56 @@ import 'package:flutter/foundation.dart'; //debugPrint()
 // https://medium.com/flutter-community/data-binding-in-flutter-or-passing-data-from-a-child-widget-to-a-parent-widget-4b1c5ffe2114
 
 class proverbDisplay extends StatefulWidget {
-  int dumbi = 0;
-
+  final int myId ;
+  final String myMenu ;
+  const proverbDisplay(this.myId, this.myMenu);
   @override
   _proverbDisplayState createState() => _proverbDisplayState();
 }
 
 class _proverbDisplayState extends State<proverbDisplay> {
-  PageViewItem flexi = PageViewItem();
-  MyService _myService = MyService();
-  int selectedCountry = 1; //Attention c'est ici que se fait le choix du pays , binding a faire ici
-
+  //Map<String, dynamic> proverbeCountrySelected = {"Random": "0"};
   Map<String, dynamic> proverbeCountrySelected = {};
 
-  Future getJsonProverb() async {
-    //Recuperation JSON
-    final String rawJson =
-        await rootBundle.loadString('assets/json/proverb.json');
-    var datasJsonObject = await jsonDecode(rawJson);
+  String selected;
+  var datasJsonObject;
+  Random random = new Random();//Variable random me permet de mettre un proverbe au hazard
 
+  Future getJsonProverb() async {
+
+    //Recuperation JSON
+    final String rawJson = await rootBundle.loadString('assets/json/proverb.json');
+    datasJsonObject = await jsonDecode(rawJson);
     //data = jsonEncode(datasJsonObject["japonais"]["$page"]).replaceAll('"', '');
     //data = datasJsonObject["Japonais"];
-
     //POO recuperer le pays
-    proverbeCountrySelected = datasJsonObject["Japonais"];
+    /*
+        print('DATA proverbeSelect keys: ${proverbeCountrySelected.keys.toList()[3]}'); //
+    /*
+      keys.toList()[3]} : va renvoyer la 3er cle du fichier JSON , ici : American
+     */
+    print('DATA proverbeSelect values: ${proverbeCountrySelected.values.toList()[3]}');
+    /*
+     values.toList()[3]} : renvoi toute les valeur de la clef "american"   : {0: American 1 AmericanAmericanAmericanAmerican AmericanAmericanAmericanAmericanAmerican, 1: American 2 AmericanAmericanAmericanAmerican AmericanAmericanAmericanAmericanAmerican, 2: America
+     */
+    print('DATA proverbeSelect entries: ${proverbeCountrySelected.entries.toList()[3]}');
+     */
+    //proverbeCountrySelected = datasJsonObject[widget.myMenu];
+    //selectionproverbe = proverbeCountrySelected.values.toList()[1];
+    //proverbeCountrySelected = datasJsonObject["Japonais"];
+    //proverbeCountrySelected = datasJsonObject.keys.toList()[3].values.toList()[1];
     //proverbeCountrySelected = datasJsonObject;
     //Text('${itemData[index].Counter}'
-
     //DEBugage
-    debugPrint('DATA proverbeSelect: $proverbeCountrySelected');
-    //debugPrint('DATA:::::::::::::::: $flex');
     //debugPrint('DATA proverbeSelect outside: ${proverbeCountrySelected['1']}');
-
-    setState(() {
-      //print('$_myService');
-      //print('DATA PageViewItem: ${ flexi._myService }');
-      //print('${_myService.}');
-      //print('DATA PageViewItem: ${ flexi.gestureDetector_Ontap(1)}');
-      print('DATA PageViewItem: ${widget.dumbi}');
-    });
-
-    return proverbeCountrySelected; //Renvoi le proverbe
+    debugPrint('DATA proverbeSelect !!!!: ${proverbeCountrySelected}');
+    return datasJsonObject; //Renvoi le proverbe du pays selctionner
   }
 
-  updateId() {
-    setState(() {
-      print('DATA PageViewItem: ${widget.dumbi}');
-      return widget.dumbi;
-    });
-  }
-
-  @override
+    @override
   void initState() {
     super.initState();
     getJsonProverb();
-    // getJsonProverb(countrydata[selectedCountry]);
   }
 
   //Save POO
@@ -107,14 +101,32 @@ class _proverbDisplayState extends State<proverbDisplay> {
 
   @override
   Widget build(BuildContext context) {
+    debugPrint('DATA proverbeSelect: ${widget.myId}'); // OK
+    debugPrint('DATA proverbeSelect: ${widget.myMenu}'); // OK
+    proverbeCountrySelected = datasJsonObject[widget.myMenu] ;
+    selected = proverbeCountrySelected.values.toList()[widget.myId];
     return Container(
       color: Colors.blue,
       height: 250,
-      width: 250,
-      //child: Text('${proverbeCountrySelected}'),
-      child: Text('${widget.dumbi}'),
-
-      //child: updateId(),
+      //width: 370,
+      // child: Text('${selectionproverbe}'),
+      child: Row(
+        children: [
+          //Text('My ID is : ${widget.myId}'),
+          //Text('My menu is : ${widget.myMenu}'),
+          Container(
+            width: 300,
+            //child: Text('${selected}'),
+            child: PageView.builder(itemBuilder: (context, index) {
+              //Random proverbe
+              int randomProverbIndex = random.nextInt(proverbeCountrySelected.length);
+              //String convertion beacause "unProverbe" is a "map" type
+              String randomProverbStringIndex = randomProverbIndex.toString();
+              return Text("${proverbeCountrySelected[randomProverbStringIndex]}");
+            }),
+          ),
+        ],
+      ),
     );
   }
 }
