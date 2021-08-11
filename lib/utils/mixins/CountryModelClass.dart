@@ -1,4 +1,3 @@
-//import 'package:flutter/material.dart';
 class InterestsModel {
   //Field
   int id;
@@ -7,18 +6,3 @@ class InterestsModel {
   //Constructor
   InterestsModel(this.id, this.country, this.imageAsset);
 }
-
-
-/*
-List<Widget> pages = [
-Container(
-color: Colors.red,
-),
-Container(
-color: Colors.blue,
-),
-Container(
-color: Colors.green,
-),
-];
- */
