@@ -1,7 +1,7 @@
 # projet1_proverbe_v2
 
-A new Flutter project.
+Sauvegarde 1.
 
 ## Getting Started
 
-Ayant eu trop de probleme de code avec la 1er version de "proverbe app" je creer ici une V2 , la v1 reste disponible .
+1ere sauvegarde , le code fonctionne , il s'agit d'une version brut que je n'ai volotairement pas nettoyer ,  tout les commentaires sont présents , ainsi que du vieux code (en commentaire).
