@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import '../main.dart';
 import '../widgets/pageViewItem.dart';
 import '../widgets/proverbDisplay.dart';
-
 
 class MyHomePage extends StatefulWidget {
   @override
@@ -10,19 +8,17 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
-  // Create fields to store the current `myId` and current `myMenu`
+  // Create fields to store the current `myId` and current `myMenu`, si je ne met pas "0" et "Random" j'ai une erreur "null".
   int myId = 0;
-  String myMenu = "Random";
+  String myCountry = "Random";
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body:
-        Container(
+        body: Container(
           child: Column(children: <Widget>[
-            //ROW 1
+            //ROW 1 //Affichage Menu
             SizedBox(height: 100),
             Stack(
               //mainAxisAlignment: MainAxisAlignment.center,
@@ -31,156 +27,26 @@ class _MyHomePageState extends State<MyHomePage> {
                 PageViewItem(onChanged: (newMyId, newMyMenu) {
                   setState(() {
                     myId = newMyId;
-                    myMenu = newMyMenu;
+                    myCountry = newMyMenu;
                   });
                 }),
                 // _buildCheckIcon(),
               ],
             ),
-            // SizedBox(height: 150),
-             //ROW 2
             SizedBox(height: 100),
+            //ROW 2 //AFFICHAGE des proverbes
             Row(
-
-              //AFFICHAGE des proverbes
-               //Expanded(// permet a son contenu de prendre toute la place horyzontal disponible , puisque on a autiliser un " width: double.infinity, "
-              mainAxisAlignment: MainAxisAlignment.center, //permet de centrer le Row
+              //Expanded(// permet a son contenu de prendre toute la place horyzontal disponible , puisque on a autiliser un " width: double.infinity, "
+              //permet de centrer le Row
+              mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-
-
-
-                proverbDisplay(myId, myMenu),
-                //DisplayProverb(_myService),
-                // _showProverbeOnTap(),
-                // _buildCheckIcon(),
+                ProverbDisplay(myId, myCountry),
               ],
               //),
             ),
-
-
           ]),
         ),
-        /*
-           Container(
-          child:
-          Column(
-              children: <Widget>[
-            SizedBox(height: 100),
-            //ROW 1 ///////////////////////////////////////////////////////////
-            Expanded(
-              child: Stack(
-                children: <Widget>[
-                  //CurvePainterContainer(),
-                  PageViewItem(),
-                ],
-              ),
-            ),
-            // ROW 2 ///////////////////////////////////////////////////////////
-
-
-          //  Row(
-          //    mainAxisSize: MainAxisSize.min,
-          //    children: <Widget>[
-               proverbDisplay(),
-           //  ],
-              //),
-          //  ),
-          ]
-          ),
-        ),
-         */
       ),
     );
   }
 }
-
-
-// Last save
-/*
-import 'package:flutter/material.dart';
-import '../main.dart';
-import '../widgets/pageViewItem.dart';
-import '../widgets/proverbDisplay.dart';
-
-
-// https://flutter.dev/docs/development/ui/layout
-
-class MyHomePage extends StatefulWidget {
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        body:
-
-        Container(
-          child: Column(children: <Widget>[
-            //ROW 1
-            SizedBox(height: 100),
-            Stack(
-              //mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                //CurvePainterContainer(),
-                PageViewItem(),
-                // _buildCheckIcon(),
-              ],
-            ),
-            // SizedBox(height: 150),
-             //ROW 2
-
-            SizedBox(height: 100),
-            Row(
-              //AFFICHAGE des proverbes
-              // Expanded(// permet a son contenu de prendre toute la place horyzontal disponible , puisque on a autiliser un " width: double.infinity, "
-              mainAxisAlignment: MainAxisAlignment.center, //permet de centrer le Row
-              children: <Widget>[
-                proverbDisplay(),
-                //DisplayProverb(_myService),
-                // _showProverbeOnTap(),
-                // _buildCheckIcon(),
-              ],
-              //),
-            ),
-
-
-          ]),
-        ),
-        /*
-           Container(
-          child:
-          Column(
-              children: <Widget>[
-            SizedBox(height: 100),
-            //ROW 1 ///////////////////////////////////////////////////////////
-            Expanded(
-              child: Stack(
-                children: <Widget>[
-                  //CurvePainterContainer(),
-                  PageViewItem(),
-                ],
-              ),
-            ),
-            // ROW 2 ///////////////////////////////////////////////////////////
-
-
-          //  Row(
-          //    mainAxisSize: MainAxisSize.min,
-          //    children: <Widget>[
-               proverbDisplay(),
-           //  ],
-              //),
-          //  ),
-          ]
-          ),
-        ),
-         */
-      ),
-    );
-  }
-}
-
- */
