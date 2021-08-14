@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../widgets/pageViewItem.dart';
 import '../widgets/proverbDisplay.dart';
+import '../widgets/MenuCanvas.dart';
 
 class MyHomePage extends StatefulWidget {
   @override
@@ -19,11 +20,11 @@ class _MyHomePageState extends State<MyHomePage> {
         body: Container(
           child: Column(children: <Widget>[
             //ROW 1 //Affichage Menu
-            SizedBox(height: 100),
+            //SizedBox(height: 100),
             Stack(
               //mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                //CurvePainterContainer(),
+                CurvePainterContainer(),
                 PageViewItem(onChanged: (newMyId, newMyMenu) {
                   setState(() {
                     myId = newMyId;
