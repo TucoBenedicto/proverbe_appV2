@@ -12,7 +12,8 @@ class PageViewItem extends StatefulWidget {
 
 class _PageViewItemState extends State<PageViewItem> {
   bool selected = false; // Trigger Button animation
-  int select  ;
+  int myId;
+  int select;
 
   Container countryPageView() {
     //PageViewBuilder
@@ -36,8 +37,6 @@ class _PageViewItemState extends State<PageViewItem> {
   }
 
   GestureDetector gestureDetectorOntap(int index) {
-
-
     // Instance class MyButtonWidget ok but not necessary
     /*
         MyButtonWidgetState st = new MyButtonWidgetState();
@@ -46,8 +45,8 @@ class _PageViewItemState extends State<PageViewItem> {
 
     return GestureDetector(
       onTap: () {
-
-        int myId = countryData[index].id;
+        //int myId = countryData[index].id;
+        myId = countryData[index].id;
         String myMenu = countryData[index].country;
         widget.onChanged(myId, myMenu);
         print('myIDpageViewItem $myId');
@@ -59,22 +58,43 @@ class _PageViewItemState extends State<PageViewItem> {
           print('selected  $selected');
         });
  */
-
+/*
         setState(() {
           if (select == index) {
             //Si je clique a nouveau dessus , je suprime l'index (crt) et donc supprime l'affichage Si je ne met pas ce "null" , alors l'affichage reste definitevement
-            select = null;
+            return select = null;
           } else {
             //crt = index fournit dans le GestureDetector , j'aurais pus le nommer index
-            select =index; //j'ajoute mon index (crt) à ma selection
+            return select =index; //j'ajoute mon index (crt) à ma selection
           }
         });
+ */
 
+        setState(() {
+          selected = !selected;
+         // myId = countryData[index].id;
+        });
+
+        /*
+               setState(() {
+          if (myId == index) {
+            //Si je clique a nouveau dessus , je suprime l'index (crt) et donc supprime l'affichage Si je ne met pas ce "null" , alors l'affichage reste definitevement
+            myId = null;
+            selected = false;
+          } else {
+            //crt = index fournit dans le GestureDetector , j'aurais pus le nommer index
+            myId = index; //j'ajoute mon index (crt) à ma selection
+            selected = true;
+            debugPrint('lastSelectedInterests: $myId');
+            debugPrint('crt : $index');
+          }
+        });
+         */
       },
       child: Column(
         children: <Widget>[
           SizedBox(height: 30),
-          button(select),
+          button(selected, index),
           /*
           SizedBox(
               height: 129,
@@ -105,7 +125,6 @@ class _PageViewItemState extends State<PageViewItem> {
        */
     );
   }
-
 
   Widget build(BuildContext context) {
     return Container(

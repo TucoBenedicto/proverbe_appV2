@@ -90,17 +90,14 @@ button(int select) {
 }
  */
 
+button(bool  selected, int index  ) {
+  int selecto = 0 ;
+  //bool selected = true;
 
-button(int select) {
-  int selecto ;
-  bool selected = true;
-  /*
-    if(select ){
+  //print('button $id');
 
-}
-   */
-  if( selecto != select){
 
+  if(selecto == index ) {
     return AnimatedContainer(
       width: selected ? 200.0 : 100.0,
       height: selected ? 100.0 : 200.0,
@@ -111,6 +108,7 @@ button(int select) {
       child: const FlutterLogo(size: 75),
     );
   }
+
 }
 
 //Class MyButtonWidget OK but no necessary
