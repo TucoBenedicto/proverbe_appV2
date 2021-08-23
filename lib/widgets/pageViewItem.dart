@@ -39,7 +39,7 @@ class _PageViewItemState extends State<PageViewItem> {
       ),
     );
   }
-
+/****/
   GestureDetector gestureDetectorOntap(int index) {
     String imageAsseto = countryData[index].imageAsset;
     return GestureDetector(
