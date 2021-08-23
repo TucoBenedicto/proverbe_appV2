@@ -1,177 +1,240 @@
 import 'package:flutter/material.dart';
 import './pageViewItem.dart';
-// https://api.flutter.dev/flutter/widgets/AnimatedContainer-class.html
-/*
+import '../utils/mixins/CountryDataList.dart';
+import '../utils/mixins/CountryModelClass.dart';
 
-int flex = widget.myService.myVariable;
-final backgroundAsset = flex != crt
-    ? AnimatedContainer(
-  //Animation etat initial
-    duration: Duration(seconds: 1),
-    child: Card(
-      elevation: 18,
-      clipBehavior: Clip.antiAlias,
-      shape: CircleBorder(
-          side: BorderSide(color: Colors.grey.shade200, width: 5)),
-      child: Image.asset(
-        data.imageAsset,
-        fit: BoxFit.cover, //image inside the circle
-      ),
-    ),
-    decoration: BoxDecoration(
-      shape: BoxShape.circle,
-    ))
-    : AnimatedContainer(
-  //Animation etat final
-    duration: Duration(seconds: 1),
-    child: Card(
-      elevation: 18,
-      clipBehavior: Clip.antiAlias,
-      shape: CircleBorder(
-          side: BorderSide(color: Colors.grey.shade200, width: 5)),
-      child: Image.asset(
-        data.imageAsset,
-        fit: BoxFit.cover,
-        //image inside the circle
-      ),
-    ),
-    decoration: BoxDecoration(
-      color: Colors.grey.shade200,
-      shape: BoxShape.circle,
-      border: Border.all(
-        color: Colors.white,
-        width: 15,
-      ),
-      boxShadow: [
-        new BoxShadow(
-            color: Colors.red[100],
-            offset: new Offset(0.0, 0.0),
-            blurRadius: 20.0,
-            spreadRadius: 5.0)
-      ],
-    ));
- */
+AnimatedContainer button(bool selected , String imageAsset) {
+  //InterestsModel data;
 
-//Function animated OK mais figé
-/*
-button(bool selected) {
-  return AnimatedContainer(
-        width: selected ? 200.0 : 100.0,
-        height: selected ? 100.0 : 200.0,
-        color: selected ? Colors.red : Colors.blue,
-        alignment: selected ? Alignment.center : AlignmentDirectional.topCenter,
-        duration: const Duration(seconds: 2),
-        curve: Curves.fastOutSlowIn,
-        child: const FlutterLogo(size: 75),
+    //String imageAsset='assets/images/button/bonsai1.jpg'; //Ok
+    //String imageAsset2 = countryData[1].imageAsset; //OK
+    //String imageAsset3 = data.imageAsset; //marche pas
+
+    return AnimatedContainer(
+      width: selected ? 200.0 : 100.0,
+      height: selected ? 100.0 : 200.0,
+      color: selected ? Colors.red : Colors.blue,
+      alignment: selected ? Alignment.center : AlignmentDirectional.topCenter,
+      duration: const Duration(seconds: 2),
+      curve: Curves.fastOutSlowIn,
+      //child: Image.asset(imageAsset, fit: BoxFit.cover) //OK
+      //child: Image.asset(imageAsset2, fit: BoxFit.cover) //OK
+        child: Image.asset(imageAsset, fit: BoxFit.cover)
       );
-}
- */
 
 /*
-button(int select) {
-  bool selected = true;
-  /*
-    if(select ){
-
-}
-   */
-  if(select == 1){
-    // statement(s) will execute if the boolean expression is true.
-    return AnimatedContainer(
-      width: selected ? 200.0 : 100.0,
-      height: selected ? 100.0 : 200.0,
-      color: selected ? Colors.red : Colors.blue,
-      alignment: selected ? Alignment.center : AlignmentDirectional.topCenter,
-      duration: const Duration(seconds: 2),
-      curve: Curves.fastOutSlowIn,
-      child: const FlutterLogo(size: 75),
-    );
-  }
-}
- */
-
-button(bool  selected, int index  ) {
-  int selecto = 0 ;
-  //bool selected = true;
-
-  //print('button $id');
-
-
-  if(selecto == index ) {
-    return AnimatedContainer(
-      width: selected ? 200.0 : 100.0,
-      height: selected ? 100.0 : 200.0,
-      color: selected ? Colors.red : Colors.blue,
-      alignment: selected ? Alignment.center : AlignmentDirectional.topCenter,
-      duration: const Duration(seconds: 2),
-      curve: Curves.fastOutSlowIn,
-      child: const FlutterLogo(size: 75),
-    );
-  }
-
-}
-
-//Class MyButtonWidget OK but no necessary
-/*
-/// This is the stateful widget that the main application instantiates.
-class MyButtonWidget extends StatefulWidget {
-
-  @override
-  State<MyButtonWidget> createState() => MyButtonWidgetState();
-}
-
-
-/// This is the private State class that goes with MyStatefulWidget.
-class MyButtonWidgetState extends State<MyButtonWidget> {
-
-  /*
-
-
-  bool selected = false;
-
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {
-        setState(() {
-          selected = !selected;
-        });
-      },
-      child: Center(
-        child: AnimatedContainer(
-          width: selected ? 200.0 : 100.0,
-          height: selected ? 100.0 : 200.0,
-          color: selected ? Colors.red : Colors.blue,
-          alignment:
-          selected ? Alignment.center : AlignmentDirectional.topCenter,
-          duration: const Duration(seconds: 2),
-          curve: Curves.fastOutSlowIn,
-          child: const FlutterLogo(size: 75),
+ AnimatedContainer(
+      duration: Duration(seconds: 1),
+      child: Card(
+        elevation: 18,
+        clipBehavior: Clip.antiAlias,
+        shape: CircleBorder(
+            side: BorderSide(color: Colors.grey.shade200, width: 5)),
+        child: Image.asset(
+          data.imageAsset,
+          fit: BoxFit.cover, //image inside the circle
         ),
       ),
-    );
-  }
-   */
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+      )): AnimatedContainer(
+  duration: Duration(seconds: 1),
+  child: Card(
+  elevation: 18,
+  clipBehavior: Clip.antiAlias,
+  shape: CircleBorder(
+  side: BorderSide(color: Colors.grey.shade200, width: 5)),
+  child: Image.asset(
+  data.imageAsset,
+  fit: BoxFit.cover,
+  //image inside the circle
+  ),
+  ),
+  decoration: BoxDecoration(
+  color: Colors.grey.shade200,
+  shape: BoxShape.circle,
+  border: Border.all(
+  color: Colors.white,
+  width: 15,
+  ),
+  boxShadow: [
+  new BoxShadow(
+  color: Colors.red[100],
+  offset: new Offset(0.0, 0.0),
+  blurRadius: 20.0,
+  spreadRadius: 5.0)
+  ],
+  ));
 
-  AnimatedContainer button(bool selected) {
-    return AnimatedContainer(
-      width: selected ? 200.0 : 100.0,
-      height: selected ? 100.0 : 200.0,
-      color: selected ? Colors.red : Colors.blue,
-      alignment: selected ? Alignment.center : AlignmentDirectional.topCenter,
-      duration: const Duration(seconds: 2),
-      curve: Curves.fastOutSlowIn,
-      child: const FlutterLogo(size: 75),
-    );
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
-  }
-
+ */
 }
+
+/*
+GestureDetector gestureDetectorOntap(int index) {
+  return GestureDetector(
+    onTap: () {},
+    child: Column(
+      children: [
+        SizedBox(height: 40),
+        Container(
+          width: 70,
+          height: 25,
+          color: Colors.blue,
+          alignment: AlignmentDirectional.center,
+        ),
+        Text('${countryData[index].country}',
+            style: TextStyle(
+              //color: Color.fromRGBO(243, 243, 243, 1),
+              color: Colors.red,
+              fontFamily: 'RadikalThin',
+              fontSize: 13.0,
+            )),
+      ],
+    ),
+  );
+}
+ */
+
+/*
+GestureDetector gestureDetectorOntap(int index) {
+  return GestureDetector(
+    onTap: () {
+      //int myId = countryData[index].id;
+      myId = countryData[index].id;
+      String myMenu = countryData[index].country;
+      widget.onChanged(myId, myMenu);
+      print('myIDpageViewItem $myId');
+      print('myMenupageViewItem  $myMenu');
+
+      setState(() {
+        selected = !selected;
+      });
+
+
+
+    },
+    child: Column(
+      children: <Widget>[
+        SizedBox(height: 30),
+        button(selected),
+        /*
+          SizedBox(
+              height: 129,
+              width: 129,
+              child: Container(
+                margin: const EdgeInsets.only(top: 5),
+                child: button(select),
+                //child : name, //Class animated
+              )),
+ */
+        Text('${countryData[index].country}',
+            style: TextStyle(
+              //color: Color.fromRGBO(243, 243, 243, 1),
+              color: Colors.blue,
+              fontFamily: 'RadikalThin',
+              fontSize: 13.0,
+            )),
+      ],
+    ),
+    /*
+            Container(
+        alignment: AlignmentDirectional.center,
+        child: Text(
+          '${countryData[index].country}',
+        ),
+      ),
+       */
+  );
+}
+ */
+
+//Partie on tap
+/*
+//OnTape - Action quand j'appui sur une image
+GestureDetector _buildPageViewItemCountry(InterestsModel data, int crt) {
+  //selection :cadre jaune around the pics, non selectionner: cadre gris around the pics
+
+  final backgroundAsset = selectedCountry != crt
+      ? AnimatedContainer(
+          duration: Duration(seconds: 1),
+          child: Card(
+            elevation: 18,
+            clipBehavior: Clip.antiAlias,
+            shape: CircleBorder(
+                side: BorderSide(color: Colors.grey.shade200, width: 5)),
+            child: Image.asset(
+              data.imageAsset,
+              fit: BoxFit.cover, //image inside the circle
+            ),
+          ),
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+          ))
+      : AnimatedContainer(
+          duration: Duration(seconds: 1),
+          child: Card(
+            elevation: 18,
+            clipBehavior: Clip.antiAlias,
+            shape: CircleBorder(
+                side: BorderSide(color: Colors.grey.shade200, width: 5)),
+            child: Image.asset(
+              data.imageAsset,
+              fit: BoxFit.cover,
+              //image inside the circle
+            ),
+          ),
+          decoration: BoxDecoration(
+            color: Colors.grey.shade200,
+            shape: BoxShape.circle,
+            border: Border.all(
+              color: Colors.white,
+              width: 15,
+            ),
+            boxShadow: [
+              new BoxShadow(
+                  color: Colors.red[100],
+                  offset: new Offset(0.0, 0.0),
+                  blurRadius: 20.0,
+                  spreadRadius: 5.0)
+            ],
+          ));
+
+  return GestureDetector(
+    onTap: () {
+      print("Container was tapped");
+      setState(() {
+        if (selectedCountry == crt) {
+          //Si je clique a nouveau dessus , je suprime l'index (crt) et donc supprime l'affichage Si je ne met pas ce "null" , alors l'affichage reste definitevement
+          selectedCountry = null;
+        } else {
+          //crt = index fournit dans le GestureDetector , j'aurais pus le nommer index
+          selectedCountry = crt; //j'ajoute mon index (crt) à ma selection
+          debugPrint('lastSelectedInterests: $selectedCountry');
+          debugPrint('crt : $crt');
+        }
+      });
+    },
+    child: Column(
+      children: <Widget>[
+        Text(data.title.toUpperCase(),
+            style: TextStyle(
+              //color: Color.fromRGBO(243, 243, 243, 1),
+              color: Colors.red,
+              fontFamily: 'RadikalThin',
+              fontSize: 11.0,
+            )),
+        SizedBox(
+            height: 129,
+            width: 129,
+            child: Container(
+              margin: const EdgeInsets.only(top: 5),
+              child: backgroundAsset,
+            )),
+      ],
+    ),
+  );
+}
+
  */
 
 // Old code
@@ -232,8 +295,6 @@ class _CountryPageViewState extends State<CountryPageView> {
   ];
   //int selectedCountry;
   //MyService_Singleton _mySingletonClass = MyService_Singleton();
-
-
 
   PageController pageController =
       PageController(viewportFraction: 0.30, initialPage: 3);

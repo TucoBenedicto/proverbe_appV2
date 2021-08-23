@@ -38,7 +38,7 @@ class _ProverbDisplayState extends State<ProverbDisplay> {
     selected = proverbCountrySelected.values.toList()[widget.myId];
 
     debugPrint('ID proverbCountrySelected: ${widget.myId}');
-    debugPrint('Contry proverbCountrySelected: ${widget.myCountry}');
+    debugPrint('Country proverbCountrySelected: ${widget.myCountry}');
     return Container(
       color: Colors.blue,
       height: 250,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../utils/mixins/CountryDataList.dart';
+import '../utils/mixins/CountryModelClass.dart';
 import './Button.dart';
 
 class PageViewItem extends StatefulWidget {
@@ -11,16 +12,19 @@ class PageViewItem extends StatefulWidget {
 }
 
 class _PageViewItemState extends State<PageViewItem> {
-  bool selected = false; // Trigger Button animation
-  int myId;
-  int select;
+  List<bool> selected = [
+    false,
+    false,
+    false,
+    false,
+    false
+  ]; // Trigger Button animation
 
   Container countryPageView() {
     //PageViewBuilder
     final PageController controller =
         PageController(initialPage: 1, keepPage: true, viewportFraction: 0.35);
     return Container(
-      //color: Colors.red,
       height: 300,
       child: PageView.builder(
         scrollDirection: Axis.horizontal,
@@ -37,95 +41,38 @@ class _PageViewItemState extends State<PageViewItem> {
   }
 
   GestureDetector gestureDetectorOntap(int index) {
-    // Instance class MyButtonWidget ok but not necessary
-    /*
-        MyButtonWidgetState st = new MyButtonWidgetState();
-    AnimatedContainer name = st.button(selected);
-     */
-
+    String imageAsseto = countryData[index].imageAsset;
     return GestureDetector(
       onTap: () {
-        //int myId = countryData[index].id;
-        myId = countryData[index].id;
-        String myMenu = countryData[index].country;
-        widget.onChanged(myId, myMenu);
-        print('myIDpageViewItem $myId');
-        print('myMenupageViewItem  $myMenu');
-/*
+        //*****************************************************
+        int myId = countryData[index].id; //Binding id
+        String myMenu = countryData[index].country; //Binding country
+        // Call the `onChanged` callback
+        widget.onChanged(myId, myMenu); //Binding
+        //*****************************************************
         setState(() {
-          select =  countryData[index].id;
-          //selected = !selected;
-          print('selected  $selected');
+          selected = [false, false, false, false, false];
+          selected[index] = !selected[index];
         });
- */
-/*
-        setState(() {
-          if (select == index) {
-            //Si je clique a nouveau dessus , je suprime l'index (crt) et donc supprime l'affichage Si je ne met pas ce "null" , alors l'affichage reste definitevement
-            return select = null;
-          } else {
-            //crt = index fournit dans le GestureDetector , j'aurais pus le nommer index
-            return select =index; //j'ajoute mon index (crt) à ma selection
-          }
-        });
- */
-
-        setState(() {
-          selected = !selected;
-         // myId = countryData[index].id;
-        });
-
-        /*
-               setState(() {
-          if (myId == index) {
-            //Si je clique a nouveau dessus , je suprime l'index (crt) et donc supprime l'affichage Si je ne met pas ce "null" , alors l'affichage reste definitevement
-            myId = null;
-            selected = false;
-          } else {
-            //crt = index fournit dans le GestureDetector , j'aurais pus le nommer index
-            myId = index; //j'ajoute mon index (crt) à ma selection
-            selected = true;
-            debugPrint('lastSelectedInterests: $myId');
-            debugPrint('crt : $index');
-          }
-        });
-         */
+        //*****************************************************
       },
       child: Column(
-        children: <Widget>[
-          SizedBox(height: 30),
-          button(selected, index),
-          /*
-          SizedBox(
-              height: 129,
-              width: 129,
-              child: Container(
-                margin: const EdgeInsets.only(top: 5),
-                child: button(select),
-                //child : name, //Class animated
-              )),
- */
-
+        children: [
+          SizedBox(height: 40),
+          button(selected[index], imageAsseto),
           Text('${countryData[index].country}',
               style: TextStyle(
                 //color: Color.fromRGBO(243, 243, 243, 1),
-                color: Colors.blue,
+                color: Colors.red,
                 fontFamily: 'RadikalThin',
                 fontSize: 13.0,
               )),
         ],
       ),
-      /*
-            Container(
-        alignment: AlignmentDirectional.center,
-        child: Text(
-          '${countryData[index].country}',
-        ),
-      ),
-       */
     );
   }
 
+  @override
   Widget build(BuildContext context) {
     return Container(
       child: countryPageView(),
