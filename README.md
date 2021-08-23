@@ -1,7 +1,7 @@
 # projet1_proverbe_v2
 
-A new Flutter project.
+SAVE 3
 
 ## Getting Started
 
-Ayant eu trop de probleme de code avec la 1er version de "proverbe app" je creer ici une V2 , la v1 reste disponible .
+c'est bon tout fonctionne , cependant il s'agit uniquement du squelette de programme , le menu fonctionne, , quand je clique dessus , les proverbes apparait, et quand le proverbe apparait, je peux faire defiler les proverbes de maniere ramdom.
