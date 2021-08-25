@@ -12,13 +12,8 @@ class PageViewItem extends StatefulWidget {
 }
 
 class _PageViewItemState extends State<PageViewItem> {
-  List<bool> selected = [
-    false,
-    false,
-    false,
-    false,
-    false
-  ]; // Trigger Button animation
+// Trigger Button animation
+  List<bool> selected = [false, false, false, false, false];
 
   Container countryPageView() {
     //PageViewBuilder
@@ -39,9 +34,9 @@ class _PageViewItemState extends State<PageViewItem> {
       ),
     );
   }
-/****/
+
   GestureDetector gestureDetectorOntap(int index) {
-    String imageAsseto = countryData[index].imageAsset;
+    String imageAsset = countryData[index].imageAsset;
     return GestureDetector(
       onTap: () {
         //*****************************************************
@@ -59,7 +54,7 @@ class _PageViewItemState extends State<PageViewItem> {
       child: Column(
         children: [
           SizedBox(height: 40),
-          button(selected[index], imageAsseto),
+          button(selected[index], imageAsset),
           Text('${countryData[index].country}',
               style: TextStyle(
                 //color: Color.fromRGBO(243, 243, 243, 1),

@@ -13,7 +13,7 @@ class ProverbDisplay extends StatefulWidget {
 }
 
 class _ProverbDisplayState extends State<ProverbDisplay> {
-  Map<String, dynamic> proverbCountrySelected = {};
+  Map<String, dynamic> proverbCountrySelected = {}; //Attention visiblement une erreur ici , mettre des donnés pour que l'ppli demarre dessus
   String selected;
   Map <String, dynamic> dataJsonObject;
   Random random = new Random();

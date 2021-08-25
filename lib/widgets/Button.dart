@@ -3,150 +3,95 @@ import './pageViewItem.dart';
 import '../utils/mixins/CountryDataList.dart';
 import '../utils/mixins/CountryModelClass.dart';
 
-AnimatedContainer button(bool selected , String imageAsset) {
-  //InterestsModel data;
-
-    //String imageAsset='assets/images/button/bonsai1.jpg'; //Ok
-    //String imageAsset2 = countryData[1].imageAsset; //OK
-    //String imageAsset3 = data.imageAsset; //marche pas
-
+AnimatedContainer button(bool selected, String imageAsset) {
+  /*
     return AnimatedContainer(
-      width: selected ? 200.0 : 100.0,
-      height: selected ? 100.0 : 200.0,
+      width: selected ? 100.0 : 80.0,
+      height: selected ? 100.0 : 80.0,
       color: selected ? Colors.red : Colors.blue,
       alignment: selected ? Alignment.center : AlignmentDirectional.topCenter,
       duration: const Duration(seconds: 2),
       curve: Curves.fastOutSlowIn,
-      //child: Image.asset(imageAsset, fit: BoxFit.cover) //OK
-      //child: Image.asset(imageAsset2, fit: BoxFit.cover) //OK
-        child: Image.asset(imageAsset, fit: BoxFit.cover)
-      );
+      child: Image.asset(imageAsset, fit: BoxFit.cover));
+   */
 
-/*
- AnimatedContainer(
+  return AnimatedContainer(
+    width: selected ? 100.0 : 80.0,
+    height: selected ? 100.0 : 80.0,
+    decoration: BoxDecoration(
+      shape :BoxShape.circle,
+      //color: selected ? Colors.red : Colors.blue,
+ image: DecorationImage(
+     //image: imageAsset,
+ image: AssetImage(imageAsset),
+ fit: BoxFit.cover
+ ),
+
+    ),
+   // color: selected ? Colors.red : Colors.blue,
+    alignment: selected ? Alignment.center : AlignmentDirectional.topCenter,
+    duration: const Duration(seconds: 2),
+    curve: Curves.fastOutSlowIn,
+    //child: Image.asset(imageAsset, fit: BoxFit.cover)
+    /*
+        child: Card(
+      /*
+            shape: CircleBorder(
+          side: BorderSide(color: Colors.grey.shade200, width: 5)
+      ),
+       */
+
+      child: Image.asset(
+        imageAsset,
+        fit: BoxFit.cover, //image inside the circle
+      ),
+    ),
+     */
+
+
+    /*
+    AnimatedContainer(
       duration: Duration(seconds: 1),
-      child: Card(
-        elevation: 18,
-        clipBehavior: Clip.antiAlias,
+      width: selected ? 100.0 : 80.0,
+      height: selected ? 100.0 : 80.0,
+      //color: selected ? Colors.red : Colors.blue,
+      //alignment: selected ? Alignment.center : AlignmentDirectional.topCenter,
+      curve: Curves.fastOutSlowIn,
+
+
+            child: Card(
+        //elevation: 18,
+        //clipBehavior: Clip.antiAlias,
         shape: CircleBorder(
-            side: BorderSide(color: Colors.grey.shade200, width: 5)),
+            side: BorderSide(color: Colors.grey.shade200, width: 5)
+        ),
+
         child: Image.asset(
-          data.imageAsset,
+          imageAsset,
           fit: BoxFit.cover, //image inside the circle
         ),
       ),
-      decoration: BoxDecoration(
-        shape: BoxShape.circle,
-      )): AnimatedContainer(
-  duration: Duration(seconds: 1),
-  child: Card(
-  elevation: 18,
-  clipBehavior: Clip.antiAlias,
-  shape: CircleBorder(
-  side: BorderSide(color: Colors.grey.shade200, width: 5)),
-  child: Image.asset(
-  data.imageAsset,
-  fit: BoxFit.cover,
-  //image inside the circle
-  ),
-  ),
-  decoration: BoxDecoration(
-  color: Colors.grey.shade200,
-  shape: BoxShape.circle,
-  border: Border.all(
-  color: Colors.white,
-  width: 15,
-  ),
-  boxShadow: [
-  new BoxShadow(
-  color: Colors.red[100],
-  offset: new Offset(0.0, 0.0),
-  blurRadius: 20.0,
-  spreadRadius: 5.0)
-  ],
-  ));
+   */
 
- */
-}
-
-/*
-GestureDetector gestureDetectorOntap(int index) {
-  return GestureDetector(
-    onTap: () {},
-    child: Column(
-      children: [
-        SizedBox(height: 40),
-        Container(
-          width: 70,
-          height: 25,
-          color: Colors.blue,
-          alignment: AlignmentDirectional.center,
-        ),
-        Text('${countryData[index].country}',
-            style: TextStyle(
-              //color: Color.fromRGBO(243, 243, 243, 1),
-              color: Colors.red,
-              fontFamily: 'RadikalThin',
-              fontSize: 13.0,
-            )),
-      ],
-    ),
-  );
-}
- */
-
-/*
-GestureDetector gestureDetectorOntap(int index) {
-  return GestureDetector(
-    onTap: () {
-      //int myId = countryData[index].id;
-      myId = countryData[index].id;
-      String myMenu = countryData[index].country;
-      widget.onChanged(myId, myMenu);
-      print('myIDpageViewItem $myId');
-      print('myMenupageViewItem  $myMenu');
-
-      setState(() {
-        selected = !selected;
-      });
-
-
-
-    },
-    child: Column(
-      children: <Widget>[
-        SizedBox(height: 30),
-        button(selected),
-        /*
-          SizedBox(
-              height: 129,
-              width: 129,
-              child: Container(
-                margin: const EdgeInsets.only(top: 5),
-                child: button(select),
-                //child : name, //Class animated
-              )),
- */
-        Text('${countryData[index].country}',
-            style: TextStyle(
-              //color: Color.fromRGBO(243, 243, 243, 1),
-              color: Colors.blue,
-              fontFamily: 'RadikalThin',
-              fontSize: 13.0,
-            )),
-      ],
-    ),
     /*
-            Container(
-        alignment: AlignmentDirectional.center,
-        child: Text(
-          '${countryData[index].country}',
+      decoration: BoxDecoration(
+        // color: Colors.grey.shade200,
+        //shape: BoxShape.circle,
+        border: Border.all(
+          // color: Colors.white,
+          width: 15,
         ),
-      ),
+        boxShadow: [
+          new BoxShadow(
+              //     color: Colors.red[100],
+              offset: new Offset(0.0, 0.0),
+              blurRadius: 20.0,
+              spreadRadius: 5.0)
+        ],
+      )
        */
   );
 }
- */
 
 //Partie on tap
 /*
