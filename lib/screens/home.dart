@@ -11,7 +11,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   // Create fields to store the current `myId` and current `myMenu`, si je ne met pas "0" et "Random" j'ai une erreur "null".
   int myId = 0;
-  String myCountry = "Random";
+  String myCountry = 'Random' ;
 
   @override
   Widget build(BuildContext context) {
@@ -25,12 +25,17 @@ class _MyHomePageState extends State<MyHomePage> {
               //mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 CurvePainterContainer(),
-                PageViewItem(onChanged: (newMyId, newMyMenu) {
+
+                PageViewItem(
+
+                    onChanged: ( newMyId,  newMyMenu) {
                   setState(() {
                     myId = newMyId;
                     myCountry = newMyMenu;
                   });
-                }),
+                }
+
+                ),
                 // _buildCheckIcon(),
               ],
             ),
@@ -40,9 +45,11 @@ class _MyHomePageState extends State<MyHomePage> {
               //Expanded(// permet a son contenu de prendre toute la place horyzontal disponible , puisque on a autiliser un " width: double.infinity, "
               //permet de centrer le Row
               mainAxisAlignment: MainAxisAlignment.center,
+              //myCountry= 'Random';
               children: <Widget>[
                 ProverbDisplay(myId, myCountry),
               ],
+
               //),
             ),
           ]),

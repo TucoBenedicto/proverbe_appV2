@@ -1,95 +1,34 @@
+//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
 import 'package:flutter/material.dart';
 import './pageViewItem.dart';
 import '../utils/mixins/CountryDataList.dart';
 import '../utils/mixins/CountryModelClass.dart';
 
 AnimatedContainer button(bool selected, String imageAsset) {
-  /*
-    return AnimatedContainer(
-      width: selected ? 100.0 : 80.0,
-      height: selected ? 100.0 : 80.0,
-      color: selected ? Colors.red : Colors.blue,
-      alignment: selected ? Alignment.center : AlignmentDirectional.topCenter,
-      duration: const Duration(seconds: 2),
-      curve: Curves.fastOutSlowIn,
-      child: Image.asset(imageAsset, fit: BoxFit.cover));
-   */
-
   return AnimatedContainer(
-    width: selected ? 100.0 : 80.0,
-    height: selected ? 100.0 : 80.0,
-    decoration: BoxDecoration(
-      shape :BoxShape.circle,
-      //color: selected ? Colors.red : Colors.blue,
- image: DecorationImage(
-     //image: imageAsset,
- image: AssetImage(imageAsset),
- fit: BoxFit.cover
- ),
-
-    ),
-   // color: selected ? Colors.red : Colors.blue,
-    alignment: selected ? Alignment.center : AlignmentDirectional.topCenter,
     duration: const Duration(seconds: 2),
+    width: selected ? 120.0 : 100.0,
+    height: selected ? 120.0 : 100.0,
+    alignment: selected ? Alignment.center : AlignmentDirectional.topCenter,
     curve: Curves.fastOutSlowIn,
-    //child: Image.asset(imageAsset, fit: BoxFit.cover)
-    /*
-        child: Card(
-      /*
-            shape: CircleBorder(
-          side: BorderSide(color: Colors.grey.shade200, width: 5)
-      ),
-       */
-
-      child: Image.asset(
-        imageAsset,
-        fit: BoxFit.cover, //image inside the circle
-      ),
+    decoration: BoxDecoration(
+      shape: BoxShape.circle,
+      border: Border.all(
+          color: selected ? Colors.redAccent : Colors.lightBlueAccent,
+          width: selected ? 5 : 10,
+          style: selected ? BorderStyle.solid : BorderStyle.none),
+      boxShadow: [
+        BoxShadow(
+            color: Colors.white,
+            offset: Offset(0.0, 0.0),
+            blurRadius: 10.0,
+            spreadRadius: 5.0)
+      ],
+      image: DecorationImage(
+          //image: imageAsset,
+          image: AssetImage(imageAsset),
+          fit: BoxFit.cover),
     ),
-     */
-
-
-    /*
-    AnimatedContainer(
-      duration: Duration(seconds: 1),
-      width: selected ? 100.0 : 80.0,
-      height: selected ? 100.0 : 80.0,
-      //color: selected ? Colors.red : Colors.blue,
-      //alignment: selected ? Alignment.center : AlignmentDirectional.topCenter,
-      curve: Curves.fastOutSlowIn,
-
-
-            child: Card(
-        //elevation: 18,
-        //clipBehavior: Clip.antiAlias,
-        shape: CircleBorder(
-            side: BorderSide(color: Colors.grey.shade200, width: 5)
-        ),
-
-        child: Image.asset(
-          imageAsset,
-          fit: BoxFit.cover, //image inside the circle
-        ),
-      ),
-   */
-
-    /*
-      decoration: BoxDecoration(
-        // color: Colors.grey.shade200,
-        //shape: BoxShape.circle,
-        border: Border.all(
-          // color: Colors.white,
-          width: 15,
-        ),
-        boxShadow: [
-          new BoxShadow(
-              //     color: Colors.red[100],
-              offset: new Offset(0.0, 0.0),
-              blurRadius: 20.0,
-              spreadRadius: 5.0)
-        ],
-      )
-       */
   );
 }
 
@@ -181,7 +120,6 @@ GestureDetector _buildPageViewItemCountry(InterestsModel data, int crt) {
 }
 
  */
-
 // Old code
 /*
 // adb connect localhost:5555
