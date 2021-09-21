@@ -4,12 +4,14 @@ import 'package:flutter/services.dart'; // (loadJson)
 import 'dart:math'; //(Random)
 import 'package:flutter/foundation.dart'; //(debugPrint)
 import './Card.dart';
-import '../utils/mixins/CountryDataList.dart';
+import '../utils/mixins/HelperFunction.dart';
 import '../utils/mixins/CountryModelClass.dart'; // Class InterestsModel
 
 class ProverbDisplay extends StatefulWidget {
+  //final String myId;
   final int myId;
-  final String myCountry;
+  //final String country;
+  final String myCountry; //ou final String myCountry;
   const ProverbDisplay(this.myId, this.myCountry);
 
   @override
@@ -17,21 +19,10 @@ class ProverbDisplay extends StatefulWidget {
 }
 
 class _ProverbDisplayState extends State<ProverbDisplay> {
-
-//Future getJsonProverb(InterestsModel data) async {
-  Future getJsonProverb(String country) async {
-    Map<String, dynamic> proverbCountrySelected = {};
-    final String rawJson = await rootBundle.loadString('assets/json/proverb.json');
-    var datasJsonObject = await jsonDecode(rawJson);
-    //data = jsonEncode(datasJsonObject["japonais"]["$page"]).replaceAll('"', '');
-    //data = datasJsonObject["Japonais"];
-    proverbCountrySelected = datasJsonObject[country];
-    return proverbCountrySelected; //Renvoi le proverbe
-  }
-
-  Widget build(BuildContext context) {
+  Widget projectWidget() {
     return FutureBuilder(
-        future: getJsonProverb(widget.myCountry),
+        //future: getJsonProverb(widget.myCountry),
+        future: loadProverb(widget.myCountry),
         builder: (context, snapshot) {
           if (!snapshot.hasData) {
             return Text('Loading...');
@@ -44,14 +35,32 @@ class _ProverbDisplayState extends State<ProverbDisplay> {
                   Container(
                     width: 300,
                     child: PageView.builder(itemBuilder: (context, index) {
-                      debugPrint('snapshot.data: ${snapshot.data}');
-                      debugPrint('snapshot.data: ${snapshot.data.length}');
+                      //DEBUG
+                      /*
+                      debugPrint('snapshot.length: ${snapshot.data.length}');
+                      debugPrint('idCountry : ${snapshot.data[0].idCountry}'); // 0
+                      debugPrint('country : ${snapshot.data[0].country}'); // Japonais
+                      debugPrint('assets : ${snapshot.data[0].assets}'); // 0
+                      //1ere valeur  = le pays , le 2eme valeur =
+                      debugPrint('idProverb 0 : ${snapshot.data[0].idProverb[1]}'); // Japonais
+                      debugPrint('idProverb 2 : ${snapshot.data[2].idProverb[1]}'); // Japonais
+                      debugPrint('idProverb lenght : ${snapshot.data[2].idProverb.length}'); // Japonais
+                      ///////////////////////////////////////////////////////////////////////////////
+                       */
 
+                      //RANDOM
                       Random random = Random.secure();
-                      int randomProverbIndex = random.nextInt(snapshot.data.length);
-                      String randomProverbStringIndex = randomProverbIndex.toString();
+                      int proverbLength = snapshot.data[2].idProverb.length; //Nombre total de proverbe par pays.
+                      int randomProverbIndex = random.nextInt(proverbLength);
+                      //int randomProverbIndex = random.nextInt(snapshot.data.length);
+                      //String randomProverbStringIndex = randomProverbIndex.toString();
+                      //int randomProverbStringIndex = randomProverbIndex;
+                      ///////////////////////////////////////////////////////////////////////////////
+                      // return Text("${snapshot.data[randomProverbStringIndex]}");
+                      // return Text("${snapshot.data}");
 
-                      return Text("${snapshot.data[randomProverbStringIndex]}");
+                      return Text(
+                          "${snapshot.data[1].idProverb[randomProverbIndex]}");
                     }),
                   ),
                 ],
@@ -60,89 +69,18 @@ class _ProverbDisplayState extends State<ProverbDisplay> {
           }
         });
   }
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: projectWidget(),
+    );
+  }
 }
 
 // Save 0 (vielle save de proverbV1
 /*
 
-  Map<String, dynamic> proverbCountrySelected =
-  {}; //Attention visiblement une erreur ici , mettre des donnés pour que l'ppli demarre dessus
-  String selected;
-  Map<String, dynamic> dataJsonObject;
-  Random random = Random();
-
-  FutureBuilder readJsonProverb() {
-    return FutureBuilder<dynamic>(
-        future: getJsonProverb(),
-    // on affiche le proberve mais de manier asynchrone (temps de chargement).
-    builder: (BuildContext context, AsyncSnapshot<dynamic> snapshot) {
-    switch (snapshot.connectionState) {
-    case ConnectionState.waiting: //Chargement
-    //return Text('Loading....'); //Message de chargement
-    return Center(
-    child:
-    CircularProgressIndicator(), //Fonction qui ajoute une icone de chargement.
-    );
-    default:
-    if (snapshot.hasError) {
-    //Message d'erreur si sa ne marche pas.
-    return Text('Error: ${snapshot.error}');
-    } else {
-
-    return Container(
-
-    width: MediaQuery.of(context).size.width,
-
-    height: 200,
-    child: PageView.builder(
-    itemBuilder: (context, index) {
-
-    int randomProverbIndex = random.nextInt(proverbCountrySelected.length);
-
-    String randomProverbStringIndex = randomProverbIndex.toString();
-
-    return Card(
-    shape: RoundedRectangleBorder(
-    borderRadius: BorderRadius.circular(30.0),
-    ),
-    color: index % 2 == 0
-    ? Colors.lightBlueAccent.withOpacity(0.4)
-        : Colors.white.withOpacity(0.4),
-    elevation: 5,
-    child: Column(
-    mainAxisSize: MainAxisSize.min,
-    children: <Widget>[
-    ListTile(
-    leading: Container(
-    //padding: EdgeInsets.only( bottom: 50),
-    child: Icon(Icons.format_quote, size: 40),
-    ),
-
-    subtitle: Center(
-    //widthFactor: 0.5,
-    child: Padding(
-    padding: EdgeInsets.fromLTRB(0, 40, 0, 0),
-    child: Text(
-    "${proverbCountrySelected[randomProverbStringIndex]}",
-    style: TextStyle(fontSize: 18.0)),
-    ),
-    ),
-    trailing: Container(
-    padding: EdgeInsets.fromLTRB(0, 120, 0, 0),
-    child: Icon(Icons.format_quote, size: 40),
-    )),
-    ]));
-
-
-
-                  },
-                ),
-              );
-            }
-        }
-      },
-    );
-  }
  */
 
 // Save 1 (Brouillon) //Fonctionne //mais erreur lors du run de l'application
@@ -223,7 +161,7 @@ import 'package:flutter/services.dart'; // (loadJson)
 import 'dart:math'; //(Random)
 import 'package:flutter/foundation.dart'; //(debugPrint)
 import './Card.dart';
-import '../utils/mixins/CountryDataList.dart';
+import '../utils/mixins/HelperFunction.dart';
 import '../utils/mixins/CountryModelClass.dart'; // Class InterestsModel
 
 class ProverbDisplay extends StatefulWidget {
@@ -281,7 +219,6 @@ class _ProverbDisplayState extends State<ProverbDisplay> {
   }
 }
  */
-
 
 //Save 3 (function outisde class)
 

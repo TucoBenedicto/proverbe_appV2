@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import './pageViewItem.dart';
-import '../utils/mixins/CountryDataList.dart';
+import '../utils/mixins/HelperFunction.dart';
 import '../utils/mixins/CountryModelClass.dart';
 import './proverbDisplay.dart';
 import 'dart:math'; //(Random)
