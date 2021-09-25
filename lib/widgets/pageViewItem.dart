@@ -6,7 +6,6 @@ import './proverbDisplay.dart';
 import 'package:flutter/foundation.dart'; //(debugPrint)
 import 'dart:math'; //(Random)
 
-
 class PageViewItem extends StatefulWidget {
   final void Function(int myId, String myCountry) onChanged;
   const PageViewItem({this.onChanged});
@@ -16,22 +15,24 @@ class PageViewItem extends StatefulWidget {
 }
 
 class _PageViewItemState extends State<PageViewItem> {
-
 //Initialisation
   Random random = Random.secure();
-  int myId ;
+  int myId;
   String myCountry;
+  int itemCountLenght;
 
 //Scrolling - MENU
   Container menuContainer() {
     final PageController controller =
-    PageController(initialPage: 1, keepPage: true, viewportFraction: 0.35);
+        PageController(initialPage: 1, keepPage: true, viewportFraction: 0.35);
     return Container(
       height: 300,
       child: PageView.builder(
         scrollDirection: Axis.horizontal,
         controller: controller,
-       // itemCount: 3,
+        itemCount: itemCountLenght,
+        //itemCount: 3, //!!
+
         physics: BouncingScrollPhysics(),
         itemBuilder: (BuildContext context, int index) {
           return Container(
@@ -49,8 +50,8 @@ class _PageViewItemState extends State<PageViewItem> {
         myId = index;
         //String myName = data.sentences[index].name; //Error here
         /////////////////////////////////////////////////////////
-       // setState(() {
-          debugPrint('pageViewItem myId : ${myId}'); // OK
+        // setState(() {
+        debugPrint('pageViewItem myId : ${myId}'); // OK
         //});
         /////////////////////////////////////////////////////////
         widget.onChanged(myId, myCountry);
@@ -69,15 +70,22 @@ class _PageViewItemState extends State<PageViewItem> {
     return FutureBuilder(
       future: loadItemMenu(index),
       builder: (BuildContext context, AsyncSnapshot snapshot) {
-        if (snapshot.hasData)
+
+        if (snapshot.hasData) {
+
+          itemCountLenght = snapshot.data.country.length -1;
+          print('itemCountLenght : $itemCountLenght');
+
           return Text("Menu ${snapshot.data.country}",
               style: TextStyle(
                 color: Colors.red,
                 fontFamily: 'RadikalThin',
                 fontSize: 13.0,
-              ));
-        else
+              )
+          );
+        } else {
           return Text("Loading");
+        }
       },
     );
   }
@@ -90,7 +98,6 @@ class _PageViewItemState extends State<PageViewItem> {
     );
   }
 }
-
 
 //SAve Corrigé - Menu Item + Proverb ProverbDisplay
 /*

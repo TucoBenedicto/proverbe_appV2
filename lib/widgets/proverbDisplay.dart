@@ -62,8 +62,7 @@ class _ProverbDisplayState extends State<ProverbDisplay> {
                     //!! Attention ici ajout de "PageView.builder" qui peux faire doublon avec un 1er ajouter plus haut cependant , si je l'enleve je vais avoir l'erreur "sentence = null"
                     child: PageView.builder(itemBuilder: (context, index) {
                       //RANDOM
-                      int proverbLength = snapshot.data.idProverb
-                          .length; //Nombre total de proverbe par pays.
+                      int proverbLength = snapshot.data.idProverb.length; //Nombre total de proverbe par pays.
                       int randomProverbIndex = random.nextInt(proverbLength);
                       print('proverbLength : $proverbLength');
                       return Text(
