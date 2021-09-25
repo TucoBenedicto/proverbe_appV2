@@ -13,19 +13,9 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-   final proverblist = ProverbList();
-  // final proverb = Proverb();
-
   // Create fields to store the current `myId` and current `myMenu`, si je ne met pas "0" et "Random" j'ai une erreur "null".
-  //int myId = 3;
-   int myId ;
-  // InterestsModel myCountry = 'Random' ;
-  //String myCountry = 'Random';
-   String myCountry;
-  //ProverbList myCountry = countryData[1].country ;
-  // String myCountry = proverblist.proverbs[1].country ;
-  // InterestsModel myCountry = countryData[1].country ;
-  // InterestsModel myCountro ;
+  int myId = 3;
+  String myCountry; //Not used here
 
   @override
   Widget build(BuildContext context) {
@@ -44,7 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   setState(() {
                     myId = newMyId;
                     myCountry = newMyCountry;
-                    print(myId);
+                    print("myId from home : $myId");
                     print(myCountry);
                   });
                 }),
@@ -61,7 +51,6 @@ class _MyHomePageState extends State<MyHomePage> {
               children: <Widget>[
                 ProverbDisplay(myId, myCountry),
               ],
-
               //),
             ),
           ]),

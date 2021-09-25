@@ -4,89 +4,117 @@ import '../utils/mixins/CountryModelClass.dart';
 import './Button.dart';
 import './proverbDisplay.dart';
 import 'package:flutter/foundation.dart'; //(debugPrint)
+
+import 'package:flutter/material.dart';
+import 'dart:convert'; //(jsonDecode)
+import 'package:flutter/services.dart'; // (loadJson)
 import 'dart:math'; //(Random)
+import 'package:flutter/foundation.dart'; //(debugPrint)
+import './Card.dart';
+import '../utils/mixins/HelperFunction.dart';
+import '../utils/mixins/CountryModelClass.dart'; // Class InterestsModel
 
 
 class PageViewItem extends StatefulWidget {
   final void Function(int myId, String myCountry) onChanged;
   const PageViewItem({this.onChanged});
-
+// var chapter = Chapter(1, 'Once upon a time...');
   @override
   _PageViewItemState createState() => _PageViewItemState();
 }
 
 class _PageViewItemState extends State<PageViewItem> {
 
-//Initialisation
-  Random random = Random.secure();
-  int myId ;
-  String myCountry;
 
-//Scrolling - MENU
-  Container menuContainer() {
-    final PageController controller =
-    PageController(initialPage: 1, keepPage: true, viewportFraction: 0.35);
-    return Container(
-      height: 300,
-      child: PageView.builder(
-        scrollDirection: Axis.horizontal,
-        controller: controller,
-       // itemCount: 3,
-        physics: BouncingScrollPhysics(),
-        itemBuilder: (BuildContext context, int index) {
-          return Container(
-            child: gestureDetectorOnTap(index),
-          );
-        },
-      ),
-    );
-  }
+// Trigger Button animation
+  List<bool> selected = [false, false, false, false, false];
+ // PanierModel _panier = PanierModel();
+  ProverbList proverbs = ProverbList();
 
-  //OnTap - MENU
-  GestureDetector gestureDetectorOnTap(int index, [ProverbList data]) {
-    return GestureDetector(
-      onTap: () {
-        myId = index;
-        //String myName = data.sentences[index].name; //Error here
-        /////////////////////////////////////////////////////////
-       // setState(() {
-          debugPrint('pageViewItem myId : ${myId}'); // OK
-        //});
-        /////////////////////////////////////////////////////////
-        widget.onChanged(myId, myCountry);
-      },
-      child: Column(
-        children: [
-          SizedBox(height: 40),
-          itemMenu(index),
-        ],
-      ),
-    );
-  }
-
-  //Loading Item Menu - MENU
-  Widget itemMenu([int index]) {
+  Widget projectWidget(int index) {
     return FutureBuilder(
       future: loadItemMenu(index),
       builder: (BuildContext context, AsyncSnapshot snapshot) {
         if (snapshot.hasData)
-          return Text("Menu ${snapshot.data.country}",
+          return Text("Menu : ${snapshot.data.country}",
               style: TextStyle(
                 color: Colors.red,
                 fontFamily: 'RadikalThin',
                 fontSize: 13.0,
               ));
         else
-          return Text("Loading");
+          return Text("There is no output yet");
       },
     );
   }
-  ////////////////////////////////////////////////////////////////////////////////////////////
+
+
+  Container countryPageView() {
+    final PageController controller = PageController(initialPage: 1, keepPage: true, viewportFraction: 0.35);
+    return Container(
+      height: 300,
+      child: PageView.builder(
+        scrollDirection: Axis.horizontal,
+        controller: controller,
+        //itemCount: countryData.length,
+        itemCount: 5, // a revoir : nombre de pays
+        //itemCount: proverblist.proverbs.length, // a revoir : nombre de pays
+        physics: BouncingScrollPhysics(),
+        itemBuilder: (BuildContext context, int index) {
+          //debugPrint('pageViewItem dato : ${data.proverbs[1].country}'); // 0
+          return Container(
+            child: gestureDetectorOntap(index),
+
+          );
+        },
+      ),
+    );
+  }
+
+
+  GestureDetector gestureDetectorOntap(int index, [ProverbList datas]) {
+    return GestureDetector(
+      onTap: () {
+
+        int myId = index; //Binding id
+        String myCountry = datas.proverbs[1].country.toString(); //Binding country
+        widget.onChanged(myId, myCountry); //Binding
+        //*****************************************************
+        setState(() {
+          selected = [false, false, false, false, false];
+          selected[index] = !selected[index];
+        });
+        //*****************************************************
+      },
+      child: Column(
+        children: [
+          SizedBox(height: 40),
+          //button(selected[index], imageAsset),
+          // print('idCountry : ${proverbList.proverbs[0].idCountry}'); // 0
+          projectWidget(index),
+          /*
+                  Text('${'data.proverbs[1].country'}',
+              style: TextStyle(
+                color: Colors.red,
+                fontFamily: 'RadikalThin',
+                fontSize: 13.0,
+              )),
+           */
+        ],
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: menuContainer(),
+     // child : countryPageView(),
+      child: countryPageView(),
+      /*
+      width: 50,
+      height: 50,
+      color: Colors.red,
+       */
     );
   }
 }

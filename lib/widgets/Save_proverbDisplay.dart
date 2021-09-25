@@ -8,8 +8,10 @@ import '../utils/mixins/HelperFunction.dart';
 import '../utils/mixins/CountryModelClass.dart'; // Class InterestsModel
 
 class ProverbDisplay extends StatefulWidget {
+  //final String myId;
   final int myId;
-  final String myCountry; // Not used here
+  //final String country;
+  final String myCountry; //ou final String myCountry;
   const ProverbDisplay(this.myId, this.myCountry);
 
   @override
@@ -17,80 +19,14 @@ class ProverbDisplay extends StatefulWidget {
 }
 
 class _ProverbDisplayState extends State<ProverbDisplay> {
-  // Initisiation
-  Random random = Random.secure();
-  List<String> test = [];
-  //Scrolling - PROVERB
-  Container proverbContainer([int index]) {
-    final PageController controller =
-        PageController(initialPage: 1, keepPage: true, viewportFraction: 0.35);
-    return Container(
-      height: 200,
-      width: 350,
-      child: PageView.builder(
-        scrollDirection: Axis.horizontal,
-        //controller: controller,
-        // itemCount: 1,
-        physics: BouncingScrollPhysics(),
-        //itemBuilder: (BuildContext context, int index) {
-        itemBuilder: (BuildContext context, index) {
-          return Container(
-            child: proverb(widget.myId),
-            // proverb(2), //Le parametre ici permet de changer de pays
-          );
-        },
-      ),
-    );
-  }
 
-  Widget proverb(int index) {
-    return FutureBuilder(
-        future: loadItemMenu(index), //ICI changement pays
-        builder: (context, snapshot) {
-         // test = snapshot.data.idProverb; //get the content from the snapshot
-        //  print('$test');
-          if (!snapshot.hasData) {
-            return Text('Loading...');
-          } else {
-            return Container(
-              color: Colors.blue,
-              height: 250,
-              child: Row(
-                children: [
-                  Container(
-                    width: 300,
-                    //!! Attention ici ajout de "PageView.builder" qui peux faire doublon avec un 1er ajouter plus haut cependant , si je l'enleve je vais avoir l'erreur "sentence = null"
-                    child: PageView.builder(itemBuilder: (context, index) {
-                      //RANDOM
-                      int proverbLength = snapshot.data.idProverb
-                          .length; //Nombre total de proverbe par pays.
-                      int randomProverbIndex = random.nextInt(proverbLength);
-                      print('proverbLength : $proverbLength');
-                      return Text(
-                          "Proverb : ${snapshot.data.idProverb[randomProverbIndex]}", // l'index ici permet de selection un proverbe
-                          style: TextStyle(
-                            color: Colors.red,
-                            fontFamily: 'RadicalThin',
-                            fontSize: 13.0,
-                          ));
-                    }),
-                  ),
-                ],
-              ),
-            );
-          }
-        });
-  }
+
+
 
   @override
   Widget build(BuildContext context) {
-    setState(() {
-      debugPrint('proverbDispaly myId : ${widget.myId}');
-    });
-
-    // print(test);
     return Container(
-      child: proverbContainer(),
+     // child: projectWidget(),
     );
   }
 }

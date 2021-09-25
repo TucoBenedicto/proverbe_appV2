@@ -39,7 +39,7 @@ Future loadItemMenu(int index ,[var data] /* ou String data*/) async { //[] perm
   return proverbList.proverbs[index];
 }
 
-
+/*
 Future loadProverb([var data] /* ou String data*/) async { //[] permet de rendre les paramettre optionnelle.
   String jsonString = await _loadAStudentAsset();
   final jsonResponse = json.decode(jsonString);
@@ -47,6 +47,8 @@ Future loadProverb([var data] /* ou String data*/) async { //[] permet de rendre
 
   return proverbList.proverbs;
 }
+
+ */
 
 //SAve corrigé juste
 /*
