@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../utils/mixins/HelperFunction.dart';
 import '../utils/mixins/CountryModelClass.dart';
-import './Button.dart';
+import './ButtonItem.dart';
 import './proverbDisplay.dart';
 import 'package:flutter/foundation.dart'; //(debugPrint)
 import 'dart:math'; //(Random)
@@ -20,6 +20,17 @@ class _PageViewItemState extends State<PageViewItem> {
   int myId;
   String myCountry;
   int itemCountLenght;
+ // List selected = false;
+
+  List<bool> selected = [
+    false,
+    false,
+    false,
+    false,
+    false
+  ]; // Trigger Button animation
+
+  String assets;
 
 //Scrolling - MENU
   Container menuContainer() {
@@ -31,8 +42,6 @@ class _PageViewItemState extends State<PageViewItem> {
         scrollDirection: Axis.horizontal,
         controller: controller,
         itemCount: itemCountLenght,
-        //itemCount: 3, //!!
-
         physics: BouncingScrollPhysics(),
         itemBuilder: (BuildContext context, int index) {
           return Container(
@@ -44,6 +53,7 @@ class _PageViewItemState extends State<PageViewItem> {
   }
 
   //OnTap - MENU
+  //PLACER LE Widegt CARD !!!!!
   GestureDetector gestureDetectorOnTap(int index, [ProverbList data]) {
     return GestureDetector(
       onTap: () {
@@ -55,6 +65,13 @@ class _PageViewItemState extends State<PageViewItem> {
         //});
         /////////////////////////////////////////////////////////
         widget.onChanged(myId, myCountry);
+
+        //*****************************************************
+        setState(() {
+          selected = [false, false, false, false, false];
+          selected[index] = !selected[index];
+        });
+        //*****************************************************
       },
       child: Column(
         children: [
@@ -73,16 +90,40 @@ class _PageViewItemState extends State<PageViewItem> {
 
         if (snapshot.hasData) {
 
-          itemCountLenght = snapshot.data.country.length -1;
-          print('itemCountLenght : $itemCountLenght');
+        //get number of country
+        itemCountLenght = snapshot.data.country.length ; // !!! corriger erreur "length" donne un resultat fluctuant
+        //le probleme avec lenght viens du fait qu'il compte le nombre de caractere dans "country" et pas le nombre de country.
+        print('itemCountLenght : $itemCountLenght');
 
-          return Text("Menu ${snapshot.data.country}",
-              style: TextStyle(
+        //get assets (picks link)
+        assets = snapshot.data.assets ;
+        print('itemCountLenght : $assets');
+
+        return Column(
+            children: [
+
+              button( selected[index],  assets),
+
+              /*
+                Container(
+                width: 10,
+                height: 10,
                 color: Colors.red,
-                fontFamily: 'RadikalThin',
-                fontSize: 13.0,
-              )
+              ),
+               */
+
+              SizedBox(height: 10),
+
+              Text("Menu ${snapshot.data.country}",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontFamily: 'RadikalThin',
+                    fontSize: 13.0,
+                  )),
+
+            ],
           );
+
         } else {
           return Text("Loading");
         }

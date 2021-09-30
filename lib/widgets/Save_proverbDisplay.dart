@@ -3,7 +3,7 @@ import 'dart:convert'; //(jsonDecode)
 import 'package:flutter/services.dart'; // (loadJson)
 import 'dart:math'; //(Random)
 import 'package:flutter/foundation.dart'; //(debugPrint)
-import './Card.dart';
+import './CardProverb.dart';
 import '../utils/mixins/HelperFunction.dart';
 import '../utils/mixins/CountryModelClass.dart'; // Class InterestsModel
 
@@ -43,7 +43,7 @@ import 'dart:convert'; //(jsonDecode)
 import 'package:flutter/services.dart'; // (loadJson)
 import 'dart:math'; //(Random)
 import 'package:flutter/foundation.dart'; //(debugPrint)
-import './Card.dart';
+import './CardProverb.dart';
 
 class ProverbDisplay extends StatefulWidget {
   final int myId;
@@ -113,7 +113,7 @@ import 'dart:convert'; //(jsonDecode)
 import 'package:flutter/services.dart'; // (loadJson)
 import 'dart:math'; //(Random)
 import 'package:flutter/foundation.dart'; //(debugPrint)
-import './Card.dart';
+import './CardProverb.dart';
 import '../utils/mixins/HelperFunction.dart';
 import '../utils/mixins/CountryModelClass.dart'; // Class InterestsModel
 

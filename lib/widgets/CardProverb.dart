@@ -49,7 +49,6 @@ var flex = Container(
   color: Colors.red,
 );
  */
-
 /*
 Random random = Random();
 Map <String,dynamic>proverbCountrySelected =
@@ -76,7 +75,6 @@ var flex = Container(
   ),
 );
  */
-
 
 /*
 var stars = Row(

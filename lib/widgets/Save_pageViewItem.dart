@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../utils/mixins/HelperFunction.dart';
 import '../utils/mixins/CountryModelClass.dart';
-import './Button.dart';
+import './ButtonItem.dart';
 import './proverbDisplay.dart';
 import 'package:flutter/foundation.dart'; //(debugPrint)
 
@@ -10,7 +10,7 @@ import 'dart:convert'; //(jsonDecode)
 import 'package:flutter/services.dart'; // (loadJson)
 import 'dart:math'; //(Random)
 import 'package:flutter/foundation.dart'; //(debugPrint)
-import './Card.dart';
+import './CardProverb.dart';
 import '../utils/mixins/HelperFunction.dart';
 import '../utils/mixins/CountryModelClass.dart'; // Class InterestsModel
 

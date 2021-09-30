@@ -3,7 +3,7 @@ import 'dart:convert'; //(jsonDecode)
 import 'package:flutter/services.dart'; // (loadJson)
 import 'dart:math'; //(Random)
 import 'package:flutter/foundation.dart'; //(debugPrint)
-import './Card.dart';
+import './CardProverb.dart';
 import '../utils/mixins/HelperFunction.dart';
 import '../utils/mixins/CountryModelClass.dart'; // Class InterestsModel
 
@@ -68,7 +68,7 @@ class _ProverbDisplayState extends State<ProverbDisplay> {
                       return Text(
                           "Proverb : ${snapshot.data.idProverb[randomProverbIndex]}", // l'index ici permet de selection un proverbe
                           style: TextStyle(
-                            color: Colors.red,
+                            color: Colors.white,
                             fontFamily: 'RadicalThin',
                             fontSize: 13.0,
                           ));
@@ -106,7 +106,7 @@ import 'dart:convert'; //(jsonDecode)
 import 'package:flutter/services.dart'; // (loadJson)
 import 'dart:math'; //(Random)
 import 'package:flutter/foundation.dart'; //(debugPrint)
-import './Card.dart';
+import './CardProverb.dart';
 
 class ProverbDisplay extends StatefulWidget {
   final int myId;
@@ -176,7 +176,7 @@ import 'dart:convert'; //(jsonDecode)
 import 'package:flutter/services.dart'; // (loadJson)
 import 'dart:math'; //(Random)
 import 'package:flutter/foundation.dart'; //(debugPrint)
-import './Card.dart';
+import './CardProverb.dart';
 import '../utils/mixins/HelperFunction.dart';
 import '../utils/mixins/CountryModelClass.dart'; // Class InterestsModel
 
