@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:projet1_proverbe_v2/utils/mixins/CountryModelClass.dart';
-import '../widgets/pageViewItem.dart';
-import '../widgets/proverbDisplay.dart';
-import '../widgets/MenuCanvas.dart';
-import '../widgets/pageViewItem.dart';
+//import 'package:projet1_proverbe_v2/utils/mixins/CountryModelClass.dart';
+
+
+import '../widgets/Menu/Menu.dart';
+import '../widgets/Proverb/proverbDisplay.dart';
+import '../widgets/Background/MenuCanvas.dart';
+import '../widgets/Menu/Menu.dart';
 import '../utils/mixins/CountryModelClass.dart';
 import '../utils/mixins/HelperFunction.dart';
 
@@ -25,11 +27,11 @@ class _MyHomePageState extends State<MyHomePage> {
           // body: Expanded(
           child: Column(children: <Widget>[
             //ROW 1 //Affichage Menu
-            //SizedBox(height: 100),
             Stack(
               //mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 CurvePainterContainer(),
+                //SizedBox(height: 150),
                 PageViewItem(onChanged: (newMyId, newMyCountry) {
                   setState(() {
                     myId = newMyId;
@@ -63,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
 /*
 import 'package:flutter/material.dart';
 import 'package:projet1_proverbe_v2/utils/mixins/CountryModelClass.dart';
-import '../widgets/pageViewItem.dart';
+import '../widgets/Menu.dart';
 import '../widgets/proverbDisplay.dart';
 import '../widgets/MenuCanvas.dart';
 

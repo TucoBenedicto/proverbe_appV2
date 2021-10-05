@@ -3,7 +3,7 @@ import 'dart:convert'; //(jsonDecode)
 import 'package:flutter/services.dart'; // (loadJson)
 import 'dart:math'; //(Random)
 import 'package:flutter/foundation.dart'; //(debugPrint)
-import './CardProverb.dart';
+import 'Proverb/CardProverb.dart';
 import '../utils/mixins/HelperFunction.dart';
 import '../utils/mixins/CountryModelClass.dart'; // Class InterestsModel
 

@@ -1,9 +1,8 @@
-
 // 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
 import 'package:flutter/material.dart';
-import './pageViewItem.dart';
-import '../utils/mixins/HelperFunction.dart';
-import '../utils/mixins/CountryModelClass.dart';
+import 'Menu.dart';
+import '../../utils/mixins/HelperFunction.dart';
+import '../../utils/mixins/CountryModelClass.dart';
 
 AnimatedContainer button(bool selected, String imageAsset) {
   return AnimatedContainer(
@@ -15,15 +14,15 @@ AnimatedContainer button(bool selected, String imageAsset) {
     decoration: BoxDecoration(
       shape: BoxShape.circle,
       border: Border.all(
-          color: selected ? Colors.redAccent : Colors.lightBlueAccent,
+          color: selected ? Colors.redAccent : Colors.blue,
           width: selected ? 5 : 10,
           style: selected ? BorderStyle.solid : BorderStyle.none),
       boxShadow: [
         BoxShadow(
-            color: Colors.white,
+            color: Colors.black26,
             offset: Offset(0.0, 0.0),
-            blurRadius: 10.0,
-            spreadRadius: 5.0)
+            blurRadius: 5.0,
+            spreadRadius: 1.0)
       ],
       image: DecorationImage(
           //image: imageAsset,

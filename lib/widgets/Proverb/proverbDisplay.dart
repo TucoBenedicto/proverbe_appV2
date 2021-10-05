@@ -3,9 +3,9 @@ import 'dart:convert'; //(jsonDecode)
 import 'package:flutter/services.dart'; // (loadJson)
 import 'dart:math'; //(Random)
 import 'package:flutter/foundation.dart'; //(debugPrint)
-import './CardProverb.dart';
-import '../utils/mixins/HelperFunction.dart';
-import '../utils/mixins/CountryModelClass.dart'; // Class InterestsModel
+import 'CardProverb.dart';
+import '../../utils/mixins/HelperFunction.dart';
+import '../../utils/mixins/CountryModelClass.dart'; // Class InterestsModel
 
 class ProverbDisplay extends StatefulWidget {
   final int myId;
@@ -19,24 +19,29 @@ class ProverbDisplay extends StatefulWidget {
 class _ProverbDisplayState extends State<ProverbDisplay> {
   // Initisiation
   Random random = Random.secure();
-  List<String> test = [];
+  int flex;
+
   //Scrolling - PROVERB
-  Container proverbContainer([int index]) {
+  Container proverbContainer() {
     final PageController controller =
-        PageController(initialPage: 1, keepPage: true, viewportFraction: 0.35);
+        PageController(initialPage: 1, keepPage: true, viewportFraction: 1);
     return Container(
+      //color: Colors.redAccent,
       height: 200,
       width: 350,
       child: PageView.builder(
         scrollDirection: Axis.horizontal,
-        //controller: controller,
+        controller: controller,
         // itemCount: 1,
         physics: BouncingScrollPhysics(),
         //itemBuilder: (BuildContext context, int index) {
         itemBuilder: (BuildContext context, index) {
+          flex = index;
+          print('itemBuilder :: $index');
+
           return Container(
-            child: proverb(widget.myId),
-            // proverb(2), //Le parametre ici permet de changer de pays
+            child: proverb(
+                widget.myId), //Le parametre ici permet de changer de pays
           );
         },
       ),
@@ -47,36 +52,22 @@ class _ProverbDisplayState extends State<ProverbDisplay> {
     return FutureBuilder(
         future: loadItemMenu(index), //ICI changement pays
         builder: (context, snapshot) {
-         // test = snapshot.data.idProverb; //get the content from the snapshot
-        //  print('$test');
           if (!snapshot.hasData) {
-            return Text('Loading...');
-          } else {
-            return Container(
-              color: Colors.blue,
-              height: 250,
-              child: Row(
-                children: [
-                  Container(
-                    width: 300,
-                    //!! Attention ici ajout de "PageView.builder" qui peux faire doublon avec un 1er ajouter plus haut cependant , si je l'enleve je vais avoir l'erreur "sentence = null"
-                    child: PageView.builder(itemBuilder: (context, index) {
-                      //RANDOM
-                      int proverbLength = snapshot.data.idProverb.length; //Nombre total de proverbe par pays.
-                      int randomProverbIndex = random.nextInt(proverbLength);
-                      print('proverbLength : $proverbLength');
-                      return Text(
-                          "Proverb : ${snapshot.data.idProverb[randomProverbIndex]}", // l'index ici permet de selection un proverbe
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontFamily: 'RadicalThin',
-                            fontSize: 13.0,
-                          ));
-                    }),
-                  ),
-                ],
-              ),
+            // return Text('Loading...');
+            return Center(
+              child: CircularProgressIndicator(),
             );
+          } else {
+            //RANDOM index
+            int proverbLength = snapshot
+                .data.idProverb.length; //Nombre total de proverbe par pays.
+            int randomProverbIndex = random.nextInt(proverbLength);
+            return cardProverb(
+                text:
+                    "Proverb : ${snapshot.data.idProverb[randomProverbIndex]}",
+                color: Colors.white,
+                size: 13.0,
+                index: flex);
           }
         });
   }
@@ -89,8 +80,13 @@ class _ProverbDisplayState extends State<ProverbDisplay> {
 
     // print(test);
     return Container(
-      child: proverbContainer(),
-    );
+        child: Column(children: [
+      proverbContainer(),
+      SizedBox(height: 10),
+      Center(
+        child: Icon(Icons.swipe, size: 50, color: Colors.grey,),
+      ),
+    ]));
   }
 }
 

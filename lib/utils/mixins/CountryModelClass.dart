@@ -40,7 +40,7 @@ class Proverb {
   factory Proverb.fromJson(Map<String, dynamic> parsedJson) {
     var idProverbFromJson = parsedJson['idProverb'];
     //print(idProverbFromJson.runtimeType); //Connaitre le type "List<dynamic>"
-    List<String> idProverbList = idProverbFromJson.cast<String>(); //on change le dynamic en "string" grace a cast
+    List<String> idProverbList = idProverbFromJson.cast<String>(); //on change le dynamic en "string" grace a "cast"
 
     return new Proverb(
       idCountry: parsedJson["idCountry"].toString(),

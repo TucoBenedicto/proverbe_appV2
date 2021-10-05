@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../utils/mixins/HelperFunction.dart';
-import '../utils/mixins/CountryModelClass.dart';
-import './ButtonItem.dart';
-import './proverbDisplay.dart';
+import '../../utils/mixins/HelperFunction.dart';
+import '../../utils/mixins/CountryModelClass.dart';
+import 'ButtonItem.dart';
+import '../Proverb/proverbDisplay.dart';
 import 'package:flutter/foundation.dart'; //(debugPrint)
 import 'dart:math'; //(Random)
 
@@ -19,8 +19,9 @@ class _PageViewItemState extends State<PageViewItem> {
   Random random = Random.secure();
   int myId;
   String myCountry;
-  int itemCountLenght;
- // List selected = false;
+  String countryName ;
+  // List selected = false;
+  List <String> itemCountLenght = [];
 
   List<bool> selected = [
     false,
@@ -41,7 +42,8 @@ class _PageViewItemState extends State<PageViewItem> {
       child: PageView.builder(
         scrollDirection: Axis.horizontal,
         controller: controller,
-        itemCount: itemCountLenght,
+        //itemCount: itemCountLenght,
+        itemCount: selected.length,
         physics: BouncingScrollPhysics(),
         itemBuilder: (BuildContext context, int index) {
           return Container(
@@ -58,14 +60,12 @@ class _PageViewItemState extends State<PageViewItem> {
     return GestureDetector(
       onTap: () {
         myId = index;
-        //String myName = data.sentences[index].name; //Error here
         /////////////////////////////////////////////////////////
         // setState(() {
         debugPrint('pageViewItem myId : ${myId}'); // OK
         //});
         /////////////////////////////////////////////////////////
         widget.onChanged(myId, myCountry);
-
         //*****************************************************
         setState(() {
           selected = [false, false, false, false, false];
@@ -75,7 +75,7 @@ class _PageViewItemState extends State<PageViewItem> {
       },
       child: Column(
         children: [
-          SizedBox(height: 40),
+          SizedBox(height: 70),
           itemMenu(index),
         ],
       ),
@@ -88,44 +88,42 @@ class _PageViewItemState extends State<PageViewItem> {
       future: loadItemMenu(index),
       builder: (BuildContext context, AsyncSnapshot snapshot) {
 
+        /*
+         itemCountLenght.add( snapshot.data.country);
+        print('itemCountLenght00 : ${itemCountLenght}');
+         */
+
         if (snapshot.hasData) {
 
-        //get number of country
-        itemCountLenght = snapshot.data.country.length ; // !!! corriger erreur "length" donne un resultat fluctuant
-        //le probleme avec lenght viens du fait qu'il compte le nombre de caractere dans "country" et pas le nombre de country.
-        print('itemCountLenght : $itemCountLenght');
+          //get country name
+          countryName =  snapshot.data.country;
+          print('itemCountLenght01 : ${countryName}'); //ne s'affiche que les elements present sur l'ecran
 
-        //get assets (picks link)
-        assets = snapshot.data.assets ;
-        print('itemCountLenght : $assets');
+          //get assets (picks link)
+          assets = snapshot.data.assets;
+          print('itemCountLenght : $assets'); //ne s'affiche que les elements present sur l'ecran
 
-        return Column(
+          return Column(
             children: [
-
-              button( selected[index],  assets),
-
-              /*
-                Container(
-                width: 10,
-                height: 10,
-                color: Colors.red,
-              ),
-               */
+              button(selected[index], assets),
 
               SizedBox(height: 10),
-
-              Text("Menu ${snapshot.data.country}",
+              //Text("Menu ${snapshot.data.country}",
+              Text("Menu ${countryName}",
                   style: TextStyle(
                     color: Colors.white,
                     fontFamily: 'RadikalThin',
                     fontSize: 13.0,
                   )),
-
             ],
           );
-
         } else {
-          return Text("Loading");
+          //return Text("Loading");
+
+          return Center(
+            child: CircularProgressIndicator(),
+          );
+
         }
       },
     );

@@ -10,7 +10,6 @@ class CurvePainterContainer extends StatefulWidget {
 }
 
 class _CurvePainterContainerState extends State<CurvePainterContainer> {
-
   ui.Image myImage;
   bool isImageLoaded = false;
 
@@ -20,7 +19,8 @@ class _CurvePainterContainerState extends State<CurvePainterContainer> {
   }
 
   Future<Null> init() async {
-    final ByteData data = await rootBundle.load('assets/images/canvas/Vegeta.jpg');
+    final ByteData data =
+        await rootBundle.load('assets/images/canvas/Vegeta.jpg');
     myImage = await loadImage(Uint8List.view(data.buffer));
   }
 
@@ -38,11 +38,15 @@ class _CurvePainterContainerState extends State<CurvePainterContainer> {
   Widget _buildImage() {
     if (this.isImageLoaded) {
       return CustomPaint(
-        size: Size(MediaQuery.of(context).size.width,200), //200 = height
+        size: Size(MediaQuery.of(context).size.width, 200), //200 = height
         painter: ImageEditor(image: myImage),
       );
     } else {
-      return Center(child: Text('loading'));
+      //return Center(child: Text('loading'));
+
+      return Center(
+        child: CircularProgressIndicator(),
+      );
     }
   }
 
@@ -55,7 +59,6 @@ class _CurvePainterContainerState extends State<CurvePainterContainer> {
 }
 
 class ImageEditor extends CustomPainter {
-
   ui.Image image;
   ImageEditor({
     this.image,
@@ -66,7 +69,8 @@ class ImageEditor extends CustomPainter {
     var paint = Paint();
     paint.color = Colors.lightBlue.withOpacity(0.8);
     paint.style = PaintingStyle.fill; // Change this to fill
-    paint.shader = ImageShader(image, TileMode.repeated, TileMode.repeated, Matrix4.identity().scaled(2.0).storage);
+    paint.shader = ImageShader(image, TileMode.repeated, TileMode.repeated,
+        Matrix4.identity().scaled(2.0).storage);
 
     var path = Path();
     path.moveTo(0, size.height * 1.380);
