@@ -1,7 +1,7 @@
 [{
   "idName": 0,
   "name": "Pierre",
-  "assets": "assets/images/button/bonsai1.jpg",
+  "assetsIcon": "assets/images/button/bonsai1.jpg",
   "sentence": [
     "Pierre 1 PierrePierrePierrePierrePierrePierrePierrePierrePierrePierrePierrePierrePierre",
     "Pierre 2 PierrePierrePierrePierrePierrePierrePierrePierrePierrePierrePierrePierrePierre",
@@ -15,7 +15,7 @@
   {
     "idName": 1,
     "name": "Paul",
-    "assets": "assets/images/button/bonsai2.jpg",
+    "assetsIcon": "assets/images/button/bonsai2.jpg",
     "sentence": [
       "Paul 1 PaulPaulPaulPaulPaulPaulPaulPaulPaulPaulPaulPaulPaulPaulPaulPaulPaulPaul",
       "Paul 2 PaulPaulPaulPaulPaulPaulPaulPaulPaulPaulPaulPaulPaulPaulPaulPaulPaulPaul",
@@ -27,7 +27,7 @@
   {
     "idName": 2,
     "name": "Jack",
-    "assets": "assets/images/button/bonsai3.jpg",
+    "assetsIcon": "assets/images/button/bonsai3.jpg",
     "sentence": [
       "Jack 1 JackJackJackJackJackJackJackJackJackJackJackJackJackJackJackJack",
       "Jack 2 JackJackJackJackJackJackJackJackJackJackJackJackJackJackJackJack",

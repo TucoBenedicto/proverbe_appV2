@@ -31,7 +31,7 @@ class cardProverb extends StatelessWidget {
     return Column(
       children: [
         SizedBox(
-          width: 350,
+          width: 380,
           height: 200,
           child: Card(
             shape: RoundedRectangleBorder(

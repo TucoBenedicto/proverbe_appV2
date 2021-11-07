@@ -2,7 +2,8 @@
 [{
         "idCountry": 0,
         "country": "Japonais",
-        "assets": "assets/images/button/bonsai1.jpg",
+        "assetsIcon": "assets/images/button/bonsai1.jpg",
+        "assetsCanvas": "assets/images/canvas/pic1.jpg",
         "idProverb": [
             "japonais 1 japonais japonais japonais japonais japonais japonais japonais - Karim lebourak -",
             "japonais 2 japonais japonais japonais japonais japonais japonais japonais japonais japonais",
@@ -16,7 +17,8 @@
     {
         "idCountry": 1,
         "country": "Senegalais",
-        "assets": "assets/images/button/bonsai2.jpg",
+        "assetsIcon": "assets/images/button/bonsai2.jpg",
+        "assetsCanvas": "assets/images/canvas/pic2.jpg",
         "idProverb": ["senegalais 1 senegalaissenegalaissenegalais senegalaissenegalaissenegalaissenegalais",
             "senegalais 2 senegalaissenegalaissenegalais senegalaissenegalaissenegalaissenegalais",
             "senegalais 3 senegalaissenegalaissenegalais senegalaissenegalaissenegalaissenegalais",
@@ -27,7 +29,8 @@
     {
         "idCountry": 2,
         "country": "Random",
-        "assets": "assets/images/button/bonsai3.jpg",
+        "assetsIcon": "assets/images/button/bonsai3.jpg",
+        "assetsCanvas": "assets/images/canvas/pic3.jpg",
         "idProverb": ["Random 1 RandomRandomRandomRandomRandomRandom RandomRandomRandomRandomRandom",
             "Random 2 RandomRandomRandomRandomRandomRandom RandomRandomRandomRandomRandom",
             "Random 3 RandomRandomRandomRandomRandomRandom RandomRandomRandomRandomRandom",
@@ -39,7 +42,8 @@
     {
         "idCountry": 3,
         "country": "American",
-        "assets": "assets/images/button/bonsai4.jpg",
+        "assetsIcon": "assets/images/button/bonsai4.jpg",
+        "assetsCanvas": "assets/images/canvas/pic4.jpg",
         "idProverb": [
     "American 1 AmericanAmericanAmericanAmerican AmericanAmericanAmericanAmericanAmerican",
     "American 2 AmericanAmericanAmericanAmerican AmericanAmericanAmericanAmericanAmerican",
@@ -52,7 +56,8 @@
     {
         "idCountry": 4,
         "country": "Marocan",
-        "assets": "assets/images/button/bonsai5.jpg",
+        "assetsIcon": "assets/images/button/bonsai5.jpg",
+        "assetsCanvas": "assets/images/canvas/pic5.jpg",
         "idProverb": [
              "Marocan 1 MarocanMarocanMarocanMarocanMarocan MarocanMarocanMarocanMarocanMarocanMarocan",
              "Marocan 2 MarocanMarocanMarocanMarocanMarocan MarocanMarocanMarocanMarocanMarocanMarocan",

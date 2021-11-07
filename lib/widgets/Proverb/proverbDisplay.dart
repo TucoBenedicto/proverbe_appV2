@@ -28,7 +28,7 @@ class _ProverbDisplayState extends State<ProverbDisplay> {
     return Container(
       //color: Colors.redAccent,
       height: 200,
-      width: 350,
+      width: 380,
       child: PageView.builder(
         scrollDirection: Axis.horizontal,
         controller: controller,
@@ -37,7 +37,7 @@ class _ProverbDisplayState extends State<ProverbDisplay> {
         //itemBuilder: (BuildContext context, int index) {
         itemBuilder: (BuildContext context, index) {
           flex = index;
-          print('itemBuilder :: $index');
+          //print('itemBuilder :: $index');
 
           return Container(
             child: proverb(
@@ -75,18 +75,26 @@ class _ProverbDisplayState extends State<ProverbDisplay> {
   @override
   Widget build(BuildContext context) {
     setState(() {
-      debugPrint('proverbDispaly myId : ${widget.myId}');
+      // debugPrint('proverbDispaly myId : ${widget.myId}');
     });
 
     // print(test);
     return Container(
-        child: Column(children: [
-      proverbContainer(),
-      SizedBox(height: 10),
-      Center(
-        child: Icon(Icons.swipe, size: 50, color: Colors.grey,),
+      child: Column(
+        children: [
+          SizedBox(height: 300),
+          proverbContainer(),
+          SizedBox(height: 10),
+          Center(
+            child: Icon(
+              Icons.swipe,
+              size: 50,
+              color: Colors.grey,
+            ),
+          ),
+        ],
       ),
-    ]));
+    );
   }
 }
 

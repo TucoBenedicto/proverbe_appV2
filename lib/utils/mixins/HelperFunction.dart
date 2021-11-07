@@ -23,7 +23,7 @@ Future<String> _loadAStudentAsset() async {
 }
 
 //Load Response
-Future loadItemMenu(int index ,[var data] /* ou String data*/) async { //[] permet de rendre les paramettre optionnelle.
+Future loadItemMenu([int index ,var data] /* ou String data*/) async { //[] permet de rendre les paramettre optionnelle.
   String jsonString = await _loadAStudentAsset();
   final jsonResponse = json.decode(jsonString);
   ProverbList proverbList = ProverbList.fromJson(jsonResponse);

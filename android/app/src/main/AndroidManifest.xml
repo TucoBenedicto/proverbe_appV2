@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.projet1_proverbe_v2">
    <application
-        android:label="projet1_proverbe_v2"
+        android:label="Famous quotes"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

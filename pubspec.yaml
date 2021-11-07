@@ -1,4 +1,4 @@
-name: FamousQuotes
+name: famousQuotes
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -28,19 +28,18 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  splashscreen: ^1.3.5
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_launcher_icons: "^0.7.0"
+  flutter_launcher_icons: "^0.9.0"
 
 flutter_icons:
   ios: true
   android: true
-  image_path_ios: "assets/launcher/icon.png"
-  image_path_android: "assets/launcher/icon.png"
-  adaptive_icon_background: "assets/launcher/background.png"
-  adaptive_icon_foreground: "assets/launcher/foreground.png"
+  image_path_android: "assets/images/launcher/android.png"
+  image_path_ios: "assets/images/launcher/ios.png"
 
 
 # For information on the generic Dart part of this file, see the
@@ -61,6 +60,8 @@ flutter:
      - assets/json/proverb.json
      - assets/images/canvas/
      - assets/images/button/
+     - assets/images/launcher/
+     - assets/images/splashScreen/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

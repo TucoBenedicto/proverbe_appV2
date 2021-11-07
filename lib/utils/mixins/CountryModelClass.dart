@@ -30,12 +30,13 @@ class ProverbList {
 class Proverb {
   final String idCountry;
   final String country;
-  final String assets;
+  final String assetsIcon;
+  final String assetsCanvas;
   //Ici pour ajouter le type string , il faut ajouter du code supplementiare , plus bas pour le caster.
   //Caster : changer de type.
   final List<String> idProverb;
 
-  Proverb({this.idCountry, this.country, this.assets, this.idProverb});
+  Proverb({this.idCountry, this.country, this.assetsIcon,this.assetsCanvas, this.idProverb});
 
   factory Proverb.fromJson(Map<String, dynamic> parsedJson) {
     var idProverbFromJson = parsedJson['idProverb'];
@@ -46,7 +47,8 @@ class Proverb {
       idCountry: parsedJson["idCountry"].toString(),
      // idCountry: parsedJson["idCountry"],
       country: parsedJson["country"],
-      assets: parsedJson["assets"],
+      assetsIcon: parsedJson["assetsIcon"],
+      assetsCanvas: parsedJson["assetsCanvas"],
       // idProverb: parsedJson["idProverb"],
       idProverb: idProverbList,
     );
