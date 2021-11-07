@@ -1,7 +1,13 @@
 # projet1_proverbe_v2
 
-A new Flutter project.
+Code final.
 
 ## Getting Started
 
-Ayant eu trop de probleme de code avec la 1er version de "proverbe app" je creer ici une V2 , la v1 reste disponible .
+attention il s'agit de l'ossature finale du code , tous fonctionne , maintenant reste a :
+- netoyer le code des commentaire inutile 
+- Supprimer les fichier inutile 
+- Mettre des classe en stateLess là ou c'est possible.
+- Ameliorer le designe generale
+- faire un jolie splascreen
+- creer un jolie icon pour l'icon launcher
