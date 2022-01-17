@@ -148,8 +148,10 @@ class ImageEditor extends CustomPainter {
 
  */
 
-
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 //Canvas creation
+//Save
+/*
 class CurvePainterContainer extends CustomPainter {
   /*
     ui.Image image;
@@ -161,7 +163,7 @@ class CurvePainterContainer extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     var paint = Paint();
-    paint.color = Colors.lightBlue.withOpacity(1);
+    paint.color = Colors.lightBlue.withOpacity(0.2);
     paint.style = PaintingStyle.fill; // Change this to fill
 
     var path = Path();
@@ -170,7 +172,40 @@ class CurvePainterContainer extends CustomPainter {
     path.quadraticBezierTo(size.width * 0.75, size.height * 0.884, size.width * 1.0, size.height * 0.817);
     path.lineTo(size.width, size.height);
     path.lineTo(0, size.height);
+    canvas.drawPath(path, paint);
+  }
 
+  @override
+  bool shouldRepaint(CustomPainter oldDelegate) {
+    return true;
+  }
+
+}
+ */
+
+
+
+
+class CurvePainterContainer extends CustomPainter {
+  /*
+    ui.Image image;
+  ImageEditor({
+    this.image,
+  });
+   */
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    var paint = Paint();
+    paint.color = Colors.lightBlue.withOpacity(0.2);
+    paint.style = PaintingStyle.fill; // Change this to fill
+
+    var path = Path();
+    path.moveTo(0, size.height * 0.467);
+    path.quadraticBezierTo(size.width * 0.25, size.height * 0.475, size.width * 0.6, size.height * 0.816);
+    path.quadraticBezierTo(size.width * 0.75, size.height * 0.984, size.width * 1.0, size.height * 1.0);
+    path.lineTo(size.width, size.height);
+    path.lineTo(0, size.height);
     canvas.drawPath(path, paint);
   }
 

@@ -14,7 +14,7 @@ AnimatedContainer button(bool selected, String imageAsset) {
     decoration: BoxDecoration(
       shape: BoxShape.circle,
       border: Border.all(
-          color: selected ? Colors.redAccent : Colors.blue,
+          color: selected ? Colors.red[400] : Colors.blue,
           width: selected ? 5 : 10,
           style: selected ? BorderStyle.solid : BorderStyle.none),
       boxShadow: [

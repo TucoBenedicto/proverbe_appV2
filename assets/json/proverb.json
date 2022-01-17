@@ -1,69 +1,1463 @@
+[
+  {
+    "idCountry": 0,
+    "country": "Albert Camus",
+    "assetsIcon": "assets/images/button/albert_camus_ico.jpg",
+    "assetsCanvas": "assets/images/canvas/albert_camus_bg.jpg",
 
-[{
-        "idCountry": 0,
-        "country": "Japonais",
-        "assetsIcon": "assets/images/button/bonsai1.jpg",
-        "assetsCanvas": "assets/images/canvas/pic1.jpg",
-        "idProverb": [
-            "japonais 1 japonais japonais japonais japonais japonais japonais japonais - Karim lebourak -",
-            "japonais 2 japonais japonais japonais japonais japonais japonais japonais japonais japonais",
-            "japonais 3 japonais japonais japonais japonais japonais japonais japonais japonais japonais",
-            "japonais 4 japonais japonais japonais japonais japonais japonais japonais japonais japonais",
-            "japonais 5 japonais japonais japonais japonais japonais japonais japonais japonais japonais",
-            "japonais 6 japonais japonais japonais japonais japonais japonais japonais japonais japonais"
-        ]
-},
+    "idProverb": [
+      " No matter how hard the world pushes against me, within me, there’s something stronger, something better, pushing right back.",
+      " In the depth of winter I finally learned that there was in me an invincible summer.",
+      " A man devoid of hope and conscious of being so has ceased to belong to the future.",
+      " You cannot create experience. You must undergo it.",
+      " When you have once seen the glow of happiness on the face of a beloved person, you know that a man can have no vocation but to awaken that light on the faces surrounding him.",
+      " Man is the only creature who refuses to be what he is.",
+      " After awhile you could get used to anything.",
+      " Where there is no hope, it is incumbent on us to invent it.",
+      " Always go too far, because that’s where you’ll find the truth.",
+      " Charm is a way of getting the answer 'Yes' without asking a clear question.",
+      " If we believe in nothing, if nothing has any meaning and if we can affirm no values whatsoever, then everything is possible and nothing has any importance.",
+      " Always there comes an hour when one is weary of one's work and devotion to duty, and all one craves for is a loved face, the warmth and wonder of a loving heart.",
+      " People hasten to judge in order not to be judged themselves.",
+      " The only way to deal with an unfree world is to become so absolutely free that your very existence is an act of rebellion.",
+      " The struggle itself towards the heights is enough to fill a man's heart. One must imagine Sisyphus happy.",
+      " The truth is that everyone is bored, and devotes himself to cultivating habits.",
+      " Life can be magnificent and overwhelming, that is the whole tragedy. Without beauty, love, or danger it would almost be easy to live.",
+      " Blessed are the hearts that can bend; they shall never be broken.",
+      " A man is more a man through the things he keeps to himself than through those he says.",
+      " I know simply that the sky will last longer than I.",
+      " When the soul suffers too much, it develops a taste for misfortune.",
+      " I may not have been sure about what really did interest me, but I was absolutely sure about what didn't.",
+      " I don't want to be a genius. I have enough problems just trying to be a man.",
+      " The absurd is the essential concept and the first truth.",
+      " It is the job of thinking people not to be on the side of the executioners.",
+      " Fiction is the lie through which we tell the truth.",
+      " Human relationships always help us to carry on because they always presuppose further developments, a future and also because we live as if our only task was precisely to have relationships with other people.",
+      " The need to be right is the sign of a vulgar mind.",
+      " The evil that is in the world almost always comes from ignorance, and good intentions may do as much harm as malevolence if they lack understanding.",
+      " I opened myself to the gentle indifference of the world.",
+      " I've never really had much of an imagination. But still I would try to picture the exact moment when the beating of my heart would no longer be going on inside my head.",
+      " Nothing in life is worth, turning your back on, if you love it.",
+      " I know that man is capable of great deeds. But if he isn’t capable of great emotion, well, he leaves me cold.",
+      " In order to understand the world, one has to turn away from it on occasion.",
+      " He who despairs of the human condition is a coward, but he who has hope for it is a fool.",
+      " There is no sun without shadow, and it is essential to know the night.",
+      " But what is happiness except the simple harmony between a man and the life he leads?",
+      " Life is a sum of all your choices.",
+      " What made me run away was doubtless not so much the fear of settling down, but of settling down permanently in something ugly.",
+      " Do not wait for the last judgment. It comes every day.",
+      " Don't believe your friends when they ask you to be honest with them. All they really want is to be maintained in the good opinion they have of themselves.",
+      " If absolute truth belongs to anyone in this world, it certainly does not belong to the man or party that claims to possess it.",
+      " At the heart of all beauty lies something inhuman.",
+      " It is a kind of spiritual snobbery that makes people think they can be happy without money.",
+      " Why should it be essential to love rarely in order to love much?",
+      " At any street corner the feeling of absurdity can strike any man in the face.",
+      " A man without ethics is a wild beast loosed upon this world.",
+      " Virtue cannot separate itself from reality without becoming a principle of evil.",
+      " Nothing is more despicable than respect based on fear.",
+      " Those who lack the courage will always find a philosophy to justify it."
+    ]
 
-    {
-        "idCountry": 1,
-        "country": "Senegalais",
-        "assetsIcon": "assets/images/button/bonsai2.jpg",
-        "assetsCanvas": "assets/images/canvas/pic2.jpg",
-        "idProverb": ["senegalais 1 senegalaissenegalaissenegalais senegalaissenegalaissenegalaissenegalais",
-            "senegalais 2 senegalaissenegalaissenegalais senegalaissenegalaissenegalaissenegalais",
-            "senegalais 3 senegalaissenegalaissenegalais senegalaissenegalaissenegalaissenegalais",
-            "senegalais 4 senegalaissenegalaissenegalais senegalaissenegalaissenegalaissenegalais",
-            "senegalais 5 senegalaissenegalaissenegalais senegalaissenegalaissenegalaissenegalais",
-            "senegalais 6 senegalaissenegalaissenegalais senegalaissenegalaissenegalaissenegalais"]
-},
-    {
-        "idCountry": 2,
-        "country": "Random",
-        "assetsIcon": "assets/images/button/bonsai3.jpg",
-        "assetsCanvas": "assets/images/canvas/pic3.jpg",
-        "idProverb": ["Random 1 RandomRandomRandomRandomRandomRandom RandomRandomRandomRandomRandom",
-            "Random 2 RandomRandomRandomRandomRandomRandom RandomRandomRandomRandomRandom",
-            "Random 3 RandomRandomRandomRandomRandomRandom RandomRandomRandomRandomRandom",
-            "Random 4 RandomRandomRandomRandomRandomRandom RandomRandomRandomRandomRandom",
-            "Random 5 RandomRandomRandomRandomRandomRandom RandomRandomRandomRandomRandom",
-            "Random 6 RandomRandomRandomRandomRandomRandom RandomRandomRandomRandomRandom"]
-},
+  },
+  {
+    "idCountry": 1,
+    "country": "Aristotle",
+    "assetsIcon": "assets/images/button/aristotle_ico.jpg",
+    "assetsCanvas": "assets/images/canvas/aristotle_bg.jpg",
+    "idProverb": [
 
-    {
-        "idCountry": 3,
-        "country": "American",
-        "assetsIcon": "assets/images/button/bonsai4.jpg",
-        "assetsCanvas": "assets/images/canvas/pic4.jpg",
-        "idProverb": [
-    "American 1 AmericanAmericanAmericanAmerican AmericanAmericanAmericanAmericanAmerican",
-    "American 2 AmericanAmericanAmericanAmerican AmericanAmericanAmericanAmericanAmerican",
-    "American 3 AmericanAmericanAmericanAmerican AmericanAmericanAmericanAmericanAmerican",
-    "American 4 AmericanAmericanAmericanAmerican AmericanAmericanAmericanAmericanAmerican",
-    "American 5 AmericanAmericanAmericanAmerican AmericanAmericanAmericanAmericanAmerican",
-    "American 6 AmericanAmericanAmericanAmerican AmericanAmericanAmericanAmericanAmerican"
-        ]
-},
-    {
-        "idCountry": 4,
-        "country": "Marocan",
-        "assetsIcon": "assets/images/button/bonsai5.jpg",
-        "assetsCanvas": "assets/images/canvas/pic5.jpg",
-        "idProverb": [
-             "Marocan 1 MarocanMarocanMarocanMarocanMarocan MarocanMarocanMarocanMarocanMarocanMarocan",
-             "Marocan 2 MarocanMarocanMarocanMarocanMarocan MarocanMarocanMarocanMarocanMarocanMarocan",
-             "Marocan 3 MarocanMarocanMarocanMarocanMarocan MarocanMarocanMarocanMarocanMarocanMarocan",
-             "Marocan 4 MarocanMarocanMarocanMarocanMarocan MarocanMarocanMarocanMarocanMarocanMarocan",
-             "Marocan 5 MarocanMarocanMarocanMarocanMarocan MarocanMarocanMarocanMarocanMarocanMarocan",
-             "Marocan 6 MarocanMarocanMarocanMarocanMarocan MarocanMarocanMarocanMarocanMarocanMarocan"
-        ]
-}]
+      "It is during our darkest moments that we must focus to see the light",
+
+      " It is not always the same thing to be a good man and a good citizen",
+
+      " The energy of the mind is the essence of life",
+
+      " He who cannot be a good follower cannot be a good leader",
+
+      " Wit is educated insolence",
+
+      " Dignity does not consist in possessing honors, but in the consciousness that we deserve them",
+
+      " Wise men speak when they have something to say, fools speak because they have to say something",
+
+      " We acquire a particular quality by acting in a particular way",
+
+      " All persons ought to endeavor to follow what is right, and not what is established",
+
+      " It is the mark of an educated mind to be able to entertain a thought without accepting it",
+
+      " Learning is an ornament in prosperity, a refuge in adversity, and a provision in old age",
+
+      " Excellence is an art won by training and habituation. We do not act rightly because we have virtue or excellence, but we rather have those because we have acted rightly. We are what we repeatedly do. Excellence, then, is not an act but a habit",
+
+      " Great men are always of a nature originally melancholy",
+
+      " Fear is pain arising from the anticipation of evil",
+
+      " Character may almost be called the most effective means of persuasion",
+
+      " What is a friend? A single soul dwelling in two bodies",
+
+      " No great mind has ever existed without a touch of madness",
+
+      " Patience is bitter, but its fruit is sweet",
+
+      " Those who educate children well are more to be honored than they who produce them; for these only gave them life, those the art of living well",
+
+      " We are what we repeatedly do. Excellence, then, is not an act, but a habit",
+
+      " I count him braver who overcomes his desires than him who conquers his enemies, for the hardest victory is over self",
+
+      " Poverty is the parent of revolution and crime",
+
+      " The aim of art is to represent not the outward appearance of things, but their inward significance",
+
+      " Learning is not child's play; we cannot learn without pain",
+
+      " To write well, express yourself like the common people, but think like a wise man",
+
+      " The high-minded man must care more for the truth than for what people think",
+
+      " Comedy aims at representing men as worse, Tragedy as better than in actual life",
+
+      " To lead an orchestra, you must turn your back on the crowd",
+
+      " Youth is easily deceived because it is quick to hope",
+
+      " Whosoever is delighted in solitude, is either a wild beast or a god",
+
+      " Courage is the first of human qualities because it is the quality which guarantees the others",
+
+      " Happiness is the meaning and the purpose of life, the whole aim and end of human existence",
+
+      " We must be neither cowardly nor rash but courageous",
+
+      " It is of the nature of desire not to be satisfied, and most men live only for the gratification of it",
+
+      " The soul never thinks without a mental picture",
+
+      " Men create gods after their own image, not only with regard to their form, but with regard to their mode of life",
+
+      " The weak are always anxious for justice and equality. The strong pay no heed to either",
+
+      " With respect to the requirement of art, the probable impossible is always preferable to the improbable possible",
+
+      " Moral excellence comes about as a result of habit. We become just by doing just acts, temperate by doing temperate acts, brave by doing brave acts",
+
+      " The whole is greater than the sum of its parts",
+
+      " Young people are in a condition like permanent intoxication, because life is sweet and they are growing",
+
+      " It is absurd to hold that a man should be ashamed of an inability to defend himself with his limbs, but not ashamed of an inability to defend himself with speech and reason; for the use of rational speech is more distinctive of a human being than the use of his limbs",
+
+      " For though we love both the truth and our friends, piety requires us to honor the truth first",
+
+      " It is simplicity that makes the uneducated more effective than the educated when addressing popular audiences",
+
+      " It is well to be up before daybreak, for such habits contribute to health, wealth, and wisdom",
+
+      " The pleasures arising from thinking and learning will make us think and learn all the more",
+
+      " The least deviation from truth will be multiplied later",
+
+      " The self-indulgent man craves for all pleasant things and is led by his appetite to choose these at the cost of everything else",
+
+      " It is not once nor twice but times without number that the same ideas make their appearance in the world",
+
+      " If you would understand anything, observe its beginning and its development",
+
+      " There is only one way to avoid criticism: do nothing, say nothing, and be nothing",
+
+      " The guest will judge better of a feast than the cook",
+
+      " It is also in the interests of the tyrant to make his subjects poor... the people are so occupied with their daily tasks that they have no time for plotting",
+
+      " The beauty of the soul shines out when a man bears with composure one heavy mischance after another, not because he does not feel them, but because he is a man of high and heroic temper",
+
+      " Even that some people try deceived me many times... I will not fail to believe that somewhere, someone deserves my trust",
+
+      " At his best, man is the noblest of all animals; separated from law and justice he is the worst",
+
+      " The life of money-making is one undertaken under compulsion, and wealth is evidently not the good we are seeking; for it is merely useful and for the sake of something else",
+
+      " Tolerance and apathy are the last virtues of a dying society",
+
+      " Virtue lies in our power, and similarly so does vice; because where it is in our power to act, it is also in our power not to act",
+
+      " It is their character indeed that makes people who they are. But it is by reason of their actions that they are happy or the reverse",
+
+      " The wise man does not expose himself needlessly to danger, since there are few things for which he cares sufficiently; but he is willing, in great crises, to give even his life, knowing that under certain conditions it is not worthwhile to live",
+
+      " The least initial deviation from the truth is multiplied later a thousandfold",
+
+      " It is just that we should be grateful, not only to those with whose views we may agree, but also to those who have expressed more superficial views; for these also contributed something, by developing before us the powers of thought",
+
+      " The ideal man bears the accidents of life with dignity and grace, making the best of circumstances",
+
+      " Bring your desires down to your present means. Increase them only when your increased means permit",
+
+      " Men acquire a particular quality by constantly acting in a particular way",
+
+      " Probable impossibilities are to be preferred to improbable possibilities",
+
+      " The ultimate value of life depends upon awareness and the power of contemplation rather than upon mere survival",
+
+      " The worst form of inequality is to try to make unequal things equal",
+
+      " If one way be better than another, that you may be sure is nature's way"
+
+    ]
+  },
+  {
+    "idCountry": 2,
+    "country": "Bob Marley",
+    "assetsIcon": "assets/images/button/bob_marley_ico.jpg",
+    "assetsCanvas": "assets/images/canvas/bob_marley_bg.jpg",
+    "idProverb": [
+
+      "The greatness of a man is not in how much wealth he acquires, but in his integrity and his ability to affect those around him positively.",
+
+      "The truth is, everyone is going to hurt you. You just got to find the ones worth suffering for.",
+
+      "The good times of today are the sad thoughts of tomorrow.",
+
+      "One good thing about music, when it hits you, you feel no pain.",
+
+      "My feet is my only carriage.",
+
+      "Every man gotta right to decide his own destiny.",
+
+      "Some people feel the rain. Others just get wet.",
+
+      "Get up, stand up, Stand up for your rights. Get up, stand up, Don't give up the fight.",
+
+      "Only once in your life, I truly believe, you find someone who can completely turn your world around.",
+
+      "Emancipate yourselves from mental slavery. None but ourselves can free our minds.",
+
+      "Overcome the devils with a thing called love. ",
+
+      "Money can't buy you life.",
+
+      "One love, one heart, one destiny.",
+
+      "You can't find the right roads when the streets are paved.",
+
+      "The stone that the builder refused shall be the head corner stone.",
+
+      "Don't gain the world and lose your soul; wisdom is better than silver or gold.",
+
+      "Just because you are happy it does not mean that the day is perfect but that you have looked beyond its imperfections.",
+
+      "Judge not before you judge yourself. Judge not if you’re not ready for judgment.",
+
+      "Though the road's been rocky it sure feels good to me.",
+
+      "Better to die fighting for freedom then be a prisoner all the days of your life.",
+
+      "Beginnings are usually scary, and endings are usually sad, but its everything in between that makes it all worth living.",
+
+      "Love would never leave us alone.",
+
+      "I went deep inside myself. I had time to explore my beliefs and because of that I'm stronger.",
+
+      "Life is one big road with lots of signs. So when you riding through the ruts, don't complicate your mind. Flee from hate, mischief and jealousy. Don't bury your thoughts, put your vision to reality. Wake Up and Live!",
+
+      "You never know how strong you are until being strong is your only choice.",
+
+      "Don't worry about a thing, every little thing is gonna be alright.",
+
+      "You just can't live that negative way. You know what I mean. Make way for the positive day. Cause it's a new day.",
+
+      "Love hard when there is love to be had. Because perfect guys don’t exist, but there’s always one guy that is perfect for you.",
+
+      "I don't stand for black man's side, I don't stand for white man's side, I stand for God's side.",
+
+      "She may not be the most popular or prettiest but if you love her and she makes you smile.. what else matters?",
+
+      "The winds that sometimes take something we love, are the same that bring us something we learn to love. Therefore we should not cry about something that was taken from us, but, yes, love what we have been given. Because what is really ours is never gone forever.",
+
+      "Some will hate you, pretend they love you now, Then behind they try to eliminate you.",
+
+      "Live for yourself and you will live in vain; Live for others, and you will live again.",
+
+      "If you get down and you quarrel everyday, you're saying praises to the devil, I say.",
+
+      "When one door is closed, don't you know that many more are open.",
+
+      "The biggest coward of a man is to awaken the love of a woman without the intention of loving her.",
+
+      "Open your eyes, look within. Are you satisfied with the life you're living?",
+
+      "Most people think great god will come from the skies, take away everything, and make everybody feel high. But if you know what life is worth, you will look for yours on earth.",
+
+      "The people who were trying to make this world worse are not taking the day off. Why should I?",
+
+      "You say you love rain, but you use an umbrella to walk under it. You say you love sun, but you seek shelter when it is shining. You say you love wind, but when it comes you close your windows. So that's why I'm scared when you say you love me."
+
+    ]
+  },
+  {
+    "idCountry": 3,
+    "country": "Bruce Lee",
+    "assetsIcon": "assets/images/button/bruce_lee_ico.jpeg",
+    "assetsCanvas": "assets/images/canvas/bruce_lee_bg.jpg",
+    "idProverb": [
+
+      "If you always put limits on everything you do, physical or anything else, it will spread into your work and into your life. There are no limits. There are only plateaus, and you must not stay there, you must go beyond them.",
+      "Don’t get set into one form, adapt it and build your own, and let it grow, be like water.",
+      "If you love life, don’t waste time, for time is what life is made up of.",
+      "I’m not in this world to live up to your expectations and you’re not in this world to live up to mine.",
+      "A quick temper will make a fool of you soon enough.",
+      "As you think, so shall you become.",
+      "Showing off is the fool’s idea of glory.",
+      "In the middle of chaos lies opportunity.",
+      "Do not pray for an easy life, pray for the strength to endure a difficult one.",
+      "When you’re talking about fighting, as it is, with no rules, well then, baby you’d better train every part of your body!",
+      "Use only that which works, and take it from any place you can find it.",
+      "There are no limits. There are plateaus, but you must not stay there, you must go beyond them. If it kills you, it kills you. A man must constantly exceed his level.",
+      "The great mistake is to anticipate the outcome of the engagement; you ought not to be thinking of whether it ends in victory or defeat. Let nature take its course, and your tools will strike at the right moment.",
+      "The successful warrior is the average man, with laser-like focus.",
+      "The spirit of the individual is determined by his dominating thought habits.",
+      "Fear comes from uncertainty; we can eliminate the fear within us when we know ourselves better.",
+      "The doubters said, 'Man cannot fly,' The doers said, 'Maybe, but we’ll try,' And finally soared In the morning glow While non-believers Watched from below.",
+      "Empty your cup so that it may be filled; become devoid to gain totality.",
+      "Notice that the stiffest tree is most easily cracked, while the bamboo or willow survives by bending with the wind.",
+      "To spend time is to pass it in a specified manner. To waste time is to expend it thoughtlessly or carelessly. We all have time to either spend or waste and it is our decision what to do with it. But once passed, it is gone forever.",
+      "The more we value things, the less we value ourselves.",
+      "People try to hold onto the sameness. This holding onto prevents growth.",
+      "The meaning of life is that it is to be lived.",
+      "Practice makes perfect. After a long time of practicing, our work will become natural, skillful, swift, and steady.",
+      "Long-term consistency trumps short-term intensity.",
+      "The idea is that flowing water never goes stale, so just keep on flowing.",
+      "You must have complete determination. The worst opponent you can come across is one whose aim has become an obsession.",
+      "Since life is an ever evolving process, one should flow in this process and discover how to actualize and expand oneself.",
+      "Be a practical dreamer backed by action.",
+      "Ever since I was a child I have had this instinctive urge for expansion and growth. To me, the function and duty of a quality human being is the sincere and honest development of one’s potential.",
+      "You just wait. I’m going to be the biggest Chinese Star in the world.",
+      "What you habitually think largely determines what you will ultimately become.",
+      "Only the self-sufficient stand alone – most people follow the crowd and imitate.",
+      "Don’t fear failure.  Not failure, but low aim, is the crime. In great attempts it is glorious even to fail.",
+      "If you want to learn to swim jump into the water. On dry land no frame of mind is ever going to help you",
+      "A self-willed man has no other aim than his own growth.",
+      "We have great work ahead of us, and it needs devotion and much, much energy. To grow, to discover, we need involvement.",
+      "All knowledge leads to self-knowledge.",
+      "Once I slow down because I think I have reached my peak, then my skills will go nowhere but down.",
+      "It’s the law of averages: put in more, come out with more.",
+      "Persistence, persistence, and persistence. The Power can be created and maintained through daily practice – continuous effort.",
+      "He who wants to succeed should learn how to fight, to strive and to suffer. You can acquire a lot in life, if you are prepared to give up a lot to get it.",
+      "When you say that something is impossible, you have made it impossible.",
+      "Dedication, absolute dedication, is what keeps one ahead!",
+      "I have always been a martial artist by choice, an actor by profession, but above all, am actualizing myself to be an artist of life.",
+      "Concentration is the root of all the higher abilities in man.",
+      "Empty your mind, be formless. Shapeless, like water. If you put water into a cup, it becomes the cup. You put water into a bottle and it becomes the bottle. You put it in a teapot, it becomes the teapot. Now, water can flow or it can crash. Be water, my friend.",
+      "A wise man can learn more from a foolish question than a fool can learn from a wise answer.",
+      "Using no way as a way, having no limitation as limitation.",
+      "Mistakes are always forgivable, if one has the courage to admit them.",
+      "I fear not the man who has practiced 10000 kicks once, but I fear the man who has practiced one kick 10000 times.",
+      "Knowing is not enough; We must apply. Willing is not enough; We must do.",
+      "Defeat is a state of mind; No one is ever defeated until defeat has been accepted as a reality.",
+      "Don’t neglect life by worrying about Death. – I don’t know what is the meaning of death, but I am not afraid to die – and I go on, non-stop, going forward [with life]. Even though, I, Bruce Lee, may die some day without fulfilling all of my ambitions, I will have no regrets. I did what I wanted to do and what I’ve done, I’ve done with sincerity and to the best of my ability. You can’t expect much more from life.",
+      "The enemy of development is this pain phobia – the unwillingness to do a tiny bit of suffering.",
+      "Art requires imagination. It requires Creativity. Creativity requires experience and experience comes from your life. And your life is expressed in your art.",
+      "Art lives where absolute freedom is because when it is not, there can be no creativity.",
+      "Remember no man is really defeated unless he is discouraged.",
+      "Never trouble trouble till trouble troubles you. I’ll not willingly offend, nor be easily offended.",
+      "To express oneself honestly, not lying to oneself—that, my friend, is very hard to do.",
+      "To take responsibility for one’s own actions, good and bad, is something else.",
+      "Man, he is constantly growing and when he is bound by a set pattern of ideas or way of doing things, that’s when he stops growing.",
+      "Ultimately the greatest help is self-help.",
+      "It is useless to try to stir the dirt Out of the muddy water, As it will become murkier. But leave it alone, And if it should be cleared; It will become clear by itself.",
+      "There will be calmness, tranquility, when one is free from external objects and is not perturbed.",
+      "Time means a lot to me because you see I am also a learner and am often lost in the joy of forever developing.",
+      "A fight is not won by one punch or kick. Either learn to endure or hire a bodyguard.",
+      "From form to formless and from finite to infinite.",
+      "Always be yourself and have faith in yourself. Do not go out and look for a successful personality and try to duplicate it.",
+      "Empty your cup so that it may be filled; become devoid to gain totality.",
+      "The measure of the moral worth of a man is his happiness. The better the man, the more happiness. Happiness is the synonym of well-being.",
+      "A quick temper will make a fool of you soon enough.",
+      "The primary Reality is not what I think, but that I live, for those also live who do not think.",
+      "You will never get any more out of this life than you expect.",
+      "The three most difficult things in life are: 1. To keep a secret. 2. To forget an injury. 3. To make good use of leisure.",
+      "Love is like a friendship caught on fire. In the beginning a flame, very pretty, often hot and fierce, but still only light and flickering. As love grows older, our hearts mature and our love becomes as coals, deep-burning and unquenchable.",
+      "Understanding requires not just a moment of perception, but a continuous awareness, a continuous state of inquiry without conclusion.",
+      "Learning is a constant process of discovery – a process without end.",
+      "Preparation for tomorrow is hard work today.",
+      "It is not a shame to be knocked down by other people. The important thing is to ask when you’re being knocked down, ‘Why am I being knocked down?’ If a person can reflect in this way, then there is hope for this person.",
+      "To become a champion requires a good mental attitude toward preparation. You have to accept the most tedious task with pleasure.",
+      "Everyone wants to learn how to win, but no one wants to learn how to accept defeat.",
+      "Knowledge earns you power, character earns you respect.",
+      "The more complicated and restricted the method, the less opportunity for expression of one’s original sense of freedom.",
+      "Life is wide, limitless. There is no border, no frontier.",
+      "When one has reached maturity in the art, one will have a formless form. It is like ice dissolving in water. When one has no form, one can be all forms; when one has no style, he can fit in with any style.",
+      "Simplicity is the key to brilliance.",
+      "Observe what is with undivided awareness.",
+      "The future looks extremely bright indeed, with lots of possibilities ahead — big possibilities. Like the song says, We’ve just begun.",
+      "Be a calm beholder of what is happening around you.",
+      "The mind is like a fertile garden in which anything that is planted, flowers or weeds, will grow.",
+      "If you want to do your duty properly, you should do just a little more than that.",
+      "Every morning like a scholar at his first class I prepare a blank mind for the day to write upon.",
+      "Faith is a state of mind that can be conditioned through self-discipline. Faith will accomplish.",
+      "If you spend too much time thinking about a thing, you’ll never get it done. Make at least one definite move daily toward your goal.",
+      "To me, the extraordinary aspect of martial arts lies in its simplicity. The easy way is also the right way, and martial arts is nothing at all special; the closer to the true way of martial arts, the less wastage of expression there is.",
+      "The key to immortality is first living a life worth remembering.",
+      "As long as I can remember I feel I have had this great creative and spiritual force within me that is greater than faith, greater than ambition, greater than confidence, greater than determination, greater than vision. It is all these combined. My brain becomes magnetized with this dominating force which I hold in my hand.",
+      "The word 'superstar' is an illusion.",
+      "The consciousness of self is the greatest hindrance to the proper execution of all physical action.",
+      "A good teacher protects his pupils from his own influence.",
+      "Be self aware, rather than a repetitious robot.",
+      "To know oneself is to study oneself in action with another person.",
+      "To me, defeat in anything is merely temporary…Defeat simply tells me that something is wrong in my doing; it is a path leading to success and truth.",
+      "Do not allow negative thoughts to enter your mind for they are the weeds that strangle confidence.",
+      "Moving, be like water. Still, be like a mirror. Respond like an echo.",
+      "The possession of anything begins in the mind.",
+      "Because one does not want to be disturbed, to be made uncertain, he establishes a pattern of conduct, of thought, a pattern of relationship to man etc. Then he becomes a slave to the pattern and takes the pattern to be the real thing.",
+      "Anger should be expressed. Any anger that is not coming out, flowing freely, will turn into sadism, power drive, stammering, and other means of torturing.",
+      "Action is a high road to self-confidence and esteem.",
+      "Life is something for which there is no answer; it must be understood from moment to moment.",
+      "Be like water making its way through cracks. Do not be assertive, but adjust to the object, and you shall find a way round or through it. If nothing within you stays rigid, outward things will disclose themselves.",
+      "Life is never stagnation. It is constant movement, un-rhythmic movement, as we as constant change. Things live by moving and gain strength as they go.",
+      "Take things as they are. Punch when you have to punch. Kick when you have to kick.",
+      "Boards don’t hit back.",
+      "Absorb what is useful, discard what is not, add what is uniquely your own."
+
+    ]
+  },
+  {
+    "idCountry": 4,
+    "country": "Djalâl ad-Dîn Rûmî",
+    "assetsIcon": "assets/images/button/rumi_ico.jpg",
+    "assetsCanvas": "assets/images/canvas/rumi_bg.jpg",
+    "idProverb": [
+
+      "Stop acting so small. You are the universe in ecstatic motion.",
+      "What you seek is seeking you.",
+      "Don’t grieve. Anything you lose comes round in another form.",
+      "Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing myself.",
+      "You were born with wings, why prefer to crawl through life?",
+      "Don’t be satisfied with stories, how things have gone with others. Unfold your own myth.",
+      "Everything that is made beautiful and fair and lovely is made for the eye of one who sees.",
+      "Why should I be unhappy? Every parcel of my being is in full bloom.",
+      "Raise your words, not voice. It is rain that grows flowers, not thunder.",
+      "Ignore those that make you fearful and sad, that degrade you back towards disease and death.",
+      "There is a candle in your heart, ready to be kindled.There is a void in your soul, ready to be filled.You feel it, don’t you?",
+      "Words are a pretext. It is the inner bond that draws one person to another, not words.",
+      "Goodbyes are only for those who love with their eyes. Because for those who love with heart and soul there is no such thing as separation.",
+      "Set your life on fire. Seek those who fan your flames.",
+      "I know you’re tired but come, this is the way.",
+      "This is love: to fly toward a secret sky, to cause a hundred veils to fall each moment. First to let go of life. Finally, to take a step without feet.",
+      "The wound is the place where the light enters you.",
+      "And so it is, that both the devil and the angelic spirits present us with objects of desire to awaken our power of choice.",
+      "Wherever you are, and whatever you do, be in love.",
+      "Start a huge, foolish project, like Noah…it makes absolutely no difference what people think of you.",
+      "Reason is powerless in the expression of love.",
+      "You have to keep breaking your heart until it opens.",
+      "These pains you feel are messengers. Listen to them.",
+      "Let the lover be disgraceful, crazy, absentminded. Someone sober will worry about things going badly. Let the lover be.",
+      "Your heart is the size of an ocean. Go find yourself in its hidden depths.",
+      "I want to sing like the birds sing, not worrying about who hears or what they think.",
+      "Take someone who doesn’t keep score, who’s not looking to be richer, or afraid of losing, who has not the slightest interest even in his own personality: he’s free.",
+      "When the world pushes you to your knees, you’re in the perfect position to pray.",
+      "Live life as if everything is rigged in your favor.",
+      "I am not this hair, I am not this skin, I am the soul that lives within.",
+      "Be full of sorrow, that you may become hill of joy; weep, that you may break into laughter.",
+      "Sell your cleverness and buy bewilderment. Cleverness is mere opinion. Bewilderment brings intuitive knowledge.",
+      "Be empty of worrying. Think of who created thought.",
+      "Let yourself be silently drawn by the strange pull of what you really love. It will not lead you astray.",
+      "The lion is most handsome when looking for food.",
+      "The very center of your heart is where life begins – the most beautiful place on earth.",
+      "Don’t you know yet? It is your light that lights the worlds.",
+      "Love is the bridge between you and everything.",
+      "Seek the wisdom that will untie your knot. Seek the path that demands your whole being.",
+      "To praise the sun is to praise your own eyes.",
+      "Dance until you shatter yourself.",
+      "It’s your road, and yours alone, others may walk it with you, but no one can walk it for you.",
+      "Why do you stay in prison when the door is so wide open.",
+      "As you start to walk on the way, the way appears.",
+      "Very little grows on jagged rock. Be ground. Be crumbled, so wild flowers will come up where you are.",
+      "What hurts you, blesses you. Darkness is your candle.",
+      "The only lasting beauty is the beauty of the heart.",
+      "The universe is not outside of you. Look inside yourself; everything that you want, you already are.",
+      "Close your eyes, fall in love, stay there.",
+      "If light is in your heart, you will find your way home.",
+      "Achieve some perfection yourself, so that you may not fall into sorrow by seeing the perfection in others.",
+      "This is a subtle truth. Whatever you love you are.",
+      "Forget safety. Live where you fear to live.",
+      "What is planted in each person’s soul will sprout.",
+      "In each moment the fire rages, it will burn away a hundred veils. And carry you a thousand steps toward your goal."
+
+    ]
+  },
+  {
+    "idCountry": 5,
+    "country": "Elvis Presley",
+    "assetsIcon": "assets/images/button/elvis_presley_ico.jpg",
+    "assetsCanvas": "assets/images/canvas/elvis_presley_bg.jpg",
+    "idProverb": [
+
+      "There are too many people that depend on me. I’m too obligated. I’m in too far to get out.",
+
+      "It’s human nature to gripe, but I’m going ahead and doing the best I can.",
+
+      "I never expected to be anybody important.",
+
+      "I’ll never feel comfortable taking a strong drink, and I’ll never feel easy smoking a cigarette. I just don’t think those things are right for me.",
+
+      "I’m trying to keep a level head. You have to be careful out in the world. It’s so easy to get turned.",
+
+      "I think I have something tonight that’s not quite correct for evening wear. Blue suede shoes.",
+
+      "It’s not how much you have that makes people look up to you, it’s who you are.",
+
+      "Values are like fingerprints. Nobody’s are the same, but you leave ’em all over everything you do.",
+
+      "Truth is like the sun. You can shut it out for a time, but it ain’t goin’ away.",
+
+      "When things go wrong, don’t go with them.",
+
+      "Sad thing is, you can still love someone and be wrong for them.",
+
+      "Do something worth remembering.",
+
+      "Don’t criticize what you don’t understand, son. You never walked in that man’s shoes.",
+
+      "Man, that record came out and was real big in Memphis. They started playing it, and it got real big. Don’t know why-the lyrics had no meaning.",
+
+      "I sure lost my musical direction in Hollywood. My songs were the same conveyor belt mass production, just like most of my movies were.",
+
+      "I’ve tried to lead a straight, clean life, not set any kind of a bad example.",
+
+      "I happened to come along in the music business when there was no trend.",
+
+      "The closest I ever came to getting married was just before I started singing. In fact, my first record saved my neck.",
+
+      "I’ve never written a song in my life. It’s all a big hoax.",
+
+      "That’s why I hate to get started in these jam sessions. I’m always the last one to leave.",
+
+      "I’m no hillbilly singer.",
+
+      "Since the beginning, it was just the same. The only difference, the crowds are bigger now.",
+
+      "My movements, ma’am, are all leg movements. I don’t do nothing with my body.",
+
+      "I like to sing ballads the way Eddie Fisher does and the way Perry Como does. But the way I’m singing now is what makes the money.",
+
+      "The colored folks been singing it and playing it just like I’m doin’ now, man, for more years than I know. I got it from them.",
+
+      "I don’t think I’m bad for people. If I did think I was bad for people, I would go back to driving a truck, and I really mean this.",
+
+      "I learned how important it is to entertain people and give them a reason to come and watch you play.",
+
+      "Rhythm is something you either have or don’t have, but when you have it, you have it all over.",
+
+      "The image is one thing and the human being is another. It’s very hard to live up to an image, put it that way.",
+
+      "Rock and roll music, if you like it, if you feel it, you can’t help but move to it. That’s what happens to me. I can’t help it.’",
+
+      "A live concert to me is exciting because of all the electricity that is generated in the crowd and on stage. It’s my favorite part of the business, live concerts.",
+
+      "I don’t know anything about music. In my line you don’t have to.",
+
+      "Some people tap their feet, some people snap their fingers, and some people sway back and forth. I just sorta do ’em all together, I guess.",
+
+      "I was training to be an electrician. I suppose I got wired the wrong way round somewhere along the line.",
+
+      "When I got outta High School I was driving a truck. I was just a poor boy from Memphis, Memphis.",
+
+      "When I was a boy, I always saw myself as a hero in comic books and in movies. I grew up believing this dream.",
+
+      "Later on they send me to Hollywood. To make movies. It was all new to me. I was only 21 years old.",
+
+      "The next thing I knew, I was out of the service and making movies again. My first picture was called, GI Blues. I thought I was still in the army.",
+
+      "After a hard day of basic training, you could eat a rattlesnake.",
+
+      "The army teaches boys to think like men.",
+
+      "I was an only child, and Mother was always right with me all my life. I used to get very angry at her when I was growing up-it’s a natural thing.",
+
+      "I’m so nervous. I’ve always been nervous, ever since I was a kid.",
+
+      "From the time I was a kid, I always knew something was going to happen to me. Didn’t know exactly what.",
+
+      "I knew by heart all the dialogue of James Dean’s films; I could watch Rebel Without a Cause a hundred times over.",
+
+      "Ambition is a dream with a V8 engine.",
+
+      "More than anything else, I want the folks back at home to think right of me.",
+
+      "I have no use for bodyguards, but I have very specific use for two highly trained certified public accountants.",
+
+      "Just because I managed to do a little something, I don’t want anyone back home to think I got the big head.",
+
+      "The Lord can give, and the Lord can take away. I might be herding sheep next year.",
+
+      "If you let your head get too big, it’ll break your neck."
+
+    ]
+  },
+  {
+    "idCountry": 6,
+    "country": "Henry Ford",
+    "assetsIcon": "assets/images/button/henry_ford_ico.jpg",
+    "assetsCanvas": "assets/images/canvas/henry_ford_bg.jpg",
+    "idProverb": [
+      "Before everything else, getting ready is the secret of success.",
+
+      "If you always do what you’ve always done, you’ll always get what you’ve always got.",
+
+      "There is no disgrace in honest failure; there is disgrace in fearing to fail.",
+
+      "There is one rule for the industrialist and that is: Make the best quality of goods possible at the lowest cost possible, paying the highest wages possible.",
+
+      "When everything seem to be going against you, remember that the airplane takes off against the wind, not with it ….",
+
+      "Givers have to set limits because takers rarely do.",
+
+      "If there is any one secret of success, it lies in the ability to get the other person’s point of view and see things from that person’s angle as well as from your own.",
+
+      "An idealist is a person who helps other people to be prosperous.",
+
+      "Coming together is the beginning. Keeping together is progress. Working together is success.",
+
+      "That the Devil finds work for idle hands to do is probably true. But there is a profound difference between leisure and idleness.",
+
+      "The whole secret of a successful life is to find out what is one’s destiny to do, and then do it.",
+
+      "Even a mistake may turn out to be the one thing necessary to a worthwhile achievement",
+
+      "There is no man living who isn’t capable of doing more than he thinks he can do.",
+
+      "To see a thing clearly in the mind makes it begin to take form.",
+
+      "Experience is the thing of supreme value.",
+
+      "A business absolutely devoted to service will have only one worry about profits. They will be embarrassingly large.",
+
+      "Nothing is particularly hard if you divide it into small jobs",
+
+      "It is not the employer who pays the wages. Employers only handle the money. It is the customer who pays the wages.",
+
+      "To do more for the world than the world does for you – that is success.",
+
+      "To teach that a comparatively few men are responsible for the greatest forward steps of mankind is the worst sort of nonsense.",
+
+      "You can’t learn in school what the world is going to do next year.",
+
+      "You say I started out with practically nothing, but that isn’t correct. We all start with all there is, it’s how we use it that makes things possible.",
+
+      "Everything comes to him who hustles while he waits.",
+
+      "Do you want to know the cause of war? It is capitalism, greed, the dirty hunger for dollars. Take away the capitalist, and you will sweep war from the earth.",
+
+      "Genius is seldom recognized for what it is: a great capacity for hard work.",
+
+      "As long as we look to legislation to cure poverty or to abolish special privilege we are going to see poverty and special privilege grow",
+
+      "Don’t find fault. Find a remedy.",
+
+      "There is joy in work. There is no happiness except in the realization that we have accomplished something.",
+
+      "I see no advantage in these new clocks. They run no faster than the ones made 100 years ago.",
+
+      "You don’t have to hold a position in order to be a leader.",
+
+      "If money is your hope for independence, you will never have it. The only real security that a man can have in this world is a reserve of knowledge, experience and ability.",
+
+      "It is not usual to speak of an employee as a partner, and yet what else is he?",
+
+      "Failure is only the opportunity more intelligently to begin again.",
+
+      "We try to pay a man what he is worth and we are not inclined to keep a man who is not worth more than the minimum wage.",
+
+      "Money is like an arm or leg-use it or lose it.",
+
+      "Most people spend more time and energy going around problems than in trying to solve them.",
+
+      "Quality means doing it right when no one is looking.",
+
+      "The one aim of these financiers is world control by the creation of inextinguishable debt.",
+
+      "A business that makes nothing but money is a poor business.",
+
+      "I cannot discover that anyone knows enough to say definitely what is and what is not possible.",
+
+      "The only real mistake is the one from which we learn nothing.",
+
+      "Sometimes you just don’t like somebody",
+
+      "The way to learn to do things is to do things. The way to learn a trade is to work at it. Success teaches how to succeed. Begin with the determination to succeed, and the work is half done already.",
+
+      "If everyone is moving forward together, then success takes care of itself.",
+
+      "Obstacles are those frightful things you see when you take your eyes off your goals.",
+
+      "There are three things that grow more precious with age; old wood to burn, old books to read, and old friends to enjoy.",
+
+      "As we serve our jobs we serve the world.",
+
+      "Any man who thinks he can be happy and prosperous by letting the government take care of him better take a closer look at the American Indian.",
+
+      "Vision without execution is just hallucination.",
+
+      "Money doesn’t make us anyway it just unmasks us.",
+
+      "Anyone who stops learning is old, whether at twenty or eighty. Anyone who keeps learning stays young.",
+
+      "Chop your own wood and it will warm you twice.",
+
+      "One of the greatest discoveries a person makes, one of their great surprises, is to find they can do what they were afraid they couldn’t do.",
+
+      "Speculation into thing already produced that is not business.",
+
+      "Failure is simply the opportunity to begin again, this time more intelligently.",
+
+      "Faith without action is delusion. Faith does not wait for miracles but produces them. If you think you can or if you think you can’t, you are right.",
+
+      "The ability to know how to get the information is more important than using the mind as a garage of facts.",
+
+      "Everything is in flux, and was meant to be. Life flows. We may live at the same number of the street, but it is never the same man who lives there.",
+
+      "The difficulty is not in finding men to advance but men willing to be advanced.",
+
+      "Everything can always be done better than it is being done."
+    ]
+  },
+  {
+    "idCountry": 7,
+    "country": "JK Rowling",
+    "assetsIcon": "assets/images/button/rowling_ico.jpg",
+    "assetsCanvas": "assets/images/canvas/rowling_bg.jpg",
+    "idProverb": [
+
+      "It matters not what someone is born, but what they grow to be.",
+
+      "Youth cannot know how age thinks and feels. But old men are guilty if they forget what it was to be young.",
+
+      "It takes a great deal of bravery to stand up to our enemies, but just as much to stand up to our friends.",
+
+      "To the well-organized mind, death is but the next great adventure.",
+
+      "Of course it is happening inside your head, Harry, but why on earth should that mean that it is not real?",
+
+      "Do not pity the dead, Harry. Pity the living, and, above all those who live without love.",
+
+      " I would like to be remembered as someone who did the best she could with the talent she had.",
+
+      "I don’t believe in the kind of magic in my books. But I do believe something very magical can happen when you read a good book.",
+
+      "Wit beyond measure is a man’s greatest treasure.",
+
+      "Greatness inspires envy, envy engenders spite, spite spawns lies.",
+
+      "Differences of habit and language are nothing at all if our aims are identical and our hearts are open.",
+
+      "We do not need magic to transform our world. We carry all the power we need inside ourselves already.",
+
+      "Humans have a knack of choosing precisely those things that are worst for them.",
+
+      "We’ve all got both light and dark inside us. What matters is the part we choose to act on. That’s who we really are."
+
+    ]
+  },
+  {
+    "idCountry": 8,
+    "country": "Karl Marx",
+    "assetsIcon": "assets/images/button/marx_ico.jpg",
+    "assetsCanvas": "assets/images/canvas/marx_bg.jpg",
+    "idProverb": [
+      "Keep people from their history, and they are easily controlled.",
+      "My object in life is to dethrone God and destroy capitalism.",
+      "Take away a nation’s heritage and they are more easily persuaded.",
+      "Accumulation of wealth at one pole is at the same time accumulation of misery, agony of toil, slavery, ignorance, brutality, mental degradation, at the opposite pole",
+      "We have no compassion and we ask no compassion from you. When our turn comes, we shall not make excuses for the terror.",
+      "Surround yourself with people who make you happy. People who make you laugh, who help you when you’re in need. People who genuinely care. They are the ones worth keeping in your life. Everyone else is just passing through.",
+      "The meaning of peace is the absence of opposition to socialism.",
+      "Communism begins where atheism begins.",
+      "The education of all children, from the moment that they can get along without a mother’s care, shall be in state institutions.",
+      "The democratic concept of man is false because it is Christian. The democratic concept holds that . . . each man is a sovereign being. This is the illusion, dream, and postulate of Christianity.",
+      "…the Communists everywhere support every revolutionary movement against the existing social and political order of things… They openly declare that their ends can be attained only by the forcible overthrow of all existing social conditions.",
+      "If you can cut the people off from their history, then they can be easily persuaded.",
+      "There are, besides, eternal truths, such as Freedom, , etc., that are common to all states of society. But Communism abolishes eternal truths, it abolishes all religion, and all morality, instead of constituting them on a new basis; it therefore acts in contradiction to all past historical experience.",
+      "The theory of Communism may be summed up in one sentence: Abolish all private property.",
+      "A heavy or progressive or graduated income tax is necessary for the proper development of Communism.",
+      "Catch a man a fish, and you can sell it to him. Teach a man to fish, and you ruin a wonderful business opportunity.",
+      "When the sufferers learn to think, then the thinkers will learn to suffer.",
+      "The last capitalist we hang shall be the one who sold us the rope.",
+      "Anyone who knows anything of history knows that great social changes are impossible without feminine upheaval. Social progress can be measured exactly by the social position of the fair sex, the ugly ones included.",
+      "From each according to his abilities, to each according to his needs.",
+      "There must be something rotten in the very core of a social system which increases its wealth without diminishing its misery",
+      "This young lady, who instantly overwhelmed me with her kindness, is the ugliest creature I have seen in my entire life, with repulsive Jewish facial features.",
+      "The first requisite for the happiness of the people is the abolition of religion.",
+      "Owners of capital will stimulate working class to buy more and more of expensive goods, houses and technology, pushing them to take more and more expensive credits, until their debt becomes unbearable. The unpaid debt will lead to bankruptcy of banks which will have to be nationalized and State will have to take the road which will eventually lead to communism.",
+      "Democracy is the road to socialism.",
+      "Is it a misfortune that magnificent California was seized from the lazy Mexicans who did not know what to do with it.",
+      "Religion is the opium of the masses.",
+      "Under no pretext should arms and ammunition be surrendered; any attempt to disarm the workers must be frustrated, by force if necessary.",
+      "Workers of the world unite; you have nothing to lose but your chains.",
+      "Follow your own path, no matter what people say.",
+      "The Jews of Poland are the smeariest of all races.",
+      "I wish to avenge myself against the One who rules above.",
+      "We know that violent measures against religion are nonsense, but this is an opinion: as socialism grows, religion will disappear. Its disappearance must be done by social development, in which education must play a part.",
+      "Taxes are the source of life for the bureaucracy, the army and the court, in short, for the whole apparatus of the executive power. Strong government and heavy taxes are identical.",
+      "There is no greater stupidity than for people…to marry and so surrender themselves to the small miseries of domestic and private life.",
+      "The existence of the state is inseparable from the existence of slavery.",
+      "Change the economic base and you will change human beings.",
+      "The production of too many useful things results in too many useless people.",
+      "Social reforms are never carried out by the weakness of the strong; but always by the strength of the weak.",
+      "May the devil take these peoples movements, especially when they are ‘peaceful’.",
+      "To destroy Christianity, we must first destroy the British Empire.",
+      "Do not be deluded by the abstract word Freedom. Whose freedom? Not the freedom of one individual in relation to another, but freedom of Capital to crush the worker.",
+      "Religion is the impotence of the human mind to deal with occurrences it cannot understand.",
+      "A people without a heritage are easily persuaded.",
+      "The full man does not understand the wants of the hungry",
+      "The unity of the bourgeoisie can be shaken only by the unity of the proletariat.",
+      "With disdain I will throw my gauntlet full in the fact of the world and see the collapse of this pygmy giant. Then will I wander god-like and victorious through the ruins of the world. And giving my words an active force, I will feel equal to the Creator.",
+      "The less you eat, drink and read books; the less you go to the theatre, the dance hall, the public house; the less you think, love, theorize, sing, paint, fence, etc., the more you save-the greater becomes your treasure which neither moths nor dust will devour-your capital. The less you are, the more you have; the less you express your own life, the greater is your alienated life-the greater is the store of your estranged being.",
+      "If anything is certain, it is that I myself am not a Marxist.",
+      "Let us consider the actual, worldly Jew – not the Sabbath Jew, as Bauer does, but the everyday Jew. … What is the worldly religion of the Jew? Huckstering. What is his worldly God? Money. Money is the jealous god of Israel, in face of which no other god may exist. Money degrades all the gods of man – and turns them into commodities. The bill of exchange is the real god of the Jew. His god is only an illusory bill of exchange. The chimerical nationality of the Jew is the nationality of the merchant, of the man of money in general.",
+      "Religion is the sigh of the oppressed creature, the heart of a heartless world, and the soul of soulless conditions. It is the opium of the people.",
+      "Private property has made us so stupid and partial that an object is only ours when we have it, when it exists for us as capital … Thus all the physical and intellectual senses have been replaced by … the sense of having.",
+      "History repeats itself, the first as tragedy, then as farce.",
+      "The task is not just to understand the world but to change it.",
+      "The class struggle necessarily leads to the dictatorship of the proletariat.",
+      "Social progress can be measured exactly by the social position of the fair sex.",
+      "The state is the executive committee of the ruling class.",
+      "Be careful to trust a person who does not like wine.",
+      "The social principles of Christianity preach cowardice, self-contempt, abasement, submission, humility, in a word all the qualities of the canaille",
+      "I do not like money, money is the reason we fight.",
+      "The rich will do anything for the poor but get off their backs.",
+      "The only antidote to mental suffering is physical pain.",
+      "In the eyes of dialectical philosophy, nothing is established for all times, nothing is absolute or sacred.",
+      "Landlords, like all other men, love to reap where they never sowed.",
+      "The history of all previous societies has been the history of class struggles."
+
+    ]
+  },
+  {
+    "idCountry": 9,
+    "country": "Malcolm X",
+    "assetsIcon": "assets/images/button/malcolmx_ico.jpg",
+    "assetsCanvas": "assets/images/canvas/malcolmx_bg.jpg",
+    "idProverb": [
+
+      "We need more light about each other. Light creates understanding, understanding creates love, love creates patience, and patience creates unity.",
+      "If you’re not careful, the newspapers will have you hating the people who are being oppressed, and loving the people who are doing the oppressing.",
+      "One of the first things I think young people, especially nowadays, should learn is how to see for yourself and listen for yourself and think for yourself. Then you can come to an intelligent decision for yourself. If you form the habit of going by what you hear others say about someone or going by what others think about someone, instead of searching that thing out for yourself and seeing for yourself, you will be walking west when you think you’re going east, and you will be walking east when you think you’re going west.",
+      "A wise man can play the part of a clown, but a clown can’t play the part of a wise man.",
+      "The media’s the most powerful entity on earth. They have the power to make the innocent guilty and to make the guilty innocent, and that’s power. Because they control the minds of the masses.",
+      "If you stick a knife nine inches into my back and pull it out three inches, that is not progress. Even if you pull it all the way out, that is not progress. Progress is healing the wound, and America hasn’t even begun to pull out the knife.",
+      "You’re not supposed to be so blind with patriotism that you can’t face reality. Wrong is wrong, no matter who says it.",
+      "When the people who are in power want to use again, create an image, to justify something that’s bad, they use the press. And they’ll use the press to create a humanitarian image, for a devil, or a devil image for a humanitarian. They’ll take a person who’s a victim of the crime, and make it appear he’s the criminal, and they’ll take the criminal and make it appear that he’s the victim of the crime.",
+      "When ‘I’ replaced with ‘We’, even the illness becomes wellness.",
+      "If you don’t stand for something you will fall for anything.",
+      "Be peaceful, be courteous, obey the law, respect everyone; but if someone puts his hand on you, send him to the cemetery.",
+      "When you live in a poor neighborhood, you are living in an area where you have poor schools. When you have poor schools, you have poor teachers. When you have poor teachers, you get a poor education. When you get a poor education, you can only work in a poor-paying job. And that poor-paying job enables you to live again in a poor neighborhood. So, it’s a very vicious cycle.",
+      "I have more respect for a man who lets me know where he stands, even if he’s wrong, than the one who comes up like an angel and is nothing but a devil.",
+      "You and I have never seen democracy; all we’ve seen is hypocrisy.",
+      "Education is the passport to the future, for tomorrow belongs to those who prepare for it today.",
+      "If we are extremists, then we are not ashamed of it, for the conditions that our people suffer are extreme, and extreme illness can not be cured with moderate medicine",
+
+      "Only a fool would let his enemy teach his children.",
+      "You’re living at a time of extremism, a time of revolution A time where there’s got to be a change. People in power have misused it And now there has to be a change and a better world has to be built And the only way is going to be built is with extreme methods And I for one will join with anyone, don’t care what color you are As long as you want change this miserable condition that exists on this earth",
+
+      "Learn to see, listen, and think for yourself.",
+      "I’m for truth, no matter who tells it. I’m for justice, no matter who it is for or against. I’m a human being, first and foremost, and as such I’m for whoever and whatever benefits humanity as a whole.",
+      "I believe that there will be ultimately be a clash between the oppressed and those who do the oppressing. I believe that there will be a clash between those who want freedom, justice and equality for everyone and those who want to continue the system of exploitation. I believe that there will be that kind of clash, but I don’t think it will be based on the color of the skin.",
+      "You can’t separate peace from freedom because no one can be at peace unless he has his freedom.",
+      "There can be no black-white unity until there is first some black unity… We cannot think of uniting with others, until after we have first united among ourselves. We cannot think of being acceptable to others until we have first proven acceptable to ourselves.",
+      "If you form the habit of taking what someone else says about a thing without checking it out for yourself, you’ll find that other people will have you hating your friends and loving your enemies.",
+      "The most disrespected person in America is the black woman. The most unprotected person in America is the black woman. The most neglected person in America is the black woman.",
+      "The mother is the first teacher of the child. The message she gives that child, that child gives to the world.",
+      "Don’t be in a hurry to condemn because he doesn’t do what you do or think as you think or as fast. There was a time when you didn’t know what you know today.",
+      "That’s not a chip on my shoulder, that’s your foot on my neck.",
+
+      "For tommorow belongs to those that prepare for it today.",
+      "Usually when people are sad, they don’t do anything. They just cry over their condition. But when they get angry, they bring about a change.",
+      "Education is an important element in the struggle for human rights. It is the means to help our children and thereby increase self-respect. Education is our passport to the future, for tomorrow belongs to the people who prepare for it today.",
+      "America’s greatest crime against the black man was not slavery or lynching, but that he was taught to wear a mask of self-hate and self-doubt.",
+      "One day, may we all meet together in the light of understanding.",
+
+      "The greatest mistake of the movement has been trying to organize sleeping people around specific goals. You have to wake the people up first, then you’ll get action.",
+      "When you hear me say 'by any means necessary,' I mean exactly that. I believe in anything that is necessary to correct unjust conditions-political, economic, social, physical, anything that is necessary.",
+      "If you have no critics you’ll likely have no success.",
+      "Just as a tree without roots is dead, a people without history or cultural roots also becomes a dead people.",
+      "As long as a white man does it, it’s alright, a black man is supposed to have no feelings. But when a black man strikes back he’s an extremist, he’s supposed to sit passively and have no feelings, be nonviolent, and love his enemy no matter what kind of attack, verbal or otherwise, he’s supposed to take it. But if he stands up in any way and tries to defend himself, then he’s an extremist.",
+      "People don’t realize how a man’s whole life can be changed by one book.",
+      "I’m for truth, no matter who tells it. I’m for justice, no matter who it’s for or against.",
+      "The mental flexibility of the wise man permits him to keep an open mind and enables him to readjust himself whenever it becomes necessary for a change.",
+      "It”s good to keep wide-open ears and listen to what everybody else has to say, but when you come to make a decision, you have to weigh all of what you”ve heard on its own, and place it where it belongs, and come to a decision for yourself; you”ll never regret it. But if you form the habit of taking what someone else says about a thing without checking it out for yourself, you”ll find that other people will have you hating your friends and loving your enemies.",
+      "I believe in human beings, and that all human beings should be respected as such, regardless of their color.",
+      "Read absolutely everything you get your hands on because you’ll never know where you’ll get an idea from.",
+      "If not now then when, if not me then who?"
+
+    ]
+  },
+  {
+    "idCountry": 10,
+    "country": "Michael Jordan",
+    "assetsIcon": "assets/images/button/jordan_ico.jpg",
+    "assetsCanvas": "assets/images/canvas/jordan_bg.jpg",
+    "idProverb": [
+
+      " Never say never. Because limits, like fears, are often just an illusion.",
+
+      " My attitude is that if you push me towards something that you think is a weakness, then I will turn that perceived weakness into a strength.",
+
+      " I know fear is an obstacle for some people, but it is an illusion to me. Failure always made me try harder next time.",
+
+      " Some people want it to happen, some wish it would happen, others make it happen.",
+
+      " If you run into a wall, don’t turn around and give up. Figure out how to climb it, go through it, or work around it.",
+
+      " To be successful you have to be selfish, or else you never achieve. And once you get to your highest level, then you have to be unselfish. Stay reachable. Stay in touch. Don't isolate.",
+
+      " My father used to say that it’s never too late to do anything you wanted to do. And he said you never know what you can accomplish until you try.",
+
+      " Enjoy every minute of life. Never second-guess life.",
+
+      " If you quit once it becomes a habit. Never quit.",
+
+      " The minute you get away from fundamentals, whether its proper technique, work ethic, or mental preparation, the bottom can fall out of your game, your schoolwork, your job, whatever you're doing.",
+
+      " I approach everything step by step... I had always set short-term goals. As I look back, each one of the steps or successes led to the next one.",
+
+      " I’ve always believed that if you put in the work, the results will come.",
+
+      " Don't let them drag you down by rumors just go with what you believe in.",
+
+      " If you do the work, you get rewarded. There are no shortcuts in life.",
+
+      " I hope the millions of people I’ve touched have the optimism and desire to share their goals and hard work and perseverance with a positive attitude.",
+
+      " I’m not out there sweating for three hours every day just to find out what it feels like to sweat.",
+
+      " Once I made a decision, I never thought about it again.",
+
+      " My body could stand the crutches but my mind couldn't stand the sideline.",
+
+      " I've never been afraid to fail.",
+
+      " I want to wake up every day and do whatever comes in my mind, and not feel pressure or obligations to do anything else in my life.",
+
+      " Failure is acceptable but not trying is a whole different ball park.",
+
+      " Heart is what separates the good from the great.",
+
+      " I never looked at the consequences of missing a big shot... when you think about the consequences you always think of a negative result.",
+
+      " Every time I feel tired while I am exercising and training, I close my eyes to see that picture, to see that list with my name. This usually motivates me to work again.",
+
+      " I’d like to be settled into somewhat of a normal life. Somewhat. I know it’s never going to be completely normal.",
+
+      " You have competition every day because you set such high standards for yourself that you have to go out every day and live up to that.",
+
+      " I built my talents on the shoulders of someone else’s talent.",
+
+      " I believe greatness is an evolutionary process that changes and evolves era to era.",
+
+      " Sometimes you need to get hit in the head to realize that you’re in a fight.",
+
+      " Talent wins games, but teamwork and intelligence wins championships.",
+
+      " In any investment, you expect to have fun and make money.",
+
+      " I play to win, whether during practice or a real game. And I will not let anything get in the way of me and my competitive enthusiasm to win.",
+
+      " Even when I'm old and grey, I won't be able to play it, but I'll still love the game.",
+
+      " There is no 'i' in team but there is in win.",
+
+      " Just play. Have fun. Enjoy the game.",
+
+      " My heroes are and were my parents. I can't see having anyone else as my heroes.",
+
+      " The game has its ups and downs, but you can never lose focus of your individual goals and you can't let yourself be beat because of lack of effort.",
+
+      " I’ve never lost a game, I just ran out of time.",
+
+      " It’s heavy duty to try to do everything and please everybody. My job was to go out there and play the game of basketball as best I can. People may not agree with that. I can’t live with what everyone’s impression of what I should or what I shouldn’t do.",
+
+      " Being Michael Jordan means acting the same as I always have."
+
+    ]
+  },
+  {
+    "idCountry": 11,
+    "country": "Omar Mukhtar",
+    "assetsIcon": "assets/images/button/mukhtar_ico.jpg",
+    "assetsCanvas": "assets/images/canvas/mukhtar_bg.jpg",
+    "idProverb": [
+
+      "From God we have come and to God we must return.",
+      "I never submitted to the Italian government: I only had conversations with it.",
+      "We do not surrender — we win or die.",
+      "I am not sorry for what I did because it was God's will.",
+      "It is useless for you to ask me single facts. Whatever has been committed against Italy and the Italians for the past ten years was willed and permitted by me, whenever I did not personally take part in the acts themselves. … The raids, too, were ordered by me and some of them carried out by me.",
+      "I took part in all battles. If sometimes I was not there, the operation was likewise carried out under my orders.",
+      "I will not leave this place until I achieve one of the two highest levels; martyrhood or victory."
+
+    ]
+  },
+  {
+    "idCountry": 12,
+    "country": "Stephen King",
+    "assetsIcon": "assets/images/button/king_ico.jpg",
+    "assetsCanvas": "assets/images/canvas/king_bg.jpg",
+    "idProverb": [
+      "Sometimes human places, create inhuman monsters.",
+
+      "Monsters are real. Ghosts are too. They live inside of us, and sometimes, they win.",
+
+      "Wendy? Darling? Light of my life. I’m not gonna hurt ya. I’m just going to bash your brains in.",
+
+      "This inhuman place makes human monsters.",
+
+      "The tears that heal are also the tears that scald and scourge.",
+
+      "The sleep of reason breeds monsters.",
+
+      "How many times, over how many years, had he—a grown man—asked for the mercy of another chance? He was suddenly so sick of himself, so revolted, that he could have groaned aloud.",
+
+      "She had never dreamed there could be so much pain in a life when there was nothing physically wrong.",
+
+      "And the most terrifying question of all may be just how much horror the human mind can stand and still maintain a wakeful, staring, unrelenting sanity.",
+
+      "Don’t go beyond, no matter how much you feel you need to, Doctor. The barrier was not made to be broken. Remember this: there is more power here than you know. It is old and always restless. Remember.",
+
+      "Cats were the gangsters of the animal world, living outside the law and often dying there. There were a great many of them who never grew old by the fire.",
+
+      "Hey, police? I just saw the world’s oldest, slowest kid climbing into Pleasantview Cemetery. Looked like he was dying to get in. Yeah, looked like a grave matter to me. Kidding? Oh no, I’m in dead earnest. Maybe you ought to dig into it.",
+
+      "Maybe she’ll learn something about what death really is, which is where the pain stops and the good memories begin. Not the end of life but the end of pain.",
+
+      "Death is a mystery, and burial is a secret.",
+
+      "Life sucks, then you die.",
+
+      "That lesson suggests that in the end, we can only find peace in our human lives by accepting the will of the universe.",
+
+      "I am your number one fan. There is nothing to worry about. You are going to be just fine. I am your number one fan!",
+
+      "The rain. Sometimes it gives me the blues. When you first came here, I only loved the writer part of Paul Sheldon. Now I know I love the rest of him, too. I know you don’t love me, don’t say you do. You’re beautiful, brilliant, a famous man of the world and I’m… not a movie star type. You’ll never know the fear of losing someone like you if you’re someone like me.",
+
+      "No matter how much he strained, it was a good nine inches above the tips of his fingers but he reached anyway, unable to believe Fate or God or Whoever could be so cruel.",
+
+      "Now the time has come. I put two bullets in my gun. One for me, and one for you. Oh darling, it will be so beautiful.",
+
+      "I thought you were good Paul… but you’re not good. You’re just another lying ol’ dirty birdy.",
+
+      "And don’t even think about anybody coming for you. Not the doctors, not your agent, not your family. ‘Cause I never called them. Nobody knows you’re here. You better hope nothing happens to me. Because if I die… you die.",
+
+      "Book’s almost finished, your legs are getting better. Soon you’ll be wanting to leave.",
+
+      "God came to me last night and told me your purpose for being here. I am going to help you write a new book.",
+
+      "What’s the matter? WHAT’S THE MATTER? I will tell you what’s the matter! I go out of my way for you! I do everything to try and make you happy. I feed you, I clean you, I dress you, and what thanks do I get? ' Oh, you bought the wrong paper, Anne, I can’t write on this paper, Anne!' Well, I’ll get your stupid paper but you just better start showing me a little appreciation around here, Mr.MAN!",
+
+      " High school isn’t a very important place.When you’re going you think it’s a big deal, but when it’s over nobody really thinks it was great unless they’re beered up.",
+
+      " The low bird is not picked tenderly out of the dust by its fellows; rather, it is dispatched quickly and without mercy.",
+
+      " Sorry is the Kool - Aid of human emotions.It’s what you say when you spill a cup of coffee or throw a gutter ball when you’re bowling with the girls in the league.True sorrow is as rare as true love.",
+
+      " But hardly anybody ever finds out that their actions really, actually, hurt other people!People don’t get better, they just get smarter.When you get smarter you don’t stop pulling the wings off flies, you just think of better reasons for doing it.",
+
+      " And suddenly it didn’t seem to matter anymore, nothing would matter if she could turn over, turn over and see the stars, turn over and look once and die.",
+
+      " Mind over matter in any form is a terrific drain on the body’s resources.",
+
+      " Telekinesis is the ability to move objects or to cause changes in objects by force of the mind.",
+
+      " The overall impression is one of a town that is waiting to die.It is not enough, these days, to say that Chamberlain will never be the same.It may be closer to the truth to say that Chamberlain will simply never again be.",
+
+      " We lie best when we lie to ourselves.",
+
+      " Eddie discovered one of his childhood’s great truths.Grownups are the real monsters, he thought.",
+
+      " Come on back and we’ll see if you remember the simplest thing of all – how it is to be children, secure in belief and thus afraid of the dark.",
+
+      " Everything’s a lot tougher when it’s for real.That’s when you choke.When it’s for real.",
+
+      " And George saw the clown’s face change.What he saw then was terrible enough to make his worst imaginings of the thing in the cellar look like sweet dreams; what he saw destroyed his sanity in one clawing stroke.",
+
+      " Politics always change.Stories never do .",
+
+      " Want a balloon ? ",
+
+      " You pay for what you get, you own what you pay for… and sooner or later whatever you own comes back home to you.",
+
+      " Like some dogs : kick them once and they never trust you again, no matter how nice you are to them.",
+
+      " Sometimes there is absolutely no difference at all between salvation and damnation.",
+
+      " The world turns, that’s all.You can hold on and turn with it, or stand up to protest and be spun right off.",
+
+      " We have once again succeeded in destroying what we could not create.",
+
+      " Time takes it all, whether you want it to or not.",
+
+      " On the day of my judgment, when I stand before God, and He asks me why did I kill one of his true miracles, what am I gonna say ? That it was my job ? My job ? ",
+
+      " We each owe a death, there are no exceptions, I know that, but sometimes, oh God, the Green Mile is so long.",
+
+      " It was sweet and lovely, that smile, perhaps the more so because it wasn’t complicated by much in the way of thought.",
+
+      " Rightly tired of the pain İ hear and feel, boss… where we’s comin from or goin to or why… If İ could end it, İ would.But İ can’t.",
+
+      " The scariest moment is always just before you start.",
+
+      " You can, you should, and if you’re brave enough to start, you will.",
+
+      " Remember, Hope is a good thing, maybe the best of things, and no good thing ever dies.",
+
+      " Amateurs sit and wait for inspiration, the rest of us just get up and go to work.",
+
+      " The place where you made your stand never mattered.Only that you were there…and still on your feet.",
+
+      " There’s no harm in hoping for the best as long as you’re prepared for the worst.",
+
+      " People who try hard to do the right thing always seem mad.",
+
+      " Fault always lies in the same place: with him weak enough to lay blame.",
+
+      " The most important things are the hardest to say.",
+
+      " We are going to fight.We are going to be hurt.And in the end, we will stand."
+
+    ]
+  },
+  {
+    "idCountry": 13,
+    "country": "Steve Jobs",
+    "assetsIcon": "assets/images/button/jobs_ico.jpg",
+    "assetsCanvas": "assets/images/canvas/jobs_bg.jpg",
+    "idProverb": [
+
+      "Your time is limited, so don’t waste it living someone else’s life.",
+
+      "I always thought of myself as a Humanities person as a kid, but I liked electronics…Then I read something that one of my heroes, Edwin Land of Polaroid, said about the importance of people who could stand at the intersection of humanities and sciences, and I decided that’s what I wanted to do.",
+
+      "My favorite things in life don’t cost any money. It’s really clear that the most precious resource we all have is time.",
+
+      "When you first start off trying to solve a problem, the first solutions you come up with are very complex, and most people stop there. But if you keep going, and live with the problem and peel more layers of the onion off, you can oftentimes arrive at some very elegant and simple solutions. Most people just don’t put in the time or energy to get there. We believe that customers are smart, and want objects which are well thought through.",
+
+      "The only way to do great work is to love what you do.",
+
+      "Sometimes when you innovate, you make mistakes. It is best to admit them quickly, and get on with improving your other innovations.",
+
+      "We don’t get a chance to do that many things and everyone should be really excellent. Because this is our life. Life is brief, and then you die, you know? And we’ve all chosen to do this with our lives. So it better be damn good. It better be worth it.",
+
+      "That’s been one of my mantras — focus and simplicity. Simple can be harder than complex; you have to work hard to get your thinking clean to make it simple.",
+
+      "I’m convinced that about half of what separates the successful entrepreneurs from the non-successful ones is pure perseverance. It is so hard. You put so much of your life into this thing. There are such rough moments in time that I think most people give up. I don’t blame them. It’s really tough and it consumes your life. If you’ve got a family and you’re in the early days of a company, I can’t imagine how one could do it. I’m sure it’s been done but it’s rough. It’s pretty much an 18-hour day job, seven days a week for a while. Unless you have a lot of passion about this, you’re not going to survive.",
+
+      "Quality is much better than quantity. One home run is much better than two doubles.",
+
+      "I think if you do something and it turns out pretty good, then you should go do something else wonderful, not dwell on it for too long. Just figure out what’s next.",
+
+      "The greatest thing is when you do put your heart and soul into something over an extended period of time, and it is worth it.",
+
+      "It’s really hard to design products by focus groups. A lot of times, people don’t know what they want until you show it to them.",
+
+      "Being the richest man in the cemetery doesn’t matter to me … Going to bed at night saying we’ve done something wonderful. That’s what matters to me.",
+
+      "When you grow up you tend to get told the world is the way it is and…to live your life inside the world. Try not to bash into the walls too much. Try to have a nice family, have fun, save a little money. That’s a very limited life. Life can be much broader once you discover one simple fact: Everything around you that you call life was made up by people that were no smarter than you and you can change it, you can influence it, you can build your own things that other people can use. Once you learn that, you’ll never be the same again.",
+
+      "We are inventing the future,(Jobs told a job applicant]). Think about surfing on the front edge of a wave. It’s really exhilarating. Now think about dog-paddling at the tail end of that wave. It wouldn’t be anywhere near as much fun. Come down here and make a dent in the universe.",
+
+      "Be a yardstick of quality. Some people aren’t used to an environment where excellence is expected.",
+
+      "You can’t connect the dots looking forward; you can only connect them looking backward. So you have to trust that the dots will somehow connect in your future. You have to trust in something — your gut, destiny, life, karma, whatever. This approach has never let me down, and it has made all the difference in my life.",
+
+      "Getting fired from Apple was the best thing that could have ever happened to me. The heaviness of being successful was replaced by the lightness of being a beginner again. It freed me to enter one of the most creative periods of my life.",
+
+      "Innovation distinguishes between a leader and a follower.",
+
+      "I had no idea what I wanted to do with my life and no idea how college was going to help me figure it out. And here I was spending all of the money my parents had saved their entire life. So I decided to drop out and trust that it would all work out okay…The minute I dropped out I [began] dropping in on the [classes] that looked interesting… I learned about serif and sans serif typefaces, about varying the amount of space between different letter combinations, about what makes great typography great. It was beautiful, historical, artistically subtle in a way that science can’t capture, and I found it fascinating.",
+
+      "My model for business is The Beatles. They were four guys who kept each other’s kind of negative tendencies in check. They balanced each other, and the total was greater than the sum of the parts. That’s how I see business: Great things in business are never done by one person, they’re done by a team of people.",
+
+      "My self-identity does not revolve around being a businessman, though I recognize that is what I do. I think of myself more as a person who builds neat things. I like building neat things. I like making tools that are useful to people. I like working with very bright people. I like interacting in the world of ideas, though somehow those ideas have to be tied to some physical reality. One of the things I like the most is dropping a new idea on a bunch of incredibly smart and talented people and then letting them work it out themselves. I like all of that very, very much.",
+
+      "Don’t let the noise of other’s’ opinions drown out your own inner voice.",
+
+      "When you’re a carpenter making a beautiful chest of drawers, you’re not going to use a piece of plywood on the back, even though it faces the wall and nobody will see it. You’ll know it’s there, so you’re going to use a beautiful piece of wood on the back. For you to sleep well at night, the aesthetic, the quality, has to be carried all the way through.",
+
+      "Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do. If you haven’t found it yet, keep looking. Don’t settle. As with all matters of the heart, you’ll know when you find it.",
+
+      "Even if we lose our money, we’ll have a company,",
+      "For once in our lives, we’ll have a company.",
+
+      "I don’t really care about being right, I just care about success. You’ll find a lot of people that will tell you I had a very strong opinion, and they presented evidence to the contrary and five minutes later I changed my mind. I don’t mind being wrong, and I’ll admit that I’m wrong a lot. It doesn’t really matter to me too much. What matters to me is that we do the right thing.",
+
+      "You think, well, focusing is saying yes. No, focusing is about saying no. Focusing is about saying no. And you’ve got to say no, no, no. When you say no, you piss off people.",
+
+      "Details matter, it’s worth waiting to get it right.",
+
+      "Picasso had a saying – ‘good artists copy, great artists steal‘ – and we have always been shameless about stealing great ideas.",
+
+      "Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they didn’t really do it, they just saw something. It seemed obvious to them after a while.",
+
+      "Remembering that you are going to die is the best way I know to avoid the trap of thinking you have something to lose. You are already naked. There is no reason not to follow your heart.",
+
+      "I’m as proud of many of the things we haven’t done as the things we have done. Innovation is saying no to a thousand things.",
+
+      "Bottom line is, I didn’t return to Apple to make a fortune. I’ve been very lucky in my life and already have one. When I was 25, my net worth was $100 million or so. I decided then that I wasn’t going to let it ruin my life. There’s no way you could ever spend it all, and I don’t view wealth as something that validates my intelligence.",
+
+      "I’ve always been attracted to the more revolutionary changes. I don’t know why. Because they’re harder. They’re much more stressful emotionally. And you usually go through a period where everybody tells you that you’ve completely failed.",
+
+      "Things don’t have to change the world to be important.",
+
+      "I had no idea what I wanted to do with my life and no idea how college was going to help me figure it out…And here I was spending all of the money my parents had saved their entire life. So I decided to drop out and trust that it would all work out OK. It was pretty scary at the time, but looking back it was one of the best decisions I ever made.",
+
+      "Technology is nothing. What’s important is that you have faith in people, that they’re basically good and smart, and if you give them tools, they’ll do wonderful things with them.",
+
+      "No one wants to die. Even people who want to go to heaven don’t want to die to get there. And yet death is the destination we all share. No one has ever escaped it. And that is as it should be, because death is very likely the single best invention of life.",
+
+      "Design is not just what it looks like and feels like. Design is how it works.",
+
+      "You can’t just ask customers what they want and then try to give that to them. By the time you get it built, they’ll want something new.",
+
+      "Innovation has nothing to do with how many R&D dollars you have. When Apple came up with the Mac, IBM was spending at least 100 times more on R&D. It’s not about money. It’s about the people you have, how you’re led, and how much you get it.",
+
+      "Sometimes life hits you in the head with a brick. Don’t lose faith.",
+
+      "You should never start a company with the goal of getting rich. Your goal should be making something you believe in and making a company that will last.",
+
+      "Innovation comes from people meeting up in the hallways or calling each other at 10:30 at night with a new idea, or because they realized something that shoots holes in how we’ve been thinking about a problem. It’s ad hoc meetings of six people called by someone who thinks he has figured out the coolest new thing ever and who wants to know what other people think of his idea.",
+
+      "If you just sit and observe, you will see how restless your mind is. If you try to calm it, it only makes it worse, but over time it does calm, and when it does, there’s room to hear more subtle things – that’s when your intuition starts to blossom and you start to see things more clearly and be in the present more. Your mind just slows down, and you see a tremendous expanse in the moment. You see so much more than you could see before. It’s a discipline; you have to practice it.",
+
+      "You’ve got to start with the customer experience and work back toward the technology – not the other way around.",
+
+      "Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma — which is living with the results of other people’s thinking. Don’t let the noise of others’ opinions drown out your own inner voice. And most important, have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary.",
+
+      "Here’s to the crazy ones, the misfits, the rebels, the troublemakers, the round pegs in the square holes. The ones who see things differently; they’re not fond of rules. You can quote them, disagree with them, glorify or vilify them, but the only thing you can’t do is ignore them because they change things. They push the human race forward, and while some may see them as the crazy ones, we see genius, because the ones who are crazy enough to think that they can change the world, are the ones who do.",
+
+      "You have to be burning with an idea, or a problem, or a wrong that you want to right. If you’re not passionate enough from the start, you’ll never stick it out.",
+
+      "If you live each day as it was your last, someday you’ll most certainly be right.",
+
+      "Stay hungry. Stay foolish.",
+
+      "Sometimes life’s going to hit you in the head with a brick. Don’t lose faith. I’m convinced that the only thing that kept me going was that I loved what I did.",
+
+      "Why join the navy if you can be a pirate?",
+
+      "I’ve been rejected, but I am still in love.",
+
+      "If you’re gonna make connections that are innovative, you have to not have the same bag of experience as everyone else does.",
+
+      "When You Need A Miracle, Be Miracle.",
+
+      "It doesn’t make sense to hire good people and tell them what to do; we hire good people so they can tell us what to do.",
+
+      "God gave us the senses to let us feel the love in everyone’s heart, not the illusions brought about by wealth."
+
+    ]
+  },
+  {
+    "idCountry": 14,
+    "country": "Sun Tzu",
+    "assetsIcon": "assets/images/button/suntzu_ico.jpg",
+    "assetsCanvas": "assets/images/canvas/suntzu_bg.jpg",
+    "idProverb": [
+
+      " Let your plans be dark and impenetrable as night, and when you move, fall like a thunderbolt. ",
+
+      " What the ancients called a clever fighter is one who not only wins, but excels in winning with ease. ",
+
+      " Mystify, mislead, and surprise the enemy. ",
+
+      " Plan for what it is difficult while it is easy, do what is great while it is small. ",
+
+      " Appear weak when you are strong, and strong when you are weak. ",
+
+      " The whole secret lies in confusing the enemy, so that he cannot fathom our real intent. ",
+
+      " He will win who, prepared himself, waits to take the enemy unprepared. ",
+
+      " Foreknowledge cannot be gotten from ghosts and spirits, cannot be had by analogy, cannot be found out by calculation. It must be obtained from people, people who know the conditions of the enemy. ",
+
+      " To fight and conquer in all your battles is not supreme excellence; supreme excellence consists in breaking the enemy's resistance without fighting. ",
+
+      " If his forces are united, separate them. ",
+
+      " Do many calculations lead to victory, and few calculations to defeat. ",
+
+      " If you know the enemy and know yourself, you need not fear the result of a hundred battles. If you know yourself but not the enemy, for every victory gained you will also suffer a defeat. If you know neither the enemy nor yourself, you will succumb in every battle. ",
+
+      " Rouse him, and learn the principle of his activity or inactivity. Force him to reveal himself, so as to find out his vulnerable spots. ",
+
+      " Move not unless you see an advantage; use not your troops unless there is something to be gained; fight not unless the position is critical. ",
+
+      " If you fight with all your might, there is a chance of life; where as death is certain if you cling to your corner. ",
+
+      " Victorious warriors win first and then go to war, while defeated warriors go to war first and then seek to win. ",
+
+      " If the mind is willing, the flesh could go on and on without many things. ",
+
+      " Water shapes its course according to the nature of the ground over which it flows; the person works out his victory in relation to the foe whom he is facing. ",
+
+      " Conceal your dispositions, and your condition will remain secret, which leads to victory;  show your dispositions, and your condition will become patent, which leads to defeat. ",
+      " In the midst of chaos, there is also opportunity. ",
+      " He who is prudent and lies in wait for an enemy who is not, will be victorious. ",
+      " It is easy to love your friend, but sometimes the hardest lesson to learn is to love your enemy. ",
+      " To secure ourselves against defeat lies in our own hands, but the opportunity of defeating the enemy is provided by the enemy himself. ",
+      " Engage people with what they expect; it is what they are able to discern and confirms their projections. It settles them into predictable patterns of response, occupying their minds while you wait for the extraordinary moment that which they cannot anticipate. ",
+      " If your opponent is of choleric temper, seek to irritate him. Pretend to be weak, that he may grow arrogant. ",
+      " Begin by seizing something which your opponent holds dear; then he will be amenable to your will. ",
+      " You can be sure of succeeding in your attacks if you only attack places which are undefended. ",
+      " Treat your men as you would your own beloved sons and they will follow you into the deepest valley. ",
+      " Attack is the secret of defense; defense is the planning of an attack. ",
+      " If he sends reinforcements everywhere, he will everywhere be weak. ",
+      " When the outlook is bright, bring it before their eyes; but tell them nothing when the situation is gloomy. ",
+      " Even the finest sword plunged into salt water will eventually rust. ",
+      " Attack him where he is unprepared, appear where you are not expected. ",
+      " Energy may be likened to the bending of a crossbow; decision, to the releasing of a trigger. ",
+      " Invincibility lies in the defence; the possibility of victory in the attack. ",
+      " Move swift as the Wind and closely-formed as the Wood. Attack like the Fire and be still as the Mountain. ",
+      " Great results, can be achieved with small forces. ",
+      " Whether in an advantageous position or a disadvantageous one, the opposite state should be always present to your mind. ",
+      " When the enemy is relaxed, make them toil. When full, starve them. When settled, make them move. ",
+      " Convince your enemy that he will gain very little by attacking you; this will diminish his enthusiasm ",
+      " Order or disorder depends on organisation; courage or cowardice on circumstances; strength or weakness on dispositions. ",
+      " Build your opponent a golden bridge to retreat across. ",
+      " Ponder and deliberate before you make a move. ",
+      " Be extremely subtle even to the point of formlessness. Be extremely mysterious even to the point of soundlessness. Thereby you can be the director of the opponent's fate. ",
+      " If ignorant both of your enemy and yourself, you are certain to be in peril. ",
+      " He who wishes to fight must first count the cost. ",
+      " When strong, avoid them. If of high morale, depress them. Seem humble to fill them with conceit. If at ease, exhaust them. If united, separate them. Attack their weaknesses. Emerge to their surprise. "
+
+    ]
+  },
+  {
+    "idCountry": 15,
+    "country": "William Shakespeare",
+    "assetsIcon": "assets/images/button/shakespeare_ico.jpg",
+    "assetsCanvas": "assets/images/canvas/shakespeare_bg.jpg",
+    "idProverb": [
+      "Love all, trust a few, do wrong to none. ",
+
+      "When we are born, we cry that we come to this great stage of fools. ",
+
+      "Better a witty fool, than a foolish wit. ",
+
+      "Men have died from time to time, and worms have eaten them, but not for love. ",
+
+      "Go to your bosom; Knock there, and ask your heart what it doth know. ",
+
+      "I wish my horse had the speed of your tongue. ",
+
+      "What a piece of work is a man! How noble in reason! How infinite in faculties! In form and moving, how express and admirable! In action how like an angel! In apprehension how like a god! The beauty of the world! The paragon of animals! And yet, to me, what is this quintessence of dust? ",
+
+      "I must be cruel only to be kind; Thus bad begins and worse remains behind. ",
+
+      "Parting is such sweet sorrow that I shall say goodnight till it is morrow. ",
+
+      "Hell is empty and all the devils are here. ",
+
+      "Life is as tedious as a twice-told tale, vexing the dull ear of a drowsy man. ",
+
+      "Fishes live in the sea, as men do a-land; the great ones eat up the little ones. ",
+
+      "Speak low, if you speak love. ",
+
+      "O thou invisible spirit of wine, if thou hast no name to be known by, let us call thee devil. ",
+
+      "To be, or not to be: that is the question. ",
+
+      "With mirth and laughter let old wrinkles come. ",
+
+      "The object of Art is to give life a shape. ",
+
+      "Love me or hate me, both are in my favor... If you love me, I'll always be in your heart... If you hate me, I'll always be in your mind. ",
+
+      "The expectation is the root of all heartache. ",
+
+      "Love is the greatest of dreams, yet the worst of nightmares. ",
+
+      "All's well if all ends well. ",
+
+      " One may smile, and smile, and be a villain. ",
+
+      " Nothing will come of nothing: speak again. ",
+
+      " What's done cannot be undone. ",
+
+      " A young woman in love always looks like patience on a monument smiling at grief. ",
+
+      " People’s good deeds we write in water. The evil deeds are etched in brass. ",
+
+      " Better three hours too soon than a minute too late. ",
+
+      " No legacy is so rich as honesty. ",
+
+      " When sorrows come, they come not single spies, But in battalions. ",
+
+      " The course of true love never did run smooth. ",
+
+      "I like this place and could willingly waste my time in it. ",
+
+      " Love is heavy and light, bright and dark, hot and cold, sick and healthy, asleep and awake- its everything except what it is! ",
+
+      "The fool doth think he is wise, but the wise man knows himself to be a fool. ",
+
+      "Love looks not with the eyes, but with the mind. ",
+
+      "Be not afraid of greatness. Some are born great, some achieve greatness, and others have greatness thrust upon them. ",
+
+      "It is not in the stars to hold our destiny but in ourselves. ",
+
+      " Time is very slow for those who wait, Very fast for those who are scared, Very long for those who lament, Very short for those who celebrate, But for those who love, time is eternal. ",
+
+      " There is nothing either good or bad, but thinking makes it so. ",
+
+      " If you love and get hurt, love more. If you love more and hurt more, love even more. If you love even more and get hurt, even more, love some more until it hurts no more... ",
+
+      " Nothing will come of nothing; we must dare mighty things. ",
+
+      " Our doubts are traitors and make us lose the good we oft might win, by fearing to attempt. ",
+
+      " A light heart lives long. ",
+
+      " Neither a borrower nor a lender is: For loan oft loses both itself and friend. ",
+
+      " ’Tis an ill cook that cannot lick his own fingers. ",
+
+      " Brevity is the soul of wit. ",
+
+      " A fool thinks himself to be wise, but a wise man knows himself to be a fool. ",
+
+      " It is the stars, The stars above us, govern our conditions. ",
+
+      " There are three people in yourself: Who people think you are, Who you think you are, and who you really are.  ",
+
+      " Stars, hide your fires; Let not light see my black and deep desires. ",
+
+      "Ignorance is the curse of God; knowledge is the wing wherewith we fly to heaven. ",
+
+      " Don't waste your love on somebody, who doesn't value it. ",
+
+      " To weep is to make less the depth of grief. ",
+
+      " Love is a smoke made with the fume of sighs. ",
+
+      " And this, our life, exempt from public haunt, finds tongues in trees, books in the running brooks, sermons in stones, and good in everything. ",
+
+      " Listen to many, speak to a few. ",
+
+      " So wise so young, they say, do never live long. ",
+
+      " All the world's a stage, and all the men and women merely players: they have their exits and their entrances; and one man in his time plays many parts, his acts being seven ages. ",
+
+      " Do not swear by the moon, for she changes constantly. Then your love would also change. ",
+
+      " Go wisely and slowly. Those who rush stumble and fall. ",
+
+      " If we are true to ourselves, we can not be false to anyone. "
+    ]
+  }
+]

@@ -6,8 +6,6 @@ import 'package:flutter/foundation.dart'; //(debugPrint)
 import './CountryModelClass.dart'; // Class InterestsModel
 
 /*
-import 'CountryModelClass.dart';
-
 List countryData = <InterestsModel> [
   InterestsModel(0, 'Japonais', 'assets/images/button/bonsai1.jpg'),
   InterestsModel(1, 'Senegalais', 'assets/images/button/bonsai2.jpg'),
@@ -28,55 +26,5 @@ Future loadItemMenu([int index ,var data] /* ou String data*/) async { //[] perm
   final jsonResponse = json.decode(jsonString);
   ProverbList proverbList = ProverbList.fromJson(jsonResponse);
 
-/* DEBUG
-  print('idCountry : ${proverbList.proverbs[0].idCountry}'); // 0
-  print('country : ${proverbList.proverbs[0].country}'); // Japonais
-  print('assets : ${proverbList.proverbs[0].assets}'); // 0
-  print('idProverb : ${proverbList.proverbs[0].idProverb[1]}'); // Japonais
- */
-
-  //return proverbList.proverbs[0].country;
   return proverbList.proverbs[index];
 }
-
-/*
-Future loadProverb([var data] /* ou String data*/) async { //[] permet de rendre les paramettre optionnelle.
-  String jsonString = await _loadAStudentAsset();
-  final jsonResponse = json.decode(jsonString);
-  ProverbList proverbList = ProverbList.fromJson(jsonResponse);
-
-  return proverbList.proverbs;
-}
-
- */
-
-//SAve corrigé juste
-/*
-import 'dart:convert';
-import 'dart:async';
-import 'package:flutter/services.dart';
-import 'student_model.dart';
-
-//Load Json
-Future<String> _loadAStudentAsset() async {
-  return await rootBundle.loadString('assets/Copie.json');
-}
-
-//Load Response
-Future loadStudent(int num) async {
-  String jsonString = await _loadAStudentAsset();
-  final jsonResponse = json.decode(jsonString);
-  SentenceList sentenceList = SentenceList.fromJson(jsonResponse);
-
-   //Debug
-  /*
-    print('idCountry : ${sentenceList.sentences[0].idName}');
-  print('country : ${sentenceList.sentences[0].name}');
-  print('assets : ${sentenceList.sentences[0].assets}');
-  print('idProverb : ${sentenceList.sentences[0].sentence[1]}');
-   */
-
-  return sentenceList.sentences[num]; //OK
-}
-
- */

@@ -32,6 +32,17 @@ class _PageViewItemState extends State<PageViewItem> {
     false,
     false,
     false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
     false
   ]; // Trigger Button animation
 
@@ -64,10 +75,9 @@ class _PageViewItemState extends State<PageViewItem> {
     return GestureDetector(
       onTap: () {
 
-
         setState(() {
           //*****************************************************
-          selected = [false, false, false, false, false];
+          selected = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false];
           selected[index] = !selected[index];
           //*****************************************************
         });
@@ -111,12 +121,30 @@ class _PageViewItemState extends State<PageViewItem> {
 
               SizedBox(height: 10),
               //Text("Menu ${snapshot.data.country}",
-              Text("Menu ${countryName}",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontFamily: 'RadikalThin',
-                    fontSize: 13.0,
-                  )),
+              Stack(
+                children: <Widget>[
+                  // Stroked text as border.
+                  Text( //outline
+                    "Menu ${countryName}",
+                    style: TextStyle(
+                      fontSize: 15,
+                      foreground: Paint()
+                        ..style = PaintingStyle.stroke
+                        ..strokeWidth = 1
+                        ..color = Colors.blue[300],
+                    ),
+                  ),
+                  // Solid text as fill.
+                  Text(
+                    "Menu ${countryName}",
+                    style: TextStyle(
+                      fontSize: 15,
+                      color: Colors.grey[500],
+                    ),
+                  ),
+                ],
+              )
+
             ],
           );
         } else {

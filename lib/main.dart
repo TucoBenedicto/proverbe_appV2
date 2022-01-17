@@ -23,21 +23,23 @@ class MyApp extends StatelessWidget {
         // body : Container(),
 
         home: SplashScreen(
-            seconds: 5,
-            navigateAfterSeconds:MyHomePage(),
-            title: new Text(
+            seconds: 8,
+            navigateAfterSeconds: MyHomePage(),
+            // Add text under logo
+            /*
+             title: new Text(
               'SplashScreen Example',
               style: new TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 20.0,
-                  color: Colors.white),
+                  color: Colors.red),
             ),
-            image: new Image.asset('assets/images/splashScreen/Logo_SplashScreen.png'),
+             */
+            image: new Image.asset(
+                'assets/images/splashScreen/SplashScreenImage.png'),
             photoSize: 100.0,
-            backgroundColor: Colors.blue,
+            backgroundColor: Colors.white,
             styleTextUnderTheLoader: new TextStyle(),
-            loaderColor: Colors.white
-        )
-    );
+            loaderColor: Colors.red));
   }
 }

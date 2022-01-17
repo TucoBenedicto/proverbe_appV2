@@ -22,12 +22,9 @@ class _BackGroundState extends State<BackGround> {
   ui.Image myImage;
   bool isImageLoaded = false;
   String countryName; //à delette
-  //String assetsIcon;
-  //String assetsPic;
 
   Proverb jsonGetter;
   String assetsPic;
-
 
   @override
   //start "init()" in first
@@ -48,19 +45,11 @@ class _BackGroundState extends State<BackGround> {
   ];
    */
 
-
   //Get image
   Future<Null> init() async {
-
 //Get the image link from json thanks to the functiion "loadItemMenu" in th mixin "HelperFunction.dart "
     jsonGetter = await loadItemMenu(myId);
     assetsPic = jsonGetter.assetsCanvas; //assetsCanvas is in the Json file
-    print("result : ${jsonGetter}");
-    print("result TYPE : ${jsonGetter.runtimeType}");
-    print("someVal : ${assetsPic}");
-    print("someVal TYPE : ${assetsPic.runtimeType}");
-
-    //final ByteData data = await rootBundle.load(imageList[myId]);
     final ByteData data = await rootBundle.load(assetsPic);
     myImage = await loadImage(Uint8List.view(data.buffer));
   }
@@ -84,15 +73,11 @@ class _BackGroundState extends State<BackGround> {
         child: PageView.builder(
           pageSnapping: true,
           controller: widget.pageController1,
-
           itemCount: assetsPic.length,
-          //itemCount: 5,
-
           onPageChanged: (index) {
             setState(() {
               myId = index;
             });
-            print("myId from background ${myId}");
           },
           itemBuilder: (BuildContext context, int index) {
             return Container(
@@ -103,7 +88,6 @@ class _BackGroundState extends State<BackGround> {
               ),
             );
           },
-
         ),
       );
     } else {
@@ -116,8 +100,6 @@ class _BackGroundState extends State<BackGround> {
 
   @override
   Widget build(BuildContext context) {
-    print("myId from background ${myId}");
-    //funcThatMakesAsyncCall();
     init();
     return background();
   }

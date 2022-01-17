@@ -27,8 +27,8 @@ class _ProverbDisplayState extends State<ProverbDisplay> {
         PageController(initialPage: 1, keepPage: true, viewportFraction: 1);
     return Container(
       //color: Colors.redAccent,
-      height: 200,
       width: 380,
+      height: 450,
       child: PageView.builder(
         scrollDirection: Axis.horizontal,
         controller: controller,
@@ -59,13 +59,11 @@ class _ProverbDisplayState extends State<ProverbDisplay> {
             );
           } else {
             //RANDOM index
-            int proverbLength = snapshot
-                .data.idProverb.length; //Nombre total de proverbe par pays.
+            int proverbLength = snapshot.data.idProverb.length; //Nombre total de proverbe par pays.
             int randomProverbIndex = random.nextInt(proverbLength);
-            return cardProverb(
-                text:
-                    "Proverb : ${snapshot.data.idProverb[randomProverbIndex]}",
-                color: Colors.white,
+            return
+              cardProverb(text: "${snapshot.data.idProverb[randomProverbIndex]}",
+                color: Colors.grey,
                 size: 13.0,
                 index: flex);
           }
@@ -82,9 +80,9 @@ class _ProverbDisplayState extends State<ProverbDisplay> {
     return Container(
       child: Column(
         children: [
-          SizedBox(height: 300),
+          SizedBox(height: 250),
           proverbContainer(),
-          SizedBox(height: 10),
+
           Center(
             child: Icon(
               Icons.swipe,
@@ -92,6 +90,9 @@ class _ProverbDisplayState extends State<ProverbDisplay> {
               color: Colors.grey,
             ),
           ),
+
+
+
         ],
       ),
     );
