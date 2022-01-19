@@ -26,8 +26,11 @@ class _ProverbDisplayState extends State<ProverbDisplay> {
     final PageController controller =
         PageController(initialPage: 1, keepPage: true, viewportFraction: 1);
     return Container(
+
       //color: Colors.redAccent,
       width: 380,
+      //height: double.infinity,
+      //height: MediaQuery.,
       height: 450,
       child: PageView.builder(
         scrollDirection: Axis.horizontal,
@@ -59,10 +62,11 @@ class _ProverbDisplayState extends State<ProverbDisplay> {
             );
           } else {
             //RANDOM index
-            int proverbLength = snapshot.data.idProverb.length; //Nombre total de proverbe par pays.
+            int proverbLength = snapshot
+                .data.idProverb.length; //Nombre total de proverbe par pays.
             int randomProverbIndex = random.nextInt(proverbLength);
-            return
-              cardProverb(text: "${snapshot.data.idProverb[randomProverbIndex]}",
+            return cardProverb(
+                text: "${snapshot.data.idProverb[randomProverbIndex]}",
                 color: Colors.grey,
                 size: 13.0,
                 index: flex);
@@ -76,26 +80,11 @@ class _ProverbDisplayState extends State<ProverbDisplay> {
       // debugPrint('proverbDispaly myId : ${widget.myId}');
     });
 
-    // print(test);
     return Container(
-      child: Column(
-        children: [
-          SizedBox(height: 250),
-          proverbContainer(),
-
-          Center(
-            child: Icon(
-              Icons.swipe,
-              size: 50,
-              color: Colors.grey,
-            ),
-          ),
-
-
-
-        ],
-      ),
-    );
+      //  padding:  EdgeInsets.all(5.0),
+      padding: EdgeInsets.fromLTRB(0, 200, 0, 0),
+      child :proverbContainer(),
+      );
   }
 }
 

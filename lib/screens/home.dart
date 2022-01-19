@@ -19,9 +19,9 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false, // Retire debug banner
       home: Scaffold(
         body:
-
             //ROW 1 //Affichage Menu
             Stack(
           children: <Widget>[
@@ -30,7 +30,7 @@ class _MyHomePageState extends State<MyHomePage> {
               alignment: Alignment.bottomCenter,
               child: Container(
                   width: double.infinity,
-                  height: 1000,
+                  height: double.infinity,
                   child: CustomPaint(painter: CurvePainterContainer())),
             ),
             PageViewItem(
@@ -44,7 +44,40 @@ class _MyHomePageState extends State<MyHomePage> {
                 //print("myId from main.dart : $myId");
               });
             }),
-            ProverbDisplay(myId, myCountry),
+
+            /*
+               Positioned.fill(
+              child: Align(
+                  alignment: Alignment.bottomCenter,
+                  child: ProverbDisplay(myId, myCountry),
+              ),
+            ),
+             */
+
+            Align(
+              alignment: Alignment.center,
+              child: ProverbDisplay(myId, myCountry),
+            ),
+
+
+            Container(
+              padding: EdgeInsets.fromLTRB(0, 0, 0, 50),
+              child: Align(
+                alignment: Alignment.bottomCenter,
+                child: Icon(
+                  Icons.swipe,
+                  size: 50,
+                  color: Colors.grey,
+                ),
+              ),
+            )
+
+            /*
+                        Align(
+              alignment: Alignment.center,
+              child: ProverbDisplay(myId, myCountry),
+            ),
+             */
           ],
         ),
       ),
