@@ -37,47 +37,14 @@ class cardProverb extends StatelessWidget {
               ? Colors.lightBlue.withOpacity(0.4)
               : Colors.white.withOpacity(0.4),
           elevation: 2,
-          child:
-
-              /*
-             Container(
-              //Add a border top and bottom
-              margin: EdgeInsets.only(top: 5, bottom: 5),
-
-              child: Row(
-                children: [
-                  //Icon top left
-                  Align(
-                    alignment: Alignment.topCenter,
-                    child:
-                      Icon(Icons.format_quote, size: 40),
-                  ),
-
-                  Expanded(
-                    child: Text(text, style: TextStyle(fontSize: 18.0)),
-                  ),
-                  //Icon bottom right
-                  Column(
-                    children: [
-                      Icon(Icons.format_quote, size: 40),
-                    ],
-                  ),
-                ],
-              ),
-            )
-             */
-
-              Column(
+          child: Column(
             mainAxisSize: MainAxisSize.max,
             children: <Widget>[
-
               Align(
                 alignment: Alignment.topLeft,
-                child : Icon(Icons.format_quote, size: 40),
+                child: Icon(Icons.format_quote, size: 40),
               ),
-
               ListTile(
-
                 /*
                 leading: Container(
                   margin: EdgeInsets.only( top: 1, left:1),
@@ -88,7 +55,8 @@ class cardProverb extends StatelessWidget {
                 subtitle: Center(
                   //widthFactor: 0.5,
                   //padding: EdgeInsets.fromLTRB(0, 40, 0, 0),
-                  child: Text(text, style: TextStyle(fontSize: 18.0,color: Colors.white)),
+                  child: Text(text,
+                      style: TextStyle(fontSize: 18.0, color: Colors.white)),
                 ),
 
                 /*
@@ -100,14 +68,10 @@ class cardProverb extends StatelessWidget {
                   child: Icon(Icons.format_quote, size: 40),
                 ),
                  */
-
               ),
-
               Align(
-                alignment: Alignment.bottomRight,
-                child : Icon(Icons.format_quote, size: 40,color:Colors.red)
-              ),
-
+                  alignment: Alignment.bottomRight,
+                  child: Icon(Icons.format_quote, size: 40, color: Colors.red)),
             ],
           ),
         ),
