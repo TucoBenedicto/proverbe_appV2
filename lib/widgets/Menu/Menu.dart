@@ -126,8 +126,9 @@ class _PageViewItemState extends State<PageViewItem> {
                   // Stroked text as border.
                   Text( //outline
                     " ${countryName}",
+                    textAlign: TextAlign.center,
                     style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 18,
                       foreground: Paint()
                         ..style = PaintingStyle.stroke
                         ..strokeWidth = 2
@@ -136,15 +137,15 @@ class _PageViewItemState extends State<PageViewItem> {
                   ),
                   // Solid text as fill.
                   Text(
-                    " ${countryName}",
+                    "${countryName}",
+                    textAlign: TextAlign.center,
                     style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 18,
                       color: Colors.white,
                     ),
                   ),
                 ],
               )
-
             ],
           );
         } else {
