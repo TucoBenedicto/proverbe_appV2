@@ -8,7 +8,8 @@ import 'package:flutter/foundation.dart'; //(debugPrint)
 import 'dart:math'; //(Random)
 
 class PageViewItem extends StatefulWidget {
-  final void Function(int myId, String myCountry,PageController pageController1) onChanged;
+  final void Function(
+      int myId, String myCountry, PageController pageController1) onChanged;
   const PageViewItem({this.onChanged});
 
   @override
@@ -16,11 +17,10 @@ class PageViewItem extends StatefulWidget {
 }
 
 class _PageViewItemState extends State<PageViewItem> {
-
 //Initialisation
   Random random = Random.secure();
   //int myId = 0;
-  int myId ;
+  int myId;
   String myCountry;
   String countryName;
   PageController pageController1;
@@ -50,8 +50,9 @@ class _PageViewItemState extends State<PageViewItem> {
 
 //Scrolling - MENU
   Container menuContainer() {
-   // final PageController controller = PageController(initialPage: 1, keepPage: true, viewportFraction: 0.35);
-    final PageController controller = PageController(initialPage: 1, keepPage: true, viewportFraction: 0.29);
+    // final PageController controller = PageController(initialPage: 1, keepPage: true, viewportFraction: 0.35);
+    final PageController controller =
+        PageController(initialPage: 1, keepPage: true, viewportFraction: 0.29);
     return Container(
       //height: 300,
       child: PageView.builder(
@@ -74,10 +75,26 @@ class _PageViewItemState extends State<PageViewItem> {
   GestureDetector gestureDetectorOnTap(int index, [ProverbList data]) {
     return GestureDetector(
       onTap: () {
-
         setState(() {
           //*****************************************************
-          selected = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false];
+          selected = [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ];
           selected[index] = !selected[index];
           //*****************************************************
         });
@@ -86,7 +103,6 @@ class _PageViewItemState extends State<PageViewItem> {
           myId = index;
           widget.onChanged(myId, myCountry, pageController1);
         });
-
       },
       child: Column(
         children: [
@@ -118,31 +134,28 @@ class _PageViewItemState extends State<PageViewItem> {
           return Column(
             children: [
               button(selected[index], assetsIcon),
-
               //SizedBox(height: 10),
               //Text("Menu ${snapshot.data.country}",
               Stack(
                 children: <Widget>[
-                  // Stroked text as border.
-                  Text( //outline
+                  Text(
+                    //outline
                     " ${countryName}",
                     textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 18,
-                      foreground: Paint()
-                        ..style = PaintingStyle.stroke
-                        ..strokeWidth = 2
-                        ..color = Colors.black87,
-                    ),
-                  ),
-                  // Solid text as fill.
-                  Text(
-                    "${countryName}",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 18,
-                      color: Colors.white,
-                    ),
+                    style:
+                        TextStyle(fontSize: 18, color: Colors.white, shadows: [
+                      Shadow(
+                        //color:Colors.greenAccent,
+                        color: Colors.blueAccent,
+                        blurRadius: 10,
+                        offset: Offset(5, -5),
+                      ),
+                      Shadow(
+                        color: Colors.red,
+                        blurRadius: 10,
+                        offset: Offset(-5, 5),
+                      )
+                    ]),
                   ),
                 ],
               )
